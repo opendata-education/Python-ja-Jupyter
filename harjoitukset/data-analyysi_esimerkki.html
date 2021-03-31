@@ -1,0 +1,672 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harjoittele data-analyysiä &#8212; Python ja Jupyter</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://opendata-education.github.io/Python-ja-Jupyter/intro.html/harjoitukset/data-analyysi_esimerkki.html" />
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Funktiot Pythonissa" href="python-funktiot.html" />
+    <link rel="prev" title="Data-analyysi Pythonilla" href="jupyter-intro.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://opendata-education.github.io/Python-ja-Jupyter/intro.html/harjoitukset/data-analyysi_esimerkki.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Harjoittele data-analyysiä" />
+<meta property="og:description" content="Harjoittele data-analyysiä  Tässä harjoituksessa käydään läpi esimerkki siitä, miten ohjelmointia voidaan hyödyntää datan analysoimisessa Python-ohjelmointikiel" />
+<meta property="og:image"       content="https://opendata-education.github.io/Python-ja-Jupyter/intro.html/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python ja Jupyter</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Tervetuloa avoimen datan pariin
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Harjoitukset
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyter-intro.html">
+   Data-analyysi Pythonilla
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Harjoittele data-analyysiä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="python-funktiot.html">
+   Funktiot Pythonissa
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/harjoitukset/data-analyysi_esimerkki.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/opendata-education/Python-ja-Jupyter"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/opendata-education/Python-ja-Jupyter/issues/new?title=Issue%20on%20page%20%2Fharjoitukset/data-analyysi_esimerkki.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/opendata-education/Python-ja-Jupyter/main?urlpath=tree/materiaali/harjoitukset/data-analyysi_esimerkki.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#notebookien-kaytto">
+   Notebookien käyttö
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-ohjelmointi">
+   Python-ohjelmointi
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#datan-lukeminen-tiedostosta">
+     Datan lukeminen tiedostosta
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#datan-tarkasteleminen">
+     Datan tarkasteleminen
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#datan-valitseminen">
+     Datan valitseminen
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#datan-visualisoiminen">
+     Datan visualisoiminen
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#esimerkki">
+     Esimerkki
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="harjoittele-data-analyysia">
+<h1>Harjoittele data-analyysiä<a class="headerlink" href="#harjoittele-data-analyysia" title="Permalink to this headline">¶</a></h1>
+<p>Tässä harjoituksessa käydään läpi esimerkki siitä, miten ohjelmointia voidaan hyödyntää datan analysoimisessa Python-ohjelmointikielellä. Aloitamme Jupyter notebook -ympäristön perusteista ja etenemme siitä Pythonin ja data-analyysin pariin.</p>
+<div class="section" id="notebookien-kaytto">
+<h2>Notebookien käyttö<a class="headerlink" href="#notebookien-kaytto" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter notebookit ovat dokumentteja, joihin voidaan kirjoittaa tekstiä, lisätä kuvia tai videoita sekä kirjoittaa koodia ja nähdä koodin tulos.</p>
+<p>Dokumentti rakentuu “soluista”, jotka voivat olla joko <strong>tekstisoluja</strong> tai <strong>koodisoluja</strong>. Esimerkiksi tämä solu on tekstisolu. Jos painat tätä tekstisolua, näet että solun reuna muuttuu siniseksi. Tämä tarkoittaa sitä, että solu on valittu. Jos taas kaksoisklikkaat tekstisolua, se avautuu muokkaustilaan ja solun reuna muuttuu vihreäksi. Solun voi “ajaa” painamalla “Run”-painiketta yläreunan työkaluista. Tekstisolun tapauksessa solun ajaminen tarkoittaa sitä, että muokkaustilassa oleva solu menee näyttötilaan.</p>
+<p>Esimerkki koodisolusta on tämän solun alapuolella. Koodisolun tunnistaa siitä, että sen vasemmassa reunassa on teksti <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[</span> <span class="pre">]:</span></code>. Koodisoluun voidaan kirjoittaa ohjelmakoodia Python-kielellä. Kokeile ajaa alla oleva solu “Run”-painiketta painamalla ja katso, mitä tapahtuu!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Koodisoluissa &quot;#&quot;-merkillä alkavat rivit ovat kommentteja. Ne eivät vaikuta ajettavaan koodiin.</span>
+<span class="c1"># Kommenteissa kerrotaan tyypillisesti, mitä koodi tekee. Siihen voi kirjoittaa myös vaikkapa ohjeita.</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, World!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hienoa, ajoit juuri ensimmäisen koodisolusi! Kun koodisolu on ajettu, solun reunassa olevien sulkeiden sisään tulee numero, esim. <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[1]:</span></code>. Jos sulkeiden sisällä on asteriski, eli <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[*]:</span></code>, solun ajaminen on vielä kesken.</p>
+<p>Notebookeissa voit lisätä soluja aktiivisen solun alapuolelle painamalla työkaluista “+”-painiketta. Aktiivisen solun voi muuttaa koodisolusta tekstisoluksi ja päinvastoin työkalupalkin pudotusvalikosta. Koodisolu on “Code” ja tekstisolu on “Markdown”. Kokeile lisätä koodisolu ja tulostaa jokin teksti vastaavaan tapaan kuin “Hello, World!” yläpuolella!</p>
+</div>
+<div class="section" id="python-ohjelmointi">
+<h2>Python-ohjelmointi<a class="headerlink" href="#python-ohjelmointi" title="Permalink to this headline">¶</a></h2>
+<p>Tämän harjoituksen tarkoituksena on opastaa data-analyysin saloihin Pythonin avulla. Tästä syystä emme käy läpi kaikkia Python-kielen hienouksia, vaan tutustumme käytännönläheisesti Pythoniin data-analyysissa. Jos kaipaat enemmän materiaalia päästäksesi alkuun Pythonin kanssa, voit aloittaa esimerkiksi osoitteesta <a class="reference external" href="https://www.learnpython.org/">https://www.learnpython.org/</a>.</p>
+<div class="section" id="datan-lukeminen-tiedostosta">
+<h3>Datan lukeminen tiedostosta<a class="headerlink" href="#datan-lukeminen-tiedostosta" title="Permalink to this headline">¶</a></h3>
+<p>Olennainen osa data-analyysiä on hankkia itse data. Kun data on kerätty, se tallennetaan yleensä johonkin tiedostoon. Otetaan esimerkkinä vaikkapa Ilmatieteenlaitoksen säähavainnot. Säähavainnoista kertyy dataa, joka tallennetaan tiedostoihin. Ilmatieteenlaitoksen avoimesta hakupalvelusta voidaan hakea dataa tietyillä kriteereillä, jolloin voimme ladata haluamamme datan esimerkiksi csv-tiedostona. Käytetään esimerkkidatana <a class="reference external" href="https://www.ilmatieteenlaitos.fi/havaintojen-lataus">Ilmatieteenlaitoksen hakupalvelusta</a> ladattua dataa vuoden 2020 kuukausien keskilämpötiloista Helsinki-Vantaan lentoasemalta mitattuna. Datatiedosto on valmiiksi ladattu hakupalvelusta ja löytyy tiedostonimellä “keskilampotila2020_Helsinki.csv”.</p>
+<p>Pythonissa on sekä valmiina että ladattavissa paljon erilaisia paketteja (myös kirjasto tai moduuli), jotka sisältävät muiden tekemää koodia, jota voi kätevästi hyödyntää omassa koodissaan. Tutustutaan tässä kahteen data-analyysin kannalta olennaiseen pakettiin, jotka ovat <span class="xref myst">pandas</span> ja <span class="xref myst">matplotlib</span>. Pandas-paketti sisältää työkaluja datatiedostojen lukemiseen ja datan käsittelyyn koodissa. Matplotlib puolestaan tarjoaa työkaluja kuvaajien piirtämiseen.</p>
+<p>Koodissa paketit voidaan ottaa käyttöön <code class="docutils literal notranslate"><span class="pre">import</span></code> komennolla, jonka jälkeen kirjoitetaan paketin nimi, esimerkiksi</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span>
+</pre></div>
+</div>
+<p>Tämän jälkeen pandas-paketin työkalut, esimerkiksi <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html"><code class="docutils literal notranslate"><span class="pre">read_csv()</span></code></a> (jonka avulla voidaan lukea dataa tiedostosta) ovat käytettävissä seuraavasti:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Tyypillisesti paketeille asetetaan lyhenne, jolloin koodissa ei tarvitse aina kirjoittaa paketin koko nimeä:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="alert alert-info">
+<p><strong>Paketit</strong></p>
+<p>Ota koko paketti käyttöön <strong>import</strong>-komennolla</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">moduulin_nimi</span> <span class="k">as</span> <span class="nn">lyhenne</span>
+</pre></div>
+</div>
+<p>Esimerkiksi:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Kirjoita tähän soluun koodi, joka ottaa käyttöön pandas kirjaston lyhenteellä &quot;pd&quot;</span>
+<span class="c1"># Lopuksi aja solu. Huom! Solu ei tulosta mitään, koska lataamme ainoastaan paketin käyttöömme.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Datan lukeminen tiedostosta onnistuu <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html"><code class="docutils literal notranslate"><span class="pre">read_csv()</span></code></a>-työkalulla. Pythonissa tällaiset työkalut ovat nimeltään funktioita. Käytännössä funktiot ovat sellaista koodia, jota tarvitaan usein, ja jota voidaan uudelleenkäyttää helposti. Pythonissa on paljon <a class="reference external" href="https://docs.python.org/3/library/functions.html">valmiita funktioita</a>, esimerkiksi  <a class="reference external" href="https://docs.python.org/3/library/functions.html#print"><code class="docutils literal notranslate"><span class="pre">print()</span></code></a>, jota käytit jo aiemmin. <code class="docutils literal notranslate"><span class="pre">print()</span></code>-funktiolle kirjoitetaan sulkeiden sisään tulostettava teksti, kuten “Hello, World!”. Tätä kutsutaan funktion parametriksi. Funktiosta riippuen parametreja voidaan tarvita useampiakin (tai ei yhtäkään). Otetaan vielä esimerkki funktiosta <a class="reference external" href="https://docs.python.org/3/library/functions.html#pow"><code class="docutils literal notranslate"><span class="pre">pow(x,</span> <span class="pre">y)</span></code></a>, joka korottaa annetun luvun x potenssiin y:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lasketaan 3^2 (3 potenssiin 2). </span>
+<span class="c1"># Aja tämä solu</span>
+
+<span class="nb">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Funktio voi siis antaa jonkin <strong>paluuarvon</strong>, kuten äskeisessä esimerkissä luvun 9. Paluuarvo voidaan myös tallettaa <strong>muuttujaan</strong>, jolloin sitä voidaan käyttää myöhemmin koodissa.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lasketaan 3^2 ja tallennetaan tulos muuttujaan &quot;x&quot;</span>
+<span class="c1"># Aja tämä solu. Huom. solu ei tulosta mitään, koska arvo vain tallennetaan muuttujaan.</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tulostetaan muuttujan x arvo</span>
+<span class="c1"># Huom. Muuttujan arvoa tulostettaessa ei käytetä lainausmerkkejä muuttujan nimen ympärillä.</span>
+<span class="c1"># Voit kokeilla mitä tapahtuu, jos lisäät lainausmerkit x:n ympärille.</span>
+<span class="c1"># Aja tämä solu</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Jotkin funktiot kuuluvat Pythoniin valmiina, mutta paketit (kuten pandas ja matplotlib) sisältävät ainakin meidän kannalta hyödyllisiä funktioita. Funktioita voi tehdä myös itse, mutta sitä ei käsitellä tässä ohjeessa.</p>
+<p>Palataan datan lukemiseen. Dataa voidaan lukea pandas-paketin <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html"><code class="docutils literal notranslate"><span class="pre">read_csv()</span></code></a>-funktiolla, jolle annetaan parametrinä luettavan datatiedoston nimi, esimerkiksi</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;tiedostonimi.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html"><code class="docutils literal notranslate"><span class="pre">read_csv()</span></code></a>-funktiolle voidaan antaa paljon muitakin parametreja, esimerkiksi <code class="docutils literal notranslate"><span class="pre">delimiter=&quot;;&quot;</span></code>, mikäli datatiedostossa erottimena olisi pilkun sijaan puolipilkku. Koko listan funktion parametreista näet <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html">täältä</a>.
+Pelkästään datan lukemisesta ei kuitenkaan ole hyötyä, vaan data pitää myös tallentaa, jotta sitä voidaan käyttää koodissa. Data voidaan tallentaa muuttujaan samaan tapaan kuin aiemmassa esimerkissä tallensimme potenssilaskun tuloksen:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;tiedostonimi.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Kun data on tallennettu “data”-nimiseen muuttujaan, voimme myöhemmin koodissa käsitellä dataa tähän muuttujaan viittaamalla. Huomaa, että muuttujan nimen ei tarvitse olla “data”, vaan sen voi vapaasti keksiä itse.</p>
+<div class="alert alert-info">
+<p><strong>Funktiot</strong></p>
+<p>Funktion käyttäminen ja paluuarvon tallentaminen muuttujaan</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">funktion_nimi</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;tiedostonimi.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Kirjoita tähän soluun koodi, joka lukee datan tiedostosta &quot;keskilampotila2020_Helsinki.csv&quot;</span>
+<span class="c1"># ja tallentaa sen muuttujaan &quot;data&quot;. Muista ajaa solu!</span>
+<span class="c1"># Huom! Datan lataamisesta ei tulostu mitään solua ajettaessa.</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="datan-tarkasteleminen">
+<h3>Datan tarkasteleminen<a class="headerlink" href="#datan-tarkasteleminen" title="Permalink to this headline">¶</a></h3>
+<p>Nyt, kun data on luettu ja tallennettu muuttujaan “data”, voimme tarkastella sitä esimerkiksi <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html"><code class="docutils literal notranslate"><span class="pre">head()</span></code></a>-funktiolla, jonka avulla voidaan tulostaa näytölle datan muutama ensimmäinen rivi. Joitakin funktioita voidaan käyttää vain tiettyjen <strong>tietotyyppien</strong> kanssa. Esimerkiksi <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html"><code class="docutils literal notranslate"><span class="pre">head()</span></code></a>-funktiota voidaan käyttää mm. datataulukoiden (DataFrame) tarkastelemiseen. Edellisessä kohdassa funktio <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html"><code class="docutils literal notranslate"><span class="pre">read_csv()</span></code></a> luki datan tiedostosta ja tallensi sen datataulukkona muuttujaan “data”. Tässä tapauksessa <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html"><code class="docutils literal notranslate"><span class="pre">head()</span></code></a>-funktioita voitaisiin käyttää seuraavasti:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tulostetaan datan muutama ensimmäinen rivi</span>
+<span class="c1"># Aja tämä solu</span>
+
+<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html"><code class="docutils literal notranslate"><span class="pre">head()</span></code></a>-funktion eteen kirjoitetaan siis se muuttuja, joka sisältää sen datataulukon, jota haluamme tarkastella. Oletuksena <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html"><code class="docutils literal notranslate"><span class="pre">head()</span></code></a> tulostaa viisi ensimmäistä riviä datasta. Sille voidaan antaa kuitenkin parametrina tulostettavien rivien lukumäärä.</p>
+<p>Joskus on myös hyvä tarkastella, mitä sarakkeita datassa on. Tämä onnistuu <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.columns.html"><code class="docutils literal notranslate"><span class="pre">columns</span></code></a>-komennolla. Huom. <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.columns.html"><code class="docutils literal notranslate"><span class="pre">columns</span></code></a> ei ole funktio, vaan datataulukon “ominaisuus”. Tästä syystä emme kirjoita sulkeita komennon perään niin kuin funktioiden tapauksessa:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+<div class="alert alert-info">
+<p><strong>Datan tarkasteleminen</strong></p>
+<p>Data tallennettu muuttujaan “data”</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;tiedostonimi.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Tulosta rivejä alusta</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span> <span class="c1"># 5 ensimmäistä riviä</span>
+<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="c1"># 8 ensimmäistä riviä</span>
+</pre></div>
+</div>
+<p>Tulosta rivejä lopusta</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># 3 viimeistä riviä</span>
+</pre></div>
+</div>
+<p>Tarkastele datan sarakkeita (otsikoita)</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tulosta datasta 4 ensimmäistä riviä ja katso mitä se sisältää.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Katso, mitä sarakkeita data sisältää</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="datan-valitseminen">
+<h3>Datan valitseminen<a class="headerlink" href="#datan-valitseminen" title="Permalink to this headline">¶</a></h3>
+<p>Edellisessä vaiheessa saimme selville, että datamme sisältää sarakkeet “Vuosi”, “Kk” sekä “Keskilämpötila (°C)”.
+Tyypillisesti olemme kiinnostuneita tietystä tai tietyistä sarakkeista datatiedostossa.
+Voisimme esimerkiksi haluta piirtää kuvaajan, jossa x-akselilla ovat kuukaudet ja y-akselilla kuukauden keskilämpötila.</p>
+<p>Tätä varten voisimme erottaa sarakkeet omiksi muuttujikseen.
+Sarakkeen valitseminen datataulukosta onnistuu kulmasulkeiden <code class="docutils literal notranslate"><span class="pre">[]</span></code> avulla:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sarake</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;sarakkeen_nimi&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="alert alert-info">
+<p><strong>Datan valitseminen</strong></p>
+<p>Valitaan datasta tietty sarake</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sarake</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;sarakkeen_nimi&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Esimerkiksi tallennetaan sarakkeen “Kk” sisältö muuttujaan “kuukaudet”.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">kuukaudet</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Kk&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Valitse datasta sarakkeet &quot;Kk&quot; ja &quot;Keskilämpötila (°C)&quot; ja tallenna ne muuttujiin &quot;kuukaudet&quot; ja &quot;lämpötilat&quot;</span>
+<span class="c1"># Muista ajaa solu. Huom. muuttujaan tallentamisesta ei tulostu mitään.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Katso &quot;lämpötilat&quot;-muuttujan muutama ensimmäinen rivi. Vinkki: head()-metodi.</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="datan-visualisoiminen">
+<h3>Datan visualisoiminen<a class="headerlink" href="#datan-visualisoiminen" title="Permalink to this headline">¶</a></h3>
+<p>Datan visualisoimiseksi tarvitsemme <span class="xref myst">matplotlib</span>-pakettia. Tämä paketti sisältää paljon käteviä funktioita esimerkiksi juuri kuvaajien piirtämistä varten. Kuvaajien piirtämistä varten tarvitsemme matplotlib-paketista ainoastaan pyplot-osuuden. Käytettävä <code class="docutils literal notranslate"><span class="pre">import</span></code> käsky on tällöin</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># lyhenne plt on yleinen tälle paketille</span>
+</pre></div>
+</div>
+<div class="alert alert-info">
+<p><strong>Matplotlib funktioita</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="c1"># Piirretään y x:n funktiona</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;otsikko&#39;</span><span class="p">)</span> <span class="c1"># x-akselin otsikko</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;otsikko&#39;</span><span class="p">)</span> <span class="c1"># y-akselin otsikko</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;otsikko&#39;</span><span class="p">)</span> <span class="c1"># Kuvaajan otsikko</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span> <span class="c1"># Kuvaajan näyttäminen</span>
+</pre></div>
+</div>
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ota matplotlib.pyplot moduuli käyttöön import-komennolla</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Käytä yllä olevia funktioita ja piirrä kuvaaja, jossa x-akselilla on kuukaudet ja y-akselilla on lämpötilat</span>
+<span class="c1"># Vinkki. x- ja y-muuttujien paikalle voit laittaa aiemmin määrittelemäsi muuttujat &quot;kuukaudet&quot; ja &quot;lämpötilat&quot;.</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="esimerkki">
+<h3>Esimerkki<a class="headerlink" href="#esimerkki" title="Permalink to this headline">¶</a></h3>
+<p>Piirretään kolmen paikkakunnan (Helsinki, Tampere, Oulu) kuukausien keskilämpötilat vuonna 2020 samaan kuvaajaan. Tiedostot ovat nimeltään:</p>
+<ul class="simple">
+<li><p>keskilampotila2020_Helsinki.csv</p></li>
+<li><p>keskilampotila2020_Tampere.csv</p></li>
+<li><p>keskilampotila2020_Oulu.csv</p></li>
+</ul>
+<p>Huom. voit vain ajaa solut läpi. Voit myös muokata soluja jos haluat kokeilla tehdä jotain eri tavalla.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Otetaan käyttöön tarvittavat paketit</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Luetaan datatiedostot eri muuttujiin</span>
+
+<span class="n">data_hel</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;keskilampotila2020_Helsinki.csv&#39;</span><span class="p">)</span>
+<span class="n">data_tre</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;keskilampotila2020_Tampere.csv&#39;</span><span class="p">)</span>
+<span class="n">data_oul</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;keskilampotila2020_Oulu.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Katsotaan, miltä data näyttää</span>
+
+<span class="n">data_hel</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_tre</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_oul</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Erotetaan lämpötilat omiksi muuttujikseen</span>
+
+<span class="n">lämp_hel</span> <span class="o">=</span> <span class="n">data_hel</span><span class="p">[</span><span class="s1">&#39;Keskilämpötila (°C)&#39;</span><span class="p">]</span>
+<span class="n">lämp_tre</span> <span class="o">=</span> <span class="n">data_tre</span><span class="p">[</span><span class="s1">&#39;Keskilämpötila (°C)&#39;</span><span class="p">]</span>
+<span class="n">lämp_oul</span> <span class="o">=</span> <span class="n">data_oul</span><span class="p">[</span><span class="s1">&#39;Keskilämpötila (°C)&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># x-akselille tulevat kuukaudet ovat kaikissa tapauksissa samat, joten tehdään vain yksi muuttuja niille</span>
+
+<span class="n">kk</span> <span class="o">=</span> <span class="n">data_hel</span><span class="p">[</span><span class="s1">&#39;Kk&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Piirretään kuvaaja</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kk</span><span class="p">,</span> <span class="n">lämp_hel</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Helsinki&#39;</span><span class="p">)</span> <span class="c1"># Helsingin lämpötilat, mitä tehdään label-parametrilla?</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kk</span><span class="p">,</span> <span class="n">lämp_tre</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Tampere&#39;</span><span class="p">)</span> <span class="c1"># Tampereen lämpötilat</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kk</span><span class="p">,</span> <span class="n">lämp_oul</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Oulu&#39;</span><span class="p">)</span> <span class="c1"># Oulun lämpötilat</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Kuukausi&#39;</span><span class="p">)</span> <span class="c1"># x-akselin otsikko</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Lämpötila (°C)&#39;</span><span class="p">)</span> <span class="c1"># y-akselin otsikko</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Kuukausien keskilämpötilat vuonna 2020&#39;</span><span class="p">)</span> <span class="c1"># Kuvaajan otsikko</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span> <span class="c1"># Näytetään kaupunkien selitteet laatikossa. Mitä jos tätä riviä ei olisi?</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span> <span class="c1"># Näytetään kuvaaja</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./harjoitukset"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="jupyter-intro.html" title="previous page">Data-analyysi Pythonilla</a>
+    <a class='right-next' id="next-link" href="python-funktiot.html" title="next page">Funktiot Pythonissa</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Juha Teuho<br/>
+        
+          <div class="extra_footer">
+            <div>
+<a>Toteutettu Opetushallituksen valtionavustuksella tiedekasvatuksen edistämiseen.</a></br><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="license" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> Tämän sivuston materiaali on käytettävissä seuraavalla lisenssillä: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY 4.0.</a>
+</div>    
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
