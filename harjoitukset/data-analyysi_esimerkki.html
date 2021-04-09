@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>Harjoittele data-analyysiä &#8212; Python ja Jupyter</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
@@ -103,7 +104,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Harjoitukset
  </span>
@@ -277,10 +278,10 @@
         
               <div>
                 
-  <div class="section" id="harjoittele-data-analyysia">
+  <section id="harjoittele-data-analyysia">
 <h1>Harjoittele data-analyysiä<a class="headerlink" href="#harjoittele-data-analyysia" title="Permalink to this headline">¶</a></h1>
 <p>Tässä harjoituksessa käydään läpi esimerkki siitä, miten ohjelmointia voidaan hyödyntää datan analysoimisessa Python-ohjelmointikielellä. Aloitamme Jupyter notebook -ympäristön perusteista ja etenemme siitä Pythonin ja data-analyysin pariin.</p>
-<div class="section" id="notebookien-kaytto">
+<section id="notebookien-kaytto">
 <h2>Notebookien käyttö<a class="headerlink" href="#notebookien-kaytto" title="Permalink to this headline">¶</a></h2>
 <p>Jupyter notebookit ovat dokumentteja, joihin voidaan kirjoittaa tekstiä, lisätä kuvia tai videoita sekä kirjoittaa koodia ja nähdä koodin tulos.</p>
 <p>Dokumentti rakentuu “soluista”, jotka voivat olla joko <strong>tekstisoluja</strong> tai <strong>koodisoluja</strong>. Esimerkiksi tämä solu on tekstisolu. Jos painat tätä tekstisolua, näet että solun reuna muuttuu siniseksi. Tämä tarkoittaa sitä, että solu on valittu. Jos taas kaksoisklikkaat tekstisolua, se avautuu muokkaustilaan ja solun reuna muuttuu vihreäksi. Solun voi “ajaa” painamalla “Run”-painiketta yläreunan työkaluista. Tekstisolun tapauksessa solun ajaminen tarkoittaa sitä, että muokkaustilassa oleva solu menee näyttötilaan.</p>
@@ -297,11 +298,11 @@
 </div>
 <p>Hienoa, ajoit juuri ensimmäisen koodisolusi! Kun koodisolu on ajettu, solun reunassa olevien sulkeiden sisään tulee numero, esim. <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[1]:</span></code>. Jos sulkeiden sisällä on asteriski, eli <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[*]:</span></code>, solun ajaminen on vielä kesken.</p>
 <p>Notebookeissa voit lisätä soluja aktiivisen solun alapuolelle painamalla työkaluista “+”-painiketta. Aktiivisen solun voi muuttaa koodisolusta tekstisoluksi ja päinvastoin työkalupalkin pudotusvalikosta. Koodisolu on “Code” ja tekstisolu on “Markdown”. Kokeile lisätä koodisolu ja tulostaa jokin teksti vastaavaan tapaan kuin “Hello, World!” yläpuolella!</p>
-</div>
-<div class="section" id="python-ohjelmointi">
+</section>
+<section id="python-ohjelmointi">
 <h2>Python-ohjelmointi<a class="headerlink" href="#python-ohjelmointi" title="Permalink to this headline">¶</a></h2>
 <p>Tämän harjoituksen tarkoituksena on opastaa data-analyysin saloihin Pythonin avulla. Tästä syystä emme käy läpi kaikkia Python-kielen hienouksia, vaan tutustumme käytännönläheisesti Pythoniin data-analyysissa. Jos kaipaat enemmän materiaalia päästäksesi alkuun Pythonin kanssa, voit aloittaa esimerkiksi osoitteesta <a class="reference external" href="https://www.learnpython.org/">https://www.learnpython.org/</a>.</p>
-<div class="section" id="datan-lukeminen-tiedostosta">
+<section id="datan-lukeminen-tiedostosta">
 <h3>Datan lukeminen tiedostosta<a class="headerlink" href="#datan-lukeminen-tiedostosta" title="Permalink to this headline">¶</a></h3>
 <p>Olennainen osa data-analyysiä on hankkia itse data. Kun data on kerätty, se tallennetaan yleensä johonkin tiedostoon. Otetaan esimerkkinä vaikkapa Ilmatieteenlaitoksen säähavainnot. Säähavainnoista kertyy dataa, joka tallennetaan tiedostoihin. Ilmatieteenlaitoksen avoimesta hakupalvelusta voidaan hakea dataa tietyillä kriteereillä, jolloin voimme ladata haluamamme datan esimerkiksi csv-tiedostona. Käytetään esimerkkidatana <a class="reference external" href="https://www.ilmatieteenlaitos.fi/havaintojen-lataus">Ilmatieteenlaitoksen hakupalvelusta</a> ladattua dataa vuoden 2020 kuukausien keskilämpötiloista Helsinki-Vantaan lentoasemalta mitattuna. Datatiedosto on valmiiksi ladattu hakupalvelusta ja löytyy tiedostonimellä “keskilampotila2020_Helsinki.csv”.</p>
 <p>Pythonissa on sekä valmiina että ladattavissa paljon erilaisia paketteja (myös kirjasto tai moduuli), jotka sisältävät muiden tekemää koodia, jota voi kätevästi hyödyntää omassa koodissaan. Tutustutaan tässä kahteen data-analyysin kannalta olennaiseen pakettiin, jotka ovat <span class="xref myst">pandas</span> ja <span class="xref myst">matplotlib</span>. Pandas-paketti sisältää työkaluja datatiedostojen lukemiseen ja datan käsittelyyn koodissa. Matplotlib puolestaan tarjoaa työkaluja kuvaajien piirtämiseen.</p>
@@ -397,8 +398,8 @@ Pelkästään datan lukemisesta ei kuitenkaan ole hyötyä, vaan data pitää my
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="datan-tarkasteleminen">
+</section>
+<section id="datan-tarkasteleminen">
 <h3>Datan tarkasteleminen<a class="headerlink" href="#datan-tarkasteleminen" title="Permalink to this headline">¶</a></h3>
 <p>Nyt, kun data on luettu ja tallennettu muuttujaan “data”, voimme tarkastella sitä esimerkiksi <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html"><code class="docutils literal notranslate"><span class="pre">head()</span></code></a>-funktiolla, jonka avulla voidaan tulostaa näytölle datan muutama ensimmäinen rivi. Joitakin funktioita voidaan käyttää vain tiettyjen <strong>tietotyyppien</strong> kanssa. Esimerkiksi <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html"><code class="docutils literal notranslate"><span class="pre">head()</span></code></a>-funktiota voidaan käyttää mm. datataulukoiden (DataFrame) tarkastelemiseen. Edellisessä kohdassa funktio <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html"><code class="docutils literal notranslate"><span class="pre">read_csv()</span></code></a> luki datan tiedostosta ja tallensi sen datataulukkona muuttujaan “data”. Tässä tapauksessa <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html"><code class="docutils literal notranslate"><span class="pre">head()</span></code></a>-funktioita voitaisiin käyttää seuraavasti:</p>
 <div class="cell docutils container">
@@ -449,10 +450,10 @@ Pelkästään datan lukemisesta ei kuitenkaan ole hyötyä, vaan data pitää my
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="datan-valitseminen">
+</section>
+<section id="datan-valitseminen">
 <h3>Datan valitseminen<a class="headerlink" href="#datan-valitseminen" title="Permalink to this headline">¶</a></h3>
-<p>Edellisessä vaiheessa saimme selville, että datamme sisältää sarakkeet “Vuosi”, “Kk” sekä “Keskilämpötila (°C)”.
+<p>Edellisessä vaiheessa saimme selville, että datamme sisältää sarakkeet “Vuosi”, “Kk” sekä “Keskilämpötila (degC)”.
 Tyypillisesti olemme kiinnostuneita tietystä tai tietyistä sarakkeista datatiedostossa.
 Voisimme esimerkiksi haluta piirtää kuvaajan, jossa x-akselilla ovat kuukaudet ja y-akselilla kuukauden keskilämpötila.</p>
 <p>Tätä varten voisimme erottaa sarakkeet omiksi muuttujikseen.
@@ -485,8 +486,8 @@ Sarakkeen valitseminen datataulukosta onnistuu kulmasulkeiden <code class="docut
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="datan-visualisoiminen">
+</section>
+<section id="datan-visualisoiminen">
 <h3>Datan visualisoiminen<a class="headerlink" href="#datan-visualisoiminen" title="Permalink to this headline">¶</a></h3>
 <p>Datan visualisoimiseksi tarvitsemme <span class="xref myst">matplotlib</span>-pakettia. Tämä paketti sisältää paljon käteviä funktioita esimerkiksi juuri kuvaajien piirtämistä varten. Kuvaajien piirtämistä varten tarvitsemme matplotlib-paketista ainoastaan pyplot-osuuden. Käytettävä <code class="docutils literal notranslate"><span class="pre">import</span></code> käsky on tällöin</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># lyhenne plt on yleinen tälle paketille</span>
@@ -516,8 +517,8 @@ Sarakkeen valitseminen datataulukosta onnistuu kulmasulkeiden <code class="docut
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="esimerkki">
+</section>
+<section id="esimerkki">
 <h3>Esimerkki<a class="headerlink" href="#esimerkki" title="Permalink to this headline">¶</a></h3>
 <p>Piirretään kolmen paikkakunnan (Helsinki, Tampere, Oulu) kuukausien keskilämpötilat vuonna 2020 samaan kuvaajaan. Tiedostot ovat nimeltään:</p>
 <ul class="simple">
@@ -574,9 +575,9 @@ Sarakkeen valitseminen datataulukosta onnistuu kulmasulkeiden <code class="docut
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Erotetaan lämpötilat omiksi muuttujikseen</span>
 
-<span class="n">lämp_hel</span> <span class="o">=</span> <span class="n">data_hel</span><span class="p">[</span><span class="s1">&#39;Keskilämpötila (°C)&#39;</span><span class="p">]</span>
-<span class="n">lämp_tre</span> <span class="o">=</span> <span class="n">data_tre</span><span class="p">[</span><span class="s1">&#39;Keskilämpötila (°C)&#39;</span><span class="p">]</span>
-<span class="n">lämp_oul</span> <span class="o">=</span> <span class="n">data_oul</span><span class="p">[</span><span class="s1">&#39;Keskilämpötila (°C)&#39;</span><span class="p">]</span>
+<span class="n">lämp_hel</span> <span class="o">=</span> <span class="n">data_hel</span><span class="p">[</span><span class="s1">&#39;Keskilämpötila (degC)&#39;</span><span class="p">]</span>
+<span class="n">lämp_tre</span> <span class="o">=</span> <span class="n">data_tre</span><span class="p">[</span><span class="s1">&#39;Keskilämpötila (degC)&#39;</span><span class="p">]</span>
+<span class="n">lämp_oul</span> <span class="o">=</span> <span class="n">data_oul</span><span class="p">[</span><span class="s1">&#39;Keskilämpötila (degC)&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -606,9 +607,9 @@ Sarakkeen valitseminen datataulukosta onnistuu kulmasulkeiden <code class="docut
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {

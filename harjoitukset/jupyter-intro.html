@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
     <title>Data-analyysi Pythonilla &#8212; Python ja Jupyter</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
@@ -103,7 +104,7 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p>
  <span class="caption-text">
   Harjoitukset
  </span>
@@ -245,7 +246,7 @@
         
               <div>
                 
-  <div class="section" id="data-analyysi-pythonilla">
+  <section id="data-analyysi-pythonilla">
 <h1>Data-analyysi Pythonilla<a class="headerlink" href="#data-analyysi-pythonilla" title="Permalink to this headline">¶</a></h1>
 <p>Tässä notebookissa käydään läpi esimerkki data-analyysista Pythonilla, jossa piirretään kuvaaja Helsingin kuukausittaisista keskilämpötiloista vuonna 2020. Tämän on tarkoitus olla lyhyt esimerkki, joka näyttää, mitä Jupyter Notebookeilla ja Pythonilla voi esimerkiksi tehdä. Katso myös <a class="reference external" href="https://mybinder.org/v2/gh/opendata-education/Python-ja-Jupyter/HEAD?filepath=materiaali%2Fharjoitukset%2Fdata-analyysi_esimerkki.ipynb">toinen esimerkki</a>, jossa pääset itse kirjoittamaan koodia ohjatusti!</p>
 <p>Ennenkuin mennään varsinaisesti asiaan, perehdytään pikaisesti itse Jupyter Notebook -alustaan.
@@ -264,12 +265,14 @@ Voit myös vapaasti kirjoittaa itse koodia tai vaihtaa jotain valmiissa koodissa
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;keskilampotila2020_Helsinki.csv&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Kk&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Keskilämpötila (°C)&#39;</span><span class="p">])</span>
+<span class="n">kuukaudet</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Kk&#39;</span><span class="p">]</span>
+<span class="n">lämpötilat</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Keskilämpötila (degC)&#39;</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kuukaudet</span><span class="p">,</span> <span class="n">lämpötilat</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f572aed11c0&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f8df80d6dc0&gt;]
 </pre></div>
 </div>
 <img alt="../_images/jupyter-intro_3_1.png" src="../_images/jupyter-intro_3_1.png" />
@@ -313,7 +316,7 @@ Voit myös vapaasti kirjoittaa itse koodia tai vaihtaa jotain valmiissa koodissa
       <th></th>
       <th>Vuosi</th>
       <th>Kk</th>
-      <th>Keskilämpötila (°C)</th>
+      <th>Keskilämpötila (degC)</th>
     </tr>
   </thead>
   <tbody>
@@ -356,7 +359,7 @@ Voit myös vapaasti kirjoittaa itse koodia tai vaihtaa jotain valmiissa koodissa
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Valitaan datasta &#39;Kk&#39;-sarake ja &#39;Keskilämpötila (°C)&#39;-sarake</span>
 <span class="c1"># ja tallennetaan ne muuttujiin &#39;kuukaudet&#39; ja &#39;lämpötilat&#39;</span>
 <span class="n">kuukaudet</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Kk&#39;</span><span class="p">]</span>
-<span class="n">lämpötilat</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Keskilämpötila (°C)&#39;</span><span class="p">]</span>
+<span class="n">lämpötilat</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Keskilämpötila (degC)&#39;</span><span class="p">]</span>
 
 <span class="c1"># piirretään kuvaaja, jossa x-akselille tulee kuukaudet ja y-akselille lämpötilat</span>
 <span class="c1"># Kuvaajan piirretään punaisella viivalla (&#39;r-&#39;) ja datapisteet merkitään kuvaajaan</span>
@@ -392,7 +395,7 @@ Voit myös vapaasti kirjoittaa itse koodia tai vaihtaa jotain valmiissa koodissa
 </div>
 <p>Kuvaajien muokkaamiseen on paljon mahdollisuuksia, joita ei kaikkia pysty tässä mitenkään esittämään. Googlesta löytää kuitenkin yleensä ratkaisun siihen, millaisen kuvaajan ikinä haluatkaan piirtää.</p>
 <p>Kokeile vielä muuttaa jotain aiemmissa koodeissa. Miten muuttaisit akseleiden otsikoita? Miten piirtäisit kuvaajan vihreällä katkoviivalla?</p>
-<div class="section" id="histogrammi">
+<section id="histogrammi">
 <h2>Histogrammi<a class="headerlink" href="#histogrammi" title="Permalink to this headline">¶</a></h2>
 <p>Otetaan vielä toinen esimerkki datan visualisoinnista. Piirretään tällä kertaa histogrammi mitatuista lämpötiloista Helsingissä tammikuussa 2021. Tätä varten olemme jälleen hakeneet datan Ilmatieteenlaitoksen hakupalvelusta. Data koostuu 10 minuutin välein tehdyistä mittauksista, joten dataa on varsin paljon.</p>
 <div class="cell docutils container">
@@ -543,7 +546,7 @@ Voit myös vapaasti kirjoittaa itse koodia tai vaihtaa jotain valmiissa koodissa
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Lämpötila (°C)&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Mittaukset/°C&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Lämpötilajakauma Helsingissä tammikuussa 2021&#39;</span><span class="p">)</span>
-
+<span class="c1">#plt.xticks(range(-20,6,4))</span>
 
 <span class="c1"># Tämä komento poistaa ylimääräiset tulosteet ja näyttää ainoastaan kuvan, kun solu suoritetaan.</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -556,8 +559,8 @@ Voit myös vapaasti kirjoittaa itse koodia tai vaihtaa jotain valmiissa koodissa
 </div>
 <p>Äsken käsittelemässämme datassa oli lämpötilojen lisäksi muutakin dataa, kuten tuulen nopeus tai lumen syvyys. Kokeile piirtää jostakin toisesta sarakkeesta kuvaaja tai histogrammi.</p>
 <p>Voit myös kokeilla etsiä itse jonkin datasetin netistä ja laittaa suoran linkin <code class="docutils literal notranslate"><span class="pre">read_csv</span></code>-työkalun parametriksi.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
