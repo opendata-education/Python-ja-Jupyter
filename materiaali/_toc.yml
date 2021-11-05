@@ -4,7 +4,7 @@
 - part: Notebookit tutuksi
   chapters:
   - file: harjoitukset/Jupyter-aloitus
-- part: Data-analyysi
+- part: Kiinni data-analyysiin
   chapters:
   - file: harjoitukset/jupyter-intro
   - file: harjoitukset/data-analyysi_esimerkki
