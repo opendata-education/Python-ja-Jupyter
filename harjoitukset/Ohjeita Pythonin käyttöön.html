@@ -403,7 +403,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">896489479.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">896489479.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">8</span> 
 <span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">import</span> <span class="nn">random</span> <span class="k">as</span> <span class="nn">rand</span>   <span class="c1"># sisältää funktioita satunnaislukujen generoimiseen</span>
 <span class="ne">---&gt; </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>    <span class="c1"># sisältää tieteellistä laskentaa ja tilastolaskentaa</span>
@@ -475,76 +475,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">1067239241.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Ladataan setti hiukkasdataa muuttujaksi ja määritetään sille haluttu nimi:</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">kaksoismyonit</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Data/Dimuon_DoubleMu.csv&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> 
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># Jos haluaisi käyttää suoraa urlia, sijoita tämä &#39;http://opendata.cern.ch/record/545/files/Dimuon_DoubleMu.csv&#39;</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">309</span>                     <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">310</span>                 <span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">311</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">312</span> 
-<span class="g g-Whitespace">    </span><span class="mi">313</span>         <span class="k">return</span> <span class="n">wrapper</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">584</span>     <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">585</span> 
-<span class="ne">--&gt; </span><span class="mi">586</span>     <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">587</span> 
-<span class="g g-Whitespace">    </span><span class="mi">588</span> 
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">480</span> 
-<span class="g g-Whitespace">    </span><span class="mi">481</span>     <span class="c1"># Create the parser.</span>
-<span class="ne">--&gt; </span><span class="mi">482</span>     <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">483</span> 
-<span class="g g-Whitespace">    </span><span class="mi">484</span>     <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">__init__</span><span class="nt">(self, f, engine, **kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">809</span>             <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">810</span> 
-<span class="ne">--&gt; </span><span class="mi">811</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">812</span> 
-<span class="g g-Whitespace">    </span><span class="mi">813</span>     <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_make_engine</span><span class="nt">(self, engine)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1038</span>             <span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1039</span>         <span class="c1"># error: Too many arguments for &quot;ParserBase&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1040</span>         <span class="k">return</span> <span class="n">mapping</span><span class="p">[</span><span class="n">engine</span><span class="p">](</span><span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">)</span>  <span class="c1"># type: ignore[call-arg]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1041</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1042</span>     <span class="k">def</span> <span class="nf">_failover_to_python</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/c_parser_wrapper.py</span> in <span class="ni">__init__</span><span class="nt">(self, src, **kwds)</span>
-<span class="g g-Whitespace">     </span><span class="mi">49</span> 
-<span class="g g-Whitespace">     </span><span class="mi">50</span>         <span class="c1"># open handles</span>
-<span class="ne">---&gt; </span><span class="mi">51</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_open_handles</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span>         <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
-<span class="g g-Whitespace">     </span><span class="mi">53</span> 
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/base_parser.py</span> in <span class="ni">_open_handles</span><span class="nt">(self, src, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">220</span>         <span class="n">Let</span> <span class="n">the</span> <span class="n">readers</span> <span class="nb">open</span> <span class="n">IOHandles</span> <span class="n">after</span> <span class="n">they</span> <span class="n">are</span> <span class="n">done</span> <span class="k">with</span> <span class="n">their</span> <span class="n">potential</span> <span class="n">raises</span><span class="o">.</span>
-<span class="g g-Whitespace">    </span><span class="mi">221</span>         <span class="s2">&quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">222</span><span class="s2">         self.handles = get_handle(</span>
-<span class="g g-Whitespace">    </span><span class="mi">223</span><span class="s2">             src,</span>
-<span class="g g-Whitespace">    </span><span class="mi">224</span><span class="s2">             &quot;r&quot;,</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">700</span><span class="s2">         if ioargs.encoding and &quot;b&quot; not in ioargs.mode:</span>
-<span class="g g-Whitespace">    </span><span class="mi">701</span><span class="s2">             # Encoding</span>
-<span class="ne">--&gt; </span><span class="mi">702</span><span class="s2">             handle = open(</span>
-<span class="g g-Whitespace">    </span><span class="mi">703</span><span class="s2">                 handle,</span>
-<span class="g g-Whitespace">    </span><span class="mi">704</span><span class="s2">                 ioargs.mode,</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;../Data/Dimuon_DoubleMu.csv&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <p>Tällainen suora muoto hakee tiedoston, joka sijaitsee samassa kansiossa kuin käytössä oleva notebook. Tiedosto voidaan hakea myös suoraan verkko-osoitteen urlista tai toisesta kansiosta <strong>‘../kansio/tiedosto.csv’</strong> -rakenteella.</p>
 <p>Mikäli data on toisessa tekstimuodossa, voi kokeilla yleisempää <strong>read_table</strong> -käskyä, joka ymmärtää muitakin taulukoitavia tekstejä. Yleisin ongelma on, että teksti on eroteltu jollain muulla kuin pilkulla, kuten tabulaattorilla tai puolipisteellä. Tällöin komentoon voi laittaa argumentin <strong>sep = ‘x’</strong>, missä x on erottimena käytetty merkki. Toinen yleinen ongelma on, että tiedoston rivitys alkaa omituisesti tai sarakkeiden otsikot ovat jossain muualla kuin ensimmäisellä rivillä. Tällöin voidaan laittaa komentoon argumentti <strong>header = n</strong>, missä n on otsikoiksi halutun rivin järjestysnumero. HUOM! Tietokone aloittaa järjestysluvut aina nollasta jollei toisin mainita.</p>
@@ -567,15 +497,172 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">3168509818.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">kaksoismyonit</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ne">NameError</span>: name &#39;kaksoismyonit&#39; is not defined
-</pre></div>
-</div>
-</div>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Run</th>
+      <th>Event</th>
+      <th>type1</th>
+      <th>E1</th>
+      <th>px1</th>
+      <th>py1</th>
+      <th>pz1</th>
+      <th>pt1</th>
+      <th>eta1</th>
+      <th>phi1</th>
+      <th>...</th>
+      <th>type2</th>
+      <th>E2</th>
+      <th>px2</th>
+      <th>py2</th>
+      <th>pz2</th>
+      <th>pt2</th>
+      <th>eta2</th>
+      <th>phi2</th>
+      <th>Q2</th>
+      <th>M</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>165617</td>
+      <td>74601703</td>
+      <td>G</td>
+      <td>9.6987</td>
+      <td>-9.5104</td>
+      <td>0.3662</td>
+      <td>1.8633</td>
+      <td>9.5175</td>
+      <td>0.1945</td>
+      <td>3.1031</td>
+      <td>...</td>
+      <td>G</td>
+      <td>9.7633</td>
+      <td>7.3277</td>
+      <td>-1.1524</td>
+      <td>6.3473</td>
+      <td>7.4178</td>
+      <td>0.7756</td>
+      <td>-0.1560</td>
+      <td>1</td>
+      <td>17.4922</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>165617</td>
+      <td>75100943</td>
+      <td>G</td>
+      <td>6.2039</td>
+      <td>-4.2666</td>
+      <td>0.4565</td>
+      <td>-4.4793</td>
+      <td>4.2910</td>
+      <td>-0.9121</td>
+      <td>3.0350</td>
+      <td>...</td>
+      <td>G</td>
+      <td>9.6690</td>
+      <td>7.2740</td>
+      <td>-2.8211</td>
+      <td>-5.7104</td>
+      <td>7.8019</td>
+      <td>-0.6786</td>
+      <td>-0.3700</td>
+      <td>1</td>
+      <td>11.5534</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>165617</td>
+      <td>75587682</td>
+      <td>G</td>
+      <td>19.2892</td>
+      <td>-4.2121</td>
+      <td>-0.6516</td>
+      <td>18.8121</td>
+      <td>4.2622</td>
+      <td>2.1905</td>
+      <td>-2.9881</td>
+      <td>...</td>
+      <td>G</td>
+      <td>9.8244</td>
+      <td>4.3439</td>
+      <td>-0.4735</td>
+      <td>8.7985</td>
+      <td>4.3697</td>
+      <td>1.4497</td>
+      <td>-0.1086</td>
+      <td>1</td>
+      <td>9.1636</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>165617</td>
+      <td>75660978</td>
+      <td>G</td>
+      <td>7.0427</td>
+      <td>-6.3268</td>
+      <td>-0.2685</td>
+      <td>3.0802</td>
+      <td>6.3325</td>
+      <td>0.4690</td>
+      <td>-3.0992</td>
+      <td>...</td>
+      <td>G</td>
+      <td>5.5857</td>
+      <td>4.4748</td>
+      <td>0.8489</td>
+      <td>-3.2319</td>
+      <td>4.5546</td>
+      <td>-0.6605</td>
+      <td>0.1875</td>
+      <td>1</td>
+      <td>12.4774</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>165617</td>
+      <td>75947690</td>
+      <td>G</td>
+      <td>7.2751</td>
+      <td>0.1030</td>
+      <td>-5.5331</td>
+      <td>-4.7212</td>
+      <td>5.5340</td>
+      <td>-0.7736</td>
+      <td>-1.5522</td>
+      <td>...</td>
+      <td>G</td>
+      <td>7.3181</td>
+      <td>-0.3988</td>
+      <td>6.9408</td>
+      <td>2.2825</td>
+      <td>6.9523</td>
+      <td>0.3227</td>
+      <td>1.6282</td>
+      <td>1</td>
+      <td>14.3159</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 21 columns</p>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -718,7 +805,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">1278968257.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">1278968257.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">aurinko</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;http://sidc.oma.be/silso/INFO/sndhemcsv.php&#39;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s2">&quot;ISO-8859-1&quot;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
@@ -1075,18 +1162,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">1323213149.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Erotellaan uuteen muuttujaan myonidatan invarianttien massojen sarake, joka on otsikoitu nimellä M.</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">iMassat</span> <span class="o">=</span> <span class="n">kaksoismyonit</span><span class="o">.</span><span class="n">M</span>
-
-<span class="ne">NameError</span>: name &#39;kaksoismyonit&#39; is not defined
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1095,12 +1170,12 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">1734735511.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">iMassat</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-
-<span class="ne">NameError</span>: name &#39;iMassat&#39; is not defined
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    17.4922
+1    11.5534
+2     9.1636
+3    12.4774
+4    14.3159
+Name: M, dtype: float64
 </pre></div>
 </div>
 </div>
@@ -1118,18 +1193,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">1569338483.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Otetaan esimerkkinä hiukkasdatasta ne rivit, joissa molempien hiukkasten energia on 30 GeViä tai yli.</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">yli30</span> <span class="o">=</span> <span class="n">kaksoismyonit</span><span class="p">[(</span><span class="n">kaksoismyonit</span><span class="o">.</span><span class="n">E1</span> <span class="o">&gt;=</span> <span class="mi">30</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">kaksoismyonit</span><span class="o">.</span><span class="n">E2</span> <span class="o">&gt;=</span> <span class="mi">30</span><span class="p">)]</span>
-
-<span class="ne">NameError</span>: name &#39;kaksoismyonit&#39; is not defined
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1138,15 +1201,172 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">1344253533.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">yli30</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ne">NameError</span>: name &#39;yli30&#39; is not defined
-</pre></div>
-</div>
-</div>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Run</th>
+      <th>Event</th>
+      <th>type1</th>
+      <th>E1</th>
+      <th>px1</th>
+      <th>py1</th>
+      <th>pz1</th>
+      <th>pt1</th>
+      <th>eta1</th>
+      <th>phi1</th>
+      <th>...</th>
+      <th>type2</th>
+      <th>E2</th>
+      <th>px2</th>
+      <th>py2</th>
+      <th>pz2</th>
+      <th>pt2</th>
+      <th>eta2</th>
+      <th>phi2</th>
+      <th>Q2</th>
+      <th>M</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>21</th>
+      <td>165617</td>
+      <td>74969122</td>
+      <td>G</td>
+      <td>59.9226</td>
+      <td>-46.1516</td>
+      <td>29.4115</td>
+      <td>-24.4070</td>
+      <td>54.7266</td>
+      <td>-0.4324</td>
+      <td>2.5742</td>
+      <td>...</td>
+      <td>G</td>
+      <td>52.4465</td>
+      <td>30.1097</td>
+      <td>-16.3989</td>
+      <td>-39.6876</td>
+      <td>34.2859</td>
+      <td>-0.9885</td>
+      <td>-0.4987</td>
+      <td>-1</td>
+      <td>89.9557</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>165617</td>
+      <td>75138253</td>
+      <td>G</td>
+      <td>97.1011</td>
+      <td>-23.6144</td>
+      <td>6.6660</td>
+      <td>-93.9497</td>
+      <td>24.5372</td>
+      <td>-2.0524</td>
+      <td>2.8665</td>
+      <td>...</td>
+      <td>G</td>
+      <td>30.5992</td>
+      <td>-11.6134</td>
+      <td>-25.9848</td>
+      <td>11.2347</td>
+      <td>28.4619</td>
+      <td>0.3851</td>
+      <td>-1.9911</td>
+      <td>1</td>
+      <td>88.6081</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>165617</td>
+      <td>75887636</td>
+      <td>G</td>
+      <td>152.9720</td>
+      <td>7.4657</td>
+      <td>-30.7098</td>
+      <td>-149.6710</td>
+      <td>31.6042</td>
+      <td>-2.2593</td>
+      <td>-1.3323</td>
+      <td>...</td>
+      <td>G</td>
+      <td>33.5835</td>
+      <td>-9.2878</td>
+      <td>28.7457</td>
+      <td>-14.6719</td>
+      <td>30.2089</td>
+      <td>-0.4684</td>
+      <td>1.8833</td>
+      <td>1</td>
+      <td>88.2438</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>165617</td>
+      <td>75833588</td>
+      <td>G</td>
+      <td>181.8770</td>
+      <td>44.1427</td>
+      <td>-14.9498</td>
+      <td>175.8040</td>
+      <td>46.6055</td>
+      <td>2.0379</td>
+      <td>-0.3265</td>
+      <td>...</td>
+      <td>G</td>
+      <td>170.0210</td>
+      <td>-34.6301</td>
+      <td>12.3248</td>
+      <td>166.0000</td>
+      <td>36.7579</td>
+      <td>2.2128</td>
+      <td>2.7997</td>
+      <td>-1</td>
+      <td>83.0943</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>165617</td>
+      <td>75779415</td>
+      <td>G</td>
+      <td>50.2440</td>
+      <td>37.8072</td>
+      <td>-12.2044</td>
+      <td>-30.7590</td>
+      <td>39.7283</td>
+      <td>-0.7124</td>
+      <td>-0.3122</td>
+      <td>...</td>
+      <td>G</td>
+      <td>49.2396</td>
+      <td>-47.6064</td>
+      <td>8.2338</td>
+      <td>-9.5061</td>
+      <td>48.3132</td>
+      <td>-0.1955</td>
+      <td>2.9703</td>
+      <td>-1</td>
+      <td>90.3544</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 21 columns</p>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1156,13 +1376,8 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">4180219896.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">yli30</span><span class="p">))</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">kaksoismyonit</span><span class="p">))</span>
-
-<span class="ne">NameError</span>: name &#39;yli30&#39; is not defined
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6516
+100000
 </pre></div>
 </div>
 </div>
@@ -1655,12 +1870,12 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">2404693204.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">2404693204.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="n">summaus</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 <span class="g g-Whitespace">     </span><span class="mi">12</span> 
 <span class="ne">---&gt; </span><span class="mi">13</span> <span class="n">vapaaValinta</span><span class="p">()</span>
 
-<span class="nn">/tmp/ipykernel_1714/2404693204.py</span> in <span class="ni">vapaaValinta</span><span class="nt">()</span>
+<span class="nn">/tmp/ipykernel_1661/2404693204.py</span> in <span class="ni">vapaaValinta</span><span class="nt">()</span>
 <span class="g g-Whitespace">      </span><span class="mi">7</span> 
 <span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="k">def</span> <span class="nf">vapaaValinta</span><span class="p">():</span>
 <span class="ne">----&gt; </span><span class="mi">9</span>     <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Anna kokonaisluku: &quot;</span><span class="p">))</span>
@@ -1768,7 +1983,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Päivän voittoarpa on: 93
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Päivän voittoarpa on: 91
 </pre></div>
 </div>
 </div>
@@ -1783,7 +1998,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.9754156263323686
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.574438937793844
 </pre></div>
 </div>
 </div>
@@ -1803,7 +2018,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Iida&#39;, &#39;Netta&#39;, &#39;Iida&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Jukka&#39;, &#39;Jukka&#39;, &#39;Iida&#39;]
 </pre></div>
 </div>
 </div>
@@ -1819,7 +2034,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Netta&#39;, &#39;Torsti&#39;, &#39;Iida&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Iida&#39;, &#39;Paula&#39;, &#39;Torsti&#39;]
 </pre></div>
 </div>
 </div>
@@ -1834,7 +2049,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.923433123652814
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.8597432614621536
 </pre></div>
 </div>
 </div>
@@ -2089,7 +2304,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">664529678.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">664529678.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">     </span><span class="mi">17</span> <span class="c1"># Lasketaan huvikseen mukaan myös suoran sovite pienimmällä neliösummalla.</span>
 <span class="g g-Whitespace">     </span><span class="mi">18</span> 
 <span class="ne">---&gt; </span><span class="mi">19</span> <span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r_value</span><span class="p">,</span> <span class="n">p_value</span><span class="p">,</span> <span class="n">std_err</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">linregress</span><span class="p">(</span><span class="n">arvo1</span><span class="p">,</span> <span class="n">arvo2</span><span class="p">)</span>
@@ -2150,74 +2365,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">3873731538.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Otetaan hiukkasdataa törmäyksistä, joista havaittiin tulevan myonipareja.</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">kaksoismyonit</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Data/Dimuon_DoubleMu.csv&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> 
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># Piirretään koko roskan histogrammi invariantin massan, sarake M, suhteen.</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">309</span>                     <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">310</span>                 <span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">311</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">312</span> 
-<span class="g g-Whitespace">    </span><span class="mi">313</span>         <span class="k">return</span> <span class="n">wrapper</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">584</span>     <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">585</span> 
-<span class="ne">--&gt; </span><span class="mi">586</span>     <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">587</span> 
-<span class="g g-Whitespace">    </span><span class="mi">588</span> 
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">480</span> 
-<span class="g g-Whitespace">    </span><span class="mi">481</span>     <span class="c1"># Create the parser.</span>
-<span class="ne">--&gt; </span><span class="mi">482</span>     <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">483</span> 
-<span class="g g-Whitespace">    </span><span class="mi">484</span>     <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">__init__</span><span class="nt">(self, f, engine, **kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">809</span>             <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">810</span> 
-<span class="ne">--&gt; </span><span class="mi">811</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">812</span> 
-<span class="g g-Whitespace">    </span><span class="mi">813</span>     <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_make_engine</span><span class="nt">(self, engine)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1038</span>             <span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1039</span>         <span class="c1"># error: Too many arguments for &quot;ParserBase&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1040</span>         <span class="k">return</span> <span class="n">mapping</span><span class="p">[</span><span class="n">engine</span><span class="p">](</span><span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">)</span>  <span class="c1"># type: ignore[call-arg]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1041</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1042</span>     <span class="k">def</span> <span class="nf">_failover_to_python</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/c_parser_wrapper.py</span> in <span class="ni">__init__</span><span class="nt">(self, src, **kwds)</span>
-<span class="g g-Whitespace">     </span><span class="mi">49</span> 
-<span class="g g-Whitespace">     </span><span class="mi">50</span>         <span class="c1"># open handles</span>
-<span class="ne">---&gt; </span><span class="mi">51</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_open_handles</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span>         <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
-<span class="g g-Whitespace">     </span><span class="mi">53</span> 
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/base_parser.py</span> in <span class="ni">_open_handles</span><span class="nt">(self, src, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">220</span>         <span class="n">Let</span> <span class="n">the</span> <span class="n">readers</span> <span class="nb">open</span> <span class="n">IOHandles</span> <span class="n">after</span> <span class="n">they</span> <span class="n">are</span> <span class="n">done</span> <span class="k">with</span> <span class="n">their</span> <span class="n">potential</span> <span class="n">raises</span><span class="o">.</span>
-<span class="g g-Whitespace">    </span><span class="mi">221</span>         <span class="s2">&quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">222</span><span class="s2">         self.handles = get_handle(</span>
-<span class="g g-Whitespace">    </span><span class="mi">223</span><span class="s2">             src,</span>
-<span class="g g-Whitespace">    </span><span class="mi">224</span><span class="s2">             &quot;r&quot;,</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">700</span><span class="s2">         if ioargs.encoding and &quot;b&quot; not in ioargs.mode:</span>
-<span class="g g-Whitespace">    </span><span class="mi">701</span><span class="s2">             # Encoding</span>
-<span class="ne">--&gt; </span><span class="mi">702</span><span class="s2">             handle = open(</span>
-<span class="g g-Whitespace">    </span><span class="mi">703</span><span class="s2">                 handle,</span>
-<span class="g g-Whitespace">    </span><span class="mi">704</span><span class="s2">                 ioargs.mode,</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;../Data/Dimuon_DoubleMu.csv&#39;
-</pre></div>
-</div>
+<img alt="../_images/Ohjeita Pythonin käyttöön_73_0.png" src="../_images/Ohjeita Pythonin käyttöön_73_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2240,18 +2388,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">4151505706.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># mutta on kevyempää rajata pienempi pala dataa käsittelyyn.</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> 
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">huippu</span> <span class="o">=</span> <span class="n">kaksoismyonit</span><span class="p">[(</span><span class="n">kaksoismyonit</span><span class="o">.</span><span class="n">M</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">kaksoismyonit</span><span class="o">.</span><span class="n">M</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">)]</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> 
-<span class="g g-Whitespace">      </span><span class="mi">6</span> 
-
-<span class="ne">NameError</span>: name &#39;kaksoismyonit&#39; is not defined
-</pre></div>
-</div>
+<img alt="../_images/Ohjeita Pythonin käyttöön_74_0.png" src="../_images/Ohjeita Pythonin käyttöön_74_0.png" />
 </div>
 </div>
 <p>Keskimäärin epälineaaristen käyrien sovittaminen tuloksiin vaatii hieman enemmän koodaamista, mutta jakaumien tapauksessa Pythonista löytyy aika kattavasti valmiita komentoja. Ylläolevaan kuvaajaan saa esimerkiksi kivan normaalijakauman sovitteen:</p>
@@ -2310,14 +2447,17 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">2641987925.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">ylaraja</span> <span class="o">=</span> <span class="mi">95</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> 
-<span class="ne">----&gt; </span><span class="mi">7</span> <span class="n">pala</span> <span class="o">=</span> <span class="n">kaksoismyonit</span><span class="p">[(</span><span class="n">kaksoismyonit</span><span class="o">.</span><span class="n">M</span> <span class="o">&gt;</span> <span class="n">alaraja</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">kaksoismyonit</span><span class="o">.</span><span class="n">M</span> <span class="o">&lt;</span> <span class="n">ylaraja</span><span class="p">)]</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> 
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">2641987925.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span> 
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="n">kerroin</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">pala</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">alue</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">23</span> <span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">sigma</span><span class="p">)</span> <span class="o">=</span> <span class="n">norm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pala</span><span class="o">.</span><span class="n">M</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span> 
+<span class="g g-Whitespace">     </span><span class="mi">25</span> <span class="c1"># Tässä piirretään itse histogrammi valituissa rajoissa koko alkuperäisestä datasta..</span>
 
-<span class="ne">NameError</span>: name &#39;kaksoismyonit&#39; is not defined
+<span class="ne">NameError</span>: name &#39;norm&#39; is not defined
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1080x720 with 0 Axes&gt;
 </pre></div>
 </div>
 </div>
@@ -2335,7 +2475,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">HTTPError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">253819428.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">253819428.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Nelisenkymmentätuhatta tapaturmaa erinäisin kulkupelein, samalla tapahtumalla on sama viitenumero AREFNO.</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> 
 <span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">liikenne</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;http://roads.data.tfl.gov.uk/AccidentStats/Prod/2016-gla-data-extract-vehicle.csv&#39;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;,&quot;</span><span class="p">)</span>
@@ -2467,7 +2607,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">172838192.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">172838192.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">liikenne</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 
 <span class="ne">NameError</span>: name &#39;liikenne&#39; is not defined
@@ -2484,7 +2624,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">4265544937.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">4265544937.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">loukkaantuneet</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 
 <span class="ne">NameError</span>: name &#39;loukkaantuneet&#39; is not defined
@@ -2505,7 +2645,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">2329781694.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">2329781694.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">alaraja</span> <span class="o">=</span> <span class="mi">16</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">ylaraja</span> <span class="o">=</span> <span class="mi">25</span>
 <span class="ne">----&gt; </span><span class="mi">5</span> <span class="n">ikahaarukka</span> <span class="o">=</span> <span class="n">liikenne</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">liikenne</span><span class="p">[</span><span class="s1">&#39;Driver Age&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">ylaraja</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">liikenne</span><span class="p">[</span><span class="s1">&#39;Driver Age&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">alaraja</span><span class="p">)]</span>
@@ -2533,7 +2673,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">1328217491.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">1328217491.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> 
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ikahaarukka</span><span class="p">[</span><span class="s1">&#39;Vehicle Type&#39;</span><span class="p">],</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">50</span><span class="p">)</span>
@@ -2561,7 +2701,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">2271095266.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">2271095266.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Erotellaan hevostörmäykset liikennedatasta.</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> 
 <span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">hepat</span> <span class="o">=</span> <span class="n">liikenne</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">liikenne</span><span class="p">[</span><span class="s1">&#39;Vehicle Type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;16 Ridden Horse&#39;</span><span class="p">]</span>
@@ -2588,7 +2728,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">716351577.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">716351577.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Jaha, sama AREFNO, eli hepat ajoivat toistensa perään. Mites vakavaa vammaa tuli?</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> 
 <span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">heppaVammat</span> <span class="o">=</span> <span class="n">loukkaantuneet</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">loukkaantuneet</span><span class="p">[</span><span class="s1">&#39;AREFNO&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0116TW60237&#39;</span><span class="p">]</span>
@@ -2638,7 +2778,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">1873977598.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">1873977598.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="c1"># Lasketaan huvikseen mukaan myös suoran sovite pienimmällä neliösummalla.</span>
 <span class="g g-Whitespace">     </span><span class="mi">22</span> 
 <span class="ne">---&gt; </span><span class="mi">23</span> <span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r_value</span><span class="p">,</span> <span class="n">p_value</span><span class="p">,</span> <span class="n">std_err</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">linregress</span><span class="p">(</span><span class="n">arvo1</span><span class="p">,</span> <span class="n">arvo2</span><span class="p">)</span>
@@ -2713,7 +2853,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1714</span><span class="o">/</span><span class="mf">2941146873.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1661</span><span class="o">/</span><span class="mf">2941146873.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">     </span><span class="mi">12</span> 
 <span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
 <span class="ne">---&gt; </span><span class="mi">14</span> <span class="n">HTML</span><span class="p">(</span><span class="n">anim</span><span class="o">.</span><span class="n">to_jshtml</span><span class="p">())</span>
@@ -2746,7 +2886,7 @@
 <span class="g g-Whitespace">   </span><span class="mi">1777</span> 
 <span class="g g-Whitespace">   </span><span class="mi">1778</span>         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_blit</span><span class="p">:</span>
 
-<span class="nn">/tmp/ipykernel_1714/1978281095.py</span> in <span class="ni">updt_hist</span><span class="nt">(num, iMass)</span>
+<span class="nn">/tmp/ipykernel_1661/1978281095.py</span> in <span class="ni">updt_hist</span><span class="nt">(num, iMass)</span>
 <span class="g g-Whitespace">      </span><span class="mi">7</span>     <span class="n">axes</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8000</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">8</span>     <span class="n">axes</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
 <span class="ne">----&gt; </span><span class="mi">9</span>     <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">iMass</span><span class="p">[:</span><span class="n">num</span><span class="o">*</span><span class="mi">480</span><span class="p">],</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">120</span><span class="p">)</span>
@@ -2794,13 +2934,39 @@
 <span class="g g-Whitespace">   </span><span class="mi">2172</span>         <span class="n">p</span><span class="o">.</span><span class="n">_remove_method</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">patches</span><span class="o">.</span><span class="n">remove</span>
 
 <span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/axes/_base.py</span> in <span class="ni">_update_patch_limits</span><span class="nt">(self, patch)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2187</span>             <span class="k">return</span>
-<span class="g g-Whitespace">   </span><span class="mi">2188</span>         <span class="n">p</span> <span class="o">=</span> <span class="n">patch</span><span class="o">.</span><span class="n">get_path</span><span class="p">()</span>
-<span class="ne">-&gt; </span><span class="mi">2189</span>         <span class="n">vertices</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">vertices</span> <span class="k">if</span> <span class="n">p</span><span class="o">.</span><span class="n">codes</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">p</span><span class="o">.</span><span class="n">vertices</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">2190</span>             <span class="n">p</span><span class="o">.</span><span class="n">codes</span><span class="p">,</span> <span class="p">(</span><span class="n">mpath</span><span class="o">.</span><span class="n">Path</span><span class="o">.</span><span class="n">CLOSEPOLY</span><span class="p">,</span> <span class="n">mpath</span><span class="o">.</span><span class="n">Path</span><span class="o">.</span><span class="n">STOP</span><span class="p">),</span> <span class="n">invert</span><span class="o">=</span><span class="kc">True</span><span class="p">)]</span>
-<span class="g g-Whitespace">   </span><span class="mi">2191</span>         <span class="k">if</span> <span class="n">vertices</span><span class="o">.</span><span class="n">size</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">2196</span>                 <span class="n">xys</span> <span class="o">=</span> <span class="n">patch_to_data</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">xys</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2197</span> 
+<span class="ne">-&gt; </span><span class="mi">2198</span>             <span class="n">updatex</span><span class="p">,</span> <span class="n">updatey</span> <span class="o">=</span> <span class="n">patch</span><span class="o">.</span><span class="n">get_transform</span><span class="p">()</span><span class="o">.</span>\
+<span class="g g-Whitespace">   </span><span class="mi">2199</span>                 <span class="n">contains_branch_seperately</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">transData</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2200</span>             <span class="bp">self</span><span class="o">.</span><span class="n">update_datalim</span><span class="p">(</span><span class="n">xys</span><span class="p">,</span> <span class="n">updatex</span><span class="o">=</span><span class="n">updatex</span><span class="p">,</span>
 
-<span class="nn">&lt;__array_function__ internals&gt;</span> in <span class="ni">isin</span><span class="nt">(*args, **kwargs)</span>
+<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/transforms.py</span> in <span class="ni">contains_branch_seperately</span><span class="nt">(self, other_transform)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1389</span>         <span class="c1"># for a non-blended transform each separate dimension is the same, so</span>
+<span class="g g-Whitespace">   </span><span class="mi">1390</span>         <span class="c1"># just return the appropriate shape.</span>
+<span class="ne">-&gt; </span><span class="mi">1391</span>         <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">contains_branch</span><span class="p">(</span><span class="n">other_transform</span><span class="p">)]</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="g g-Whitespace">   </span><span class="mi">1392</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1393</span>     <span class="k">def</span> <span class="fm">__sub__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/transforms.py</span> in <span class="ni">contains_branch</span><span class="nt">(self, other)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1369</span>         <span class="c1"># check that a subtree is equal to other (starting from self)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1370</span>         <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">sub_tree</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_iter_break_from_left_to_right</span><span class="p">():</span>
+<span class="ne">-&gt; </span><span class="mi">1371</span>             <span class="k">if</span> <span class="n">sub_tree</span> <span class="o">==</span> <span class="n">other</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1372</span>                 <span class="k">return</span> <span class="kc">True</span>
+<span class="g g-Whitespace">   </span><span class="mi">1373</span>         <span class="k">return</span> <span class="kc">False</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/transforms.py</span> in <span class="ni">__eq__</span><span class="nt">(self, other)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2355</span>     <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">2356</span>         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="p">(</span><span class="n">CompositeGenericTransform</span><span class="p">,</span> <span class="n">CompositeAffine2D</span><span class="p">)):</span>
+<span class="ne">-&gt; </span><span class="mi">2357</span>             <span class="k">return</span> <span class="bp">self</span> <span class="ow">is</span> <span class="n">other</span> <span class="ow">or</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_a</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">_a</span>
+<span class="g g-Whitespace">   </span><span class="mi">2358</span>                                      <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_b</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">_b</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2359</span>         <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/transforms.py</span> in <span class="ni">__eq__</span><span class="nt">(self, other)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1758</span>     <span class="k">def</span> <span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1759</span>         <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="s2">&quot;is_affine&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="s2">&quot;get_matrix&quot;</span><span class="p">):</span>
+<span class="ne">-&gt; </span><span class="mi">1760</span>             <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_matrix</span><span class="p">()</span> <span class="o">==</span> <span class="n">other</span><span class="o">.</span><span class="n">get_matrix</span><span class="p">())</span>
+<span class="g g-Whitespace">   </span><span class="mi">1761</span>         <span class="k">return</span> <span class="bp">NotImplemented</span>
+<span class="g g-Whitespace">   </span><span class="mi">1762</span> 
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
