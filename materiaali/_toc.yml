@@ -4,6 +4,9 @@
 - part: Notebookit tutuksi
   chapters:
   - file: harjoitukset/Jupyter-aloitus
+- part: Kaverina Python
+  chapters:
+  - file: harjoitukset/Ohjeita Pythonin käyttöön
 - part: Kiinni data-analyysiin
   chapters:
   - file: harjoitukset/jupyter-intro
