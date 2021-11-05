@@ -1,7 +1,10 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 - file: intro
-- part: Harjoitukset
+- part: Notebookit tutuksi
+  chapters:
+  - file: harjoitukset/Jupyter-aloitus
+- part: Data-analyysi
   chapters:
   - file: harjoitukset/jupyter-intro
   - file: harjoitukset/data-analyysi_esimerkki
