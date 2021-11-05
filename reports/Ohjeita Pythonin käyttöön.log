@@ -32,7 +32,7 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-['%%capture', '', '# capture-magic on tässä estämässä tätä solua tuottamasta suoraan näkyvää tulosta, jottei outputista puske', '# omituisia tyhjiä kuvia tai muuta turhaa. Se siisteyttää elämää.', '']
+['%%capture', '', '# (Toimii MyBinderissa) Capture-magic on tässä estämässä tätä solua tuottamasta suoraan näkyvää tulosta, jottei outputista puske', '# omituisia tyhjiä kuvia tai muuta turhaa. Se siisteyttää elämää.', '']
 ...
 ['', '# anim.to_jshtml() muuttaa animaation (javascript)html:ksi, jolloin Notebook osaa näyttää sen.', '', 'from IPython.display import HTML', 'HTML(anim.to_jshtml())']
 -------------------
