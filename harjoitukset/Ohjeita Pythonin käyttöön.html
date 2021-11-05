@@ -1797,12 +1797,12 @@ Name: M, dtype: float64
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1879</span><span class="o">/</span><span class="mf">3032815357.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1628</span><span class="o">/</span><span class="mf">3032815357.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="n">summaus</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 <span class="g g-Whitespace">     </span><span class="mi">12</span> 
 <span class="ne">---&gt; </span><span class="mi">13</span> <span class="n">vapaaValinta</span><span class="p">()</span>
 
-<span class="nn">/tmp/ipykernel_1879/3032815357.py</span> in <span class="ni">vapaaValinta</span><span class="nt">()</span>
+<span class="nn">/tmp/ipykernel_1628/3032815357.py</span> in <span class="ni">vapaaValinta</span><span class="nt">()</span>
 <span class="g g-Whitespace">      </span><span class="mi">7</span> 
 <span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="k">def</span> <span class="nf">vapaaValinta</span><span class="p">():</span>
 <span class="ne">----&gt; </span><span class="mi">9</span>     <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Anna kokonaisluku: &quot;</span><span class="p">))</span>
@@ -1910,7 +1910,7 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Päivän voittoarpa on: 43
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Päivän voittoarpa on: 39
 </pre></div>
 </div>
 </div>
@@ -1925,7 +1925,7 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4.983549376658316
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.939203858796711
 </pre></div>
 </div>
 </div>
@@ -1945,7 +1945,7 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Pekka&#39;, &#39;Netta&#39;, &#39;Iida&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Iida&#39;, &#39;Netta&#39;, &#39;Netta&#39;]
 </pre></div>
 </div>
 </div>
@@ -1961,7 +1961,7 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Torsti&#39;, &#39;Iida&#39;, &#39;Pekka&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Iida&#39;, &#39;Paula&#39;, &#39;Netta&#39;]
 </pre></div>
 </div>
 </div>
@@ -1976,7 +1976,7 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.771899165465297
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.2227064657643543
 </pre></div>
 </div>
 </div>
@@ -2368,133 +2368,8 @@ Name: M, dtype: float64
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Nelisenkymmentätuhatta tapaturmaa erinäisin kulkupelein, samalla tapahtumalla on sama viitenumero AREFNO.</span>
 
-<span class="n">liikenne</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;http://roads.data.tfl.gov.uk/AccidentStats/Prod/2016-gla-data-extract-vehicle.csv&#39;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;,&quot;</span><span class="p">)</span>
-<span class="n">loukkaantuneet</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;http://roads.data.tfl.gov.uk/AccidentStats/Prod/2016-gla-data-extract-casualty.csv&#39;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;,&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">HTTPError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1879</span><span class="o">/</span><span class="mf">253819428.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Nelisenkymmentätuhatta tapaturmaa erinäisin kulkupelein, samalla tapahtumalla on sama viitenumero AREFNO.</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">liikenne</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;http://roads.data.tfl.gov.uk/AccidentStats/Prod/2016-gla-data-extract-vehicle.csv&#39;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;,&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">loukkaantuneet</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;http://roads.data.tfl.gov.uk/AccidentStats/Prod/2016-gla-data-extract-casualty.csv&#39;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;,&quot;</span><span class="p">)</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">309</span>                     <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">310</span>                 <span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">311</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">312</span> 
-<span class="g g-Whitespace">    </span><span class="mi">313</span>         <span class="k">return</span> <span class="n">wrapper</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read_table</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, encoding_errors, delim_whitespace, low_memory, memory_map, float_precision)</span>
-<span class="g g-Whitespace">    </span><span class="mi">681</span>     <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">682</span> 
-<span class="ne">--&gt; </span><span class="mi">683</span>     <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">684</span> 
-<span class="g g-Whitespace">    </span><span class="mi">685</span> 
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">480</span> 
-<span class="g g-Whitespace">    </span><span class="mi">481</span>     <span class="c1"># Create the parser.</span>
-<span class="ne">--&gt; </span><span class="mi">482</span>     <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">483</span> 
-<span class="g g-Whitespace">    </span><span class="mi">484</span>     <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">__init__</span><span class="nt">(self, f, engine, **kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">809</span>             <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">810</span> 
-<span class="ne">--&gt; </span><span class="mi">811</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">812</span> 
-<span class="g g-Whitespace">    </span><span class="mi">813</span>     <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_make_engine</span><span class="nt">(self, engine)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1038</span>             <span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1039</span>         <span class="c1"># error: Too many arguments for &quot;ParserBase&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1040</span>         <span class="k">return</span> <span class="n">mapping</span><span class="p">[</span><span class="n">engine</span><span class="p">](</span><span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">)</span>  <span class="c1"># type: ignore[call-arg]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1041</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1042</span>     <span class="k">def</span> <span class="nf">_failover_to_python</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/c_parser_wrapper.py</span> in <span class="ni">__init__</span><span class="nt">(self, src, **kwds)</span>
-<span class="g g-Whitespace">     </span><span class="mi">49</span> 
-<span class="g g-Whitespace">     </span><span class="mi">50</span>         <span class="c1"># open handles</span>
-<span class="ne">---&gt; </span><span class="mi">51</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_open_handles</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span>         <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
-<span class="g g-Whitespace">     </span><span class="mi">53</span> 
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/parsers/base_parser.py</span> in <span class="ni">_open_handles</span><span class="nt">(self, src, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">220</span>         <span class="n">Let</span> <span class="n">the</span> <span class="n">readers</span> <span class="nb">open</span> <span class="n">IOHandles</span> <span class="n">after</span> <span class="n">they</span> <span class="n">are</span> <span class="n">done</span> <span class="k">with</span> <span class="n">their</span> <span class="n">potential</span> <span class="n">raises</span><span class="o">.</span>
-<span class="g g-Whitespace">    </span><span class="mi">221</span>         <span class="s2">&quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">222</span><span class="s2">         self.handles = get_handle(</span>
-<span class="g g-Whitespace">    </span><span class="mi">223</span><span class="s2">             src,</span>
-<span class="g g-Whitespace">    </span><span class="mi">224</span><span class="s2">             &quot;r&quot;,</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">607</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">608</span><span class="s2">     # open URLs</span>
-<span class="ne">--&gt; </span><span class="mi">609</span><span class="s2">     ioargs = _get_filepath_or_buffer(</span>
-<span class="g g-Whitespace">    </span><span class="mi">610</span><span class="s2">         path_or_buf,</span>
-<span class="g g-Whitespace">    </span><span class="mi">611</span><span class="s2">         encoding=encoding,</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/common.py</span> in <span class="ni">_get_filepath_or_buffer</span><span class="nt">(filepath_or_buffer, encoding, compression, mode, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">310</span><span class="s2">         # assuming storage_options is to be interpreted as headers</span>
-<span class="g g-Whitespace">    </span><span class="mi">311</span><span class="s2">         req_info = urllib.request.Request(filepath_or_buffer, headers=storage_options)</span>
-<span class="ne">--&gt; </span><span class="mi">312</span><span class="s2">         with urlopen(req_info) as req:</span>
-<span class="g g-Whitespace">    </span><span class="mi">313</span><span class="s2">             content_encoding = req.headers.get(&quot;Content-Encoding&quot;, None)</span>
-<span class="g g-Whitespace">    </span><span class="mi">314</span><span class="s2">             if content_encoding == &quot;gzip&quot;:</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pandas/io/common.py</span> in <span class="ni">urlopen</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">210</span><span class="s2">     import urllib.request</span>
-<span class="g g-Whitespace">    </span><span class="mi">211</span><span class="s2"> </span>
-<span class="ne">--&gt; </span><span class="mi">212</span><span class="s2">     return urllib.request.urlopen(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">213</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">214</span><span class="s2"> </span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/urllib/request.py</span> in <span class="ni">urlopen</span><span class="nt">(url, data, timeout, cafile, capath, cadefault, context)</span>
-<span class="g g-Whitespace">    </span><span class="mi">220</span><span class="s2">     else:</span>
-<span class="g g-Whitespace">    </span><span class="mi">221</span><span class="s2">         opener = _opener</span>
-<span class="ne">--&gt; </span><span class="mi">222</span><span class="s2">     return opener.open(url, data, timeout)</span>
-<span class="g g-Whitespace">    </span><span class="mi">223</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">224</span><span class="s2"> def install_opener(opener):</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/urllib/request.py</span> in <span class="ni">open</span><span class="nt">(self, fullurl, data, timeout)</span>
-<span class="g g-Whitespace">    </span><span class="mi">529</span><span class="s2">         for processor in self.process_response.get(protocol, []):</span>
-<span class="g g-Whitespace">    </span><span class="mi">530</span><span class="s2">             meth = getattr(processor, meth_name)</span>
-<span class="ne">--&gt; </span><span class="mi">531</span><span class="s2">             response = meth(req, response)</span>
-<span class="g g-Whitespace">    </span><span class="mi">532</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">533</span><span class="s2">         return response</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/urllib/request.py</span> in <span class="ni">http_response</span><span class="nt">(self, request, response)</span>
-<span class="g g-Whitespace">    </span><span class="mi">638</span><span class="s2">         # request was successfully received, understood, and accepted.</span>
-<span class="g g-Whitespace">    </span><span class="mi">639</span><span class="s2">         if not (200 &lt;= code &lt; 300):</span>
-<span class="ne">--&gt; </span><span class="mi">640</span><span class="s2">             response = self.parent.error(</span>
-<span class="g g-Whitespace">    </span><span class="mi">641</span><span class="s2">                 &#39;http&#39;, request, response, code, msg, hdrs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">642</span><span class="s2"> </span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/urllib/request.py</span> in <span class="ni">error</span><span class="nt">(self, proto, *args)</span>
-<span class="g g-Whitespace">    </span><span class="mi">567</span><span class="s2">         if http_err:</span>
-<span class="g g-Whitespace">    </span><span class="mi">568</span><span class="s2">             args = (dict, &#39;default&#39;, &#39;http_error_default&#39;) + orig_args</span>
-<span class="ne">--&gt; </span><span class="mi">569</span><span class="s2">             return self._call_chain(*args)</span>
-<span class="g g-Whitespace">    </span><span class="mi">570</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">571</span><span class="s2"> # XXX probably also want an abstract factory that knows when it makes</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/urllib/request.py</span> in <span class="ni">_call_chain</span><span class="nt">(self, chain, kind, meth_name, *args)</span>
-<span class="g g-Whitespace">    </span><span class="mi">500</span><span class="s2">         for handler in handlers:</span>
-<span class="g g-Whitespace">    </span><span class="mi">501</span><span class="s2">             func = getattr(handler, meth_name)</span>
-<span class="ne">--&gt; </span><span class="mi">502</span><span class="s2">             result = func(*args)</span>
-<span class="g g-Whitespace">    </span><span class="mi">503</span><span class="s2">             if result is not None:</span>
-<span class="g g-Whitespace">    </span><span class="mi">504</span><span class="s2">                 return result</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/urllib/request.py</span> in <span class="ni">http_error_default</span><span class="nt">(self, req, fp, code, msg, hdrs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">647</span><span class="s2"> class HTTPDefaultErrorHandler(BaseHandler):</span>
-<span class="g g-Whitespace">    </span><span class="mi">648</span><span class="s2">     def http_error_default(self, req, fp, code, msg, hdrs):</span>
-<span class="ne">--&gt; </span><span class="mi">649</span><span class="s2">         raise HTTPError(req.full_url, code, msg, hdrs, fp)</span>
-<span class="g g-Whitespace">    </span><span class="mi">650</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">651</span><span class="s2"> class HTTPRedirectHandler(BaseHandler):</span>
-
-<span class="ne">HTTPError</span>: HTTP Error 403: Forbidden
+<span class="n">liikenne</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;../Data/2016-gla-data-extract-vehicle.csv&#39;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;,&quot;</span><span class="p">)</span>
+<span class="n">loukkaantuneet</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="s1">&#39;../Data/2016-gla-data-extract-casualty.csv&#39;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;,&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2506,15 +2381,172 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1879</span><span class="o">/</span><span class="mf">172838192.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">liikenne</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ne">NameError</span>: name &#39;liikenne&#39; is not defined
-</pre></div>
-</div>
-</div>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AREFNO</th>
+      <th>Borough</th>
+      <th>Boro</th>
+      <th>Easting</th>
+      <th>Northing</th>
+      <th>Vehicle Ref.</th>
+      <th>Vehicle Type</th>
+      <th>Vehicle Type (Banded)</th>
+      <th>Vehicle Manoeuvres</th>
+      <th>Vehicle Skidding</th>
+      <th>...</th>
+      <th>Junction Location</th>
+      <th>Object in C/W</th>
+      <th>Veh. Leaving C/W</th>
+      <th>Veh. off C/W</th>
+      <th>Veh. Impact</th>
+      <th>VJNYPURP DECODED</th>
+      <th>Driver Sex</th>
+      <th>Driver Age</th>
+      <th>Driver Age (Banded)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1160001090</td>
+      <td>CITY OF LONDON</td>
+      <td>0</td>
+      <td>531350</td>
+      <td>181580</td>
+      <td>1</td>
+      <td>08 Taxi</td>
+      <td>4 Taxi</td>
+      <td>04 Slowing Or Stopping</td>
+      <td>0 No Skidding/Overturn</td>
+      <td>...</td>
+      <td>0 Not At Jct</td>
+      <td>00 None</td>
+      <td>0 Did Not Leave</td>
+      <td>00 None</td>
+      <td>4 N/S Hit First</td>
+      <td>1 Jny Part of Work</td>
+      <td>1 Male</td>
+      <td>46</td>
+      <td>35-64</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1160002980</td>
+      <td>CITY OF LONDON</td>
+      <td>0</td>
+      <td>532780</td>
+      <td>180410</td>
+      <td>1</td>
+      <td>01 Pedal Cycle</td>
+      <td>1 Pedal cycle</td>
+      <td>13 Overtake Move Veh O/S</td>
+      <td>0 No Skidding/Overturn</td>
+      <td>...</td>
+      <td>0 Not At Jct</td>
+      <td>00 None</td>
+      <td>0 Did Not Leave</td>
+      <td>00 None</td>
+      <td>1 Front Hit First</td>
+      <td>5 Other/Not Known</td>
+      <td>3 Not Traced</td>
+      <td>0</td>
+      <td>Unknown</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1160002980</td>
+      <td>CITY OF LONDON</td>
+      <td>0</td>
+      <td>532780</td>
+      <td>180410</td>
+      <td>2</td>
+      <td>01 Pedal Cycle</td>
+      <td>1 Pedal cycle</td>
+      <td>14 Overtake Stat Veh O/S</td>
+      <td>0 No Skidding/Overturn</td>
+      <td>...</td>
+      <td>0 Not At Jct</td>
+      <td>00 None</td>
+      <td>0 Did Not Leave</td>
+      <td>00 None</td>
+      <td>2 Back Hit First</td>
+      <td>5 Other/Not Known</td>
+      <td>1 Male</td>
+      <td>46</td>
+      <td>35-64</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1160006347</td>
+      <td>CITY OF LONDON</td>
+      <td>0</td>
+      <td>531400</td>
+      <td>181570</td>
+      <td>1</td>
+      <td>09 Car</td>
+      <td>3 Car</td>
+      <td>09 Turning Right</td>
+      <td>0 No Skidding/Overturn</td>
+      <td>...</td>
+      <td>8 Jct Mid</td>
+      <td>00 None</td>
+      <td>0 Did Not Leave</td>
+      <td>00 None</td>
+      <td>1 Front Hit First</td>
+      <td>5 Other/Not Known</td>
+      <td>1 Male</td>
+      <td>22</td>
+      <td>17-24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1160006347</td>
+      <td>CITY OF LONDON</td>
+      <td>0</td>
+      <td>531400</td>
+      <td>181570</td>
+      <td>2</td>
+      <td>09 Car</td>
+      <td>3 Car</td>
+      <td>05 Moving Off</td>
+      <td>0 No Skidding/Overturn</td>
+      <td>...</td>
+      <td>8 Jct Mid</td>
+      <td>00 None</td>
+      <td>0 Did Not Leave</td>
+      <td>00 None</td>
+      <td>3 O/S Hit First</td>
+      <td>5 Other/Not Known</td>
+      <td>1 Male</td>
+      <td>69</td>
+      <td>65+</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 21 columns</p>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2523,15 +2555,141 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1879</span><span class="o">/</span><span class="mf">4265544937.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">loukkaantuneet</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ne">NameError</span>: name &#39;loukkaantuneet&#39; is not defined
-</pre></div>
-</div>
-</div>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AREFNO</th>
+      <th>Borough</th>
+      <th>Boro</th>
+      <th>Easting</th>
+      <th>Northing</th>
+      <th>CREFNO</th>
+      <th>Casualty Class</th>
+      <th>Casualty Sex</th>
+      <th>Casualty Age (Banded)</th>
+      <th>Casualty Age</th>
+      <th>No. of Casualties</th>
+      <th>Casualty Severity</th>
+      <th>Ped. Location</th>
+      <th>Ped. Movement</th>
+      <th>Mode of Travel</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1160001090</td>
+      <td>CITY OF LONDON</td>
+      <td>0</td>
+      <td>531350</td>
+      <td>181580</td>
+      <td>1</td>
+      <td>3 Pedestrian</td>
+      <td>1 Male</td>
+      <td>25-59</td>
+      <td>54</td>
+      <td>1</td>
+      <td>3 Slight</td>
+      <td>09 In Road - Not Crossing</td>
+      <td>7 In Rd Facing Traffic</td>
+      <td>1 Pedestrian</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1160002980</td>
+      <td>CITY OF LONDON</td>
+      <td>0</td>
+      <td>532780</td>
+      <td>180410</td>
+      <td>1</td>
+      <td>1 Driver/Rider</td>
+      <td>1 Male</td>
+      <td>25-59</td>
+      <td>46</td>
+      <td>1</td>
+      <td>2 Serious</td>
+      <td>-2 Unknown</td>
+      <td>-2 N/A</td>
+      <td>2 Pedal Cycle</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1160006347</td>
+      <td>CITY OF LONDON</td>
+      <td>0</td>
+      <td>531400</td>
+      <td>181570</td>
+      <td>3</td>
+      <td>2 Passenger</td>
+      <td>2 Female</td>
+      <td>60+</td>
+      <td>61</td>
+      <td>1</td>
+      <td>3 Slight</td>
+      <td>-2 Unknown</td>
+      <td>-2 N/A</td>
+      <td>4 Car</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1160006347</td>
+      <td>CITY OF LONDON</td>
+      <td>0</td>
+      <td>531400</td>
+      <td>181570</td>
+      <td>2</td>
+      <td>1 Driver/Rider</td>
+      <td>1 Male</td>
+      <td>60+</td>
+      <td>69</td>
+      <td>1</td>
+      <td>3 Slight</td>
+      <td>-2 Unknown</td>
+      <td>-2 N/A</td>
+      <td>4 Car</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1160006347</td>
+      <td>CITY OF LONDON</td>
+      <td>0</td>
+      <td>531400</td>
+      <td>181570</td>
+      <td>1</td>
+      <td>1 Driver/Rider</td>
+      <td>1 Male</td>
+      <td>16-24</td>
+      <td>22</td>
+      <td>1</td>
+      <td>3 Slight</td>
+      <td>-2 Unknown</td>
+      <td>-2 N/A</td>
+      <td>4 Car</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2540,18 +2698,6 @@ Name: M, dtype: float64
 <span class="n">alaraja</span> <span class="o">=</span> <span class="mi">16</span>
 <span class="n">ylaraja</span> <span class="o">=</span> <span class="mi">25</span>
 <span class="n">ikahaarukka</span> <span class="o">=</span> <span class="n">liikenne</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">liikenne</span><span class="p">[</span><span class="s1">&#39;Driver Age&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">ylaraja</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">liikenne</span><span class="p">[</span><span class="s1">&#39;Driver Age&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">alaraja</span><span class="p">)]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1879</span><span class="o">/</span><span class="mf">2329781694.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">alaraja</span> <span class="o">=</span> <span class="mi">16</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">ylaraja</span> <span class="o">=</span> <span class="mi">25</span>
-<span class="ne">----&gt; </span><span class="mi">5</span> <span class="n">ikahaarukka</span> <span class="o">=</span> <span class="n">liikenne</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">liikenne</span><span class="p">[</span><span class="s1">&#39;Driver Age&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">ylaraja</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">liikenne</span><span class="p">[</span><span class="s1">&#39;Driver Age&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">alaraja</span><span class="p">)]</span>
-
-<span class="ne">NameError</span>: name &#39;liikenne&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -2572,21 +2718,7 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1879</span><span class="o">/</span><span class="mf">1328217491.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ikahaarukka</span><span class="p">[</span><span class="s1">&#39;Vehicle Type&#39;</span><span class="p">],</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">50</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> 
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1"># Määritetään tässä miten vaaka-akselin selitteet toimivat. Erityisesti miten ne kallistuvat.</span>
-
-<span class="ne">NameError</span>: name &#39;ikahaarukka&#39; is not defined
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 720x360 with 0 Axes&gt;
-</pre></div>
-</div>
+<img alt="../_images/Ohjeita Pythonin käyttöön_82_0.png" src="../_images/Ohjeita Pythonin käyttöön_82_0.png" />
 </div>
 </div>
 <p>Kuvaajasta nähdään, että suurin osa liikenneonnettomuuksista on väemmän yllättäen autojen törmäilyä. Pieni yllätys voi kuitenkin tulla siitä, että listassa näkyy myös ratsuhevonen. Tätä voisi lähteä tarkastelemaan syvemminkin, esimerkiksi seuraavasti:</p>
@@ -2600,18 +2732,100 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1879</span><span class="o">/</span><span class="mf">2271095266.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Erotellaan hevostörmäykset liikennedatasta.</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">hepat</span> <span class="o">=</span> <span class="n">liikenne</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">liikenne</span><span class="p">[</span><span class="s1">&#39;Vehicle Type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;16 Ridden Horse&#39;</span><span class="p">]</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">hepat</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ne">NameError</span>: name &#39;liikenne&#39; is not defined
-</pre></div>
-</div>
-</div>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AREFNO</th>
+      <th>Borough</th>
+      <th>Boro</th>
+      <th>Easting</th>
+      <th>Northing</th>
+      <th>Vehicle Ref.</th>
+      <th>Vehicle Type</th>
+      <th>Vehicle Type (Banded)</th>
+      <th>Vehicle Manoeuvres</th>
+      <th>Vehicle Skidding</th>
+      <th>...</th>
+      <th>Junction Location</th>
+      <th>Object in C/W</th>
+      <th>Veh. Leaving C/W</th>
+      <th>Veh. off C/W</th>
+      <th>Veh. Impact</th>
+      <th>VJNYPURP DECODED</th>
+      <th>Driver Sex</th>
+      <th>Driver Age</th>
+      <th>Driver Age (Banded)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>33056</th>
+      <td>0116TW60237</td>
+      <td>RICHMOND-UPON-THAMES</td>
+      <td>24</td>
+      <td>518450</td>
+      <td>173770</td>
+      <td>1</td>
+      <td>16 Ridden Horse</td>
+      <td>8 Other</td>
+      <td>18 Going Ahead Other</td>
+      <td>0 No Skidding/Overturn</td>
+      <td>...</td>
+      <td>2 Jct Cleared</td>
+      <td>00 None</td>
+      <td>0 Did Not Leave</td>
+      <td>00 None</td>
+      <td>1 Front Hit First</td>
+      <td>1 Jny Part of Work</td>
+      <td>1 Male</td>
+      <td>25</td>
+      <td>25-34</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>33057</th>
+      <td>0116TW60237</td>
+      <td>RICHMOND-UPON-THAMES</td>
+      <td>24</td>
+      <td>518450</td>
+      <td>173770</td>
+      <td>2</td>
+      <td>16 Ridden Horse</td>
+      <td>8 Other</td>
+      <td>18 Going Ahead Other</td>
+      <td>0 No Skidding/Overturn</td>
+      <td>...</td>
+      <td>2 Jct Cleared</td>
+      <td>00 None</td>
+      <td>0 Did Not Leave</td>
+      <td>00 None</td>
+      <td>2 Back Hit First</td>
+      <td>1 Jny Part of Work</td>
+      <td>1 Male</td>
+      <td>28</td>
+      <td>25-34</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<p>2 rows × 21 columns</p>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2627,19 +2841,65 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1879</span><span class="o">/</span><span class="mf">716351577.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Jaha, sama AREFNO, eli hepat ajoivat toistensa perään. Mites vakavaa vammaa tuli?</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">heppaVammat</span> <span class="o">=</span> <span class="n">loukkaantuneet</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">loukkaantuneet</span><span class="p">[</span><span class="s1">&#39;AREFNO&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;0116TW60237&#39;</span><span class="p">]</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">heppaVammat</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> 
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ne">NameError</span>: name &#39;loukkaantuneet&#39; is not defined
-</pre></div>
-</div>
-</div>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AREFNO</th>
+      <th>Borough</th>
+      <th>Boro</th>
+      <th>Easting</th>
+      <th>Northing</th>
+      <th>CREFNO</th>
+      <th>Casualty Class</th>
+      <th>Casualty Sex</th>
+      <th>Casualty Age (Banded)</th>
+      <th>Casualty Age</th>
+      <th>No. of Casualties</th>
+      <th>Casualty Severity</th>
+      <th>Ped. Location</th>
+      <th>Ped. Movement</th>
+      <th>Mode of Travel</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>22096</th>
+      <td>0116TW60237</td>
+      <td>RICHMOND-UPON-THAMES</td>
+      <td>24</td>
+      <td>518450</td>
+      <td>173770</td>
+      <td>1</td>
+      <td>1 Driver/Rider</td>
+      <td>1 Male</td>
+      <td>25-59</td>
+      <td>28</td>
+      <td>1</td>
+      <td>3 Slight</td>
+      <td>-2 Unknown</td>
+      <td>-2 N/A</td>
+      <td>8 Other Vehicle</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <p>Kuvaajien piirtoon liittyen vielä sananen virheistä. Oikeissa mittauksissa on aina heiluntaa sen suhteen, mikä on tarkka tulos ja miten tarkasti jotain edes voidaan mitata. Nämä tarkkuusarvot voidaan kaivaa tilastollisilla prosesseilla tuloksiin tehdyistä sovitteista tai voi olla että ne ovat tiedossa jokaisen mittapisteen kohdalla erikseen, kuten vaikkapa koulussa tehtävien kokeiden kanssa voisi käydä (mikäli virheeseen ehditään paneutua). Tehdään esimerkki tällaisesta.</p>
 <div class="cell docutils container">
@@ -2742,7 +3002,7 @@ Name: M, dtype: float64
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1879</span><span class="o">/</span><span class="mf">2941146873.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1628</span><span class="o">/</span><span class="mf">2941146873.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">     </span><span class="mi">12</span> 
 <span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
 <span class="ne">---&gt; </span><span class="mi">14</span> <span class="n">HTML</span><span class="p">(</span><span class="n">anim</span><span class="o">.</span><span class="n">to_jshtml</span><span class="p">())</span>
@@ -2852,54 +3112,19 @@ Name: M, dtype: float64
 <span class="g g-Whitespace">     </span><span class="mi">52</span>         <span class="k">finally</span><span class="p">:</span>
 <span class="g g-Whitespace">     </span><span class="mi">53</span>             <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/axis.py</span> in <span class="ni">draw</span><span class="nt">(self, renderer, *args, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1139</span>         <span class="n">renderer</span><span class="o">.</span><span class="n">open_group</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">gid</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">get_gid</span><span class="p">())</span>
-<span class="g g-Whitespace">   </span><span class="mi">1140</span> 
-<span class="ne">-&gt; </span><span class="mi">1141</span>         <span class="n">ticks_to_draw</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_update_ticks</span><span class="p">()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1142</span>         <span class="n">ticklabelBoxes</span><span class="p">,</span> <span class="n">ticklabelBoxes2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_tick_bboxes</span><span class="p">(</span><span class="n">ticks_to_draw</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1143</span>                                                                 <span class="n">renderer</span><span class="p">)</span>
+<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/patches.py</span> in <span class="ni">draw</span><span class="nt">(self, renderer)</span>
+<span class="g g-Whitespace">    </span><span class="mi">608</span>             <span class="n">tpath</span> <span class="o">=</span> <span class="n">transform</span><span class="o">.</span><span class="n">transform_path_non_affine</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">609</span>             <span class="n">affine</span> <span class="o">=</span> <span class="n">transform</span><span class="o">.</span><span class="n">get_affine</span><span class="p">()</span>
+<span class="ne">--&gt; </span><span class="mi">610</span>             <span class="n">draw_path</span><span class="p">(</span><span class="n">tpath</span><span class="p">,</span> <span class="n">affine</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">611</span>                       <span class="c1"># Work around a bug in the PDF and SVG renderers, which</span>
+<span class="g g-Whitespace">    </span><span class="mi">612</span>                       <span class="c1"># do not draw the hatches if the facecolor is fully</span>
 
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/axis.py</span> in <span class="ni">_update_ticks</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1028</span>         <span class="n">major_locs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_majorticklocs</span><span class="p">()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1029</span>         <span class="n">major_labels</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">major</span><span class="o">.</span><span class="n">formatter</span><span class="o">.</span><span class="n">format_ticks</span><span class="p">(</span><span class="n">major_locs</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">1030</span>         <span class="n">major_ticks</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_major_ticks</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">major_locs</span><span class="p">))</span>
-<span class="g g-Whitespace">   </span><span class="mi">1031</span>         <span class="bp">self</span><span class="o">.</span><span class="n">major</span><span class="o">.</span><span class="n">formatter</span><span class="o">.</span><span class="n">set_locs</span><span class="p">(</span><span class="n">major_locs</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1032</span>         <span class="k">for</span> <span class="n">tick</span><span class="p">,</span> <span class="n">loc</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">major_ticks</span><span class="p">,</span> <span class="n">major_locs</span><span class="p">,</span> <span class="n">major_labels</span><span class="p">):</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/axis.py</span> in <span class="ni">get_major_ticks</span><span class="nt">(self, numticks)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1357</span>         <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">majorTicks</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">numticks</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1358</span>             <span class="c1"># Update the new tick label properties from the old.</span>
-<span class="ne">-&gt; </span><span class="mi">1359</span>             <span class="n">tick</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_tick</span><span class="p">(</span><span class="n">major</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1360</span>             <span class="bp">self</span><span class="o">.</span><span class="n">majorTicks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tick</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1361</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_copy_tick_props</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">majorTicks</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">tick</span><span class="p">)</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/axis.py</span> in <span class="ni">_get_tick</span><span class="nt">(self, major)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2057</span>         <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">2058</span>             <span class="n">tick_kw</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_minor_tick_kw</span>
-<span class="ne">-&gt; </span><span class="mi">2059</span>         <span class="k">return</span> <span class="n">XTick</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">axes</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">major</span><span class="o">=</span><span class="n">major</span><span class="p">,</span> <span class="o">**</span><span class="n">tick_kw</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2060</span> 
-<span class="g g-Whitespace">   </span><span class="mi">2061</span>     <span class="k">def</span> <span class="nf">set_label_position</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">position</span><span class="p">):</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/axis.py</span> in <span class="ni">__init__</span><span class="nt">(self, *args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">422</span>         <span class="bp">self</span><span class="o">.</span><span class="n">tick1line</span><span class="o">.</span><span class="n">set</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">423</span>             <span class="n">xdata</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ydata</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
-<span class="ne">--&gt; </span><span class="mi">424</span>             <span class="n">transform</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">get_xaxis_transform</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s2">&quot;tick1&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">425</span>             <span class="n">marker</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_tickmarkers</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
-<span class="g g-Whitespace">    </span><span class="mi">426</span>         <span class="p">)</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/axes/_base.py</span> in <span class="ni">get_xaxis_transform</span><span class="nt">(self, which)</span>
-<span class="g g-Whitespace">    </span><span class="mi">846</span>         <span class="k">elif</span> <span class="n">which</span> <span class="o">==</span> <span class="s1">&#39;tick1&#39;</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">847</span>             <span class="c1"># for cartesian projection, this is bottom spine</span>
-<span class="ne">--&gt; </span><span class="mi">848</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">spines</span><span class="o">.</span><span class="n">bottom</span><span class="o">.</span><span class="n">get_spine_transform</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">849</span>         <span class="k">elif</span> <span class="n">which</span> <span class="o">==</span> <span class="s1">&#39;tick2&#39;</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">850</span>             <span class="c1"># for cartesian projection, this is top spine</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/spines.py</span> in <span class="ni">get_spine_transform</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">333</span> 
-<span class="g g-Whitespace">    </span><span class="mi">334</span>         <span class="n">position</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_position</span>
-<span class="ne">--&gt; </span><span class="mi">335</span>         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">position</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">336</span>             <span class="k">if</span> <span class="n">position</span> <span class="o">==</span> <span class="s1">&#39;center&#39;</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">337</span>                 <span class="n">position</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;axes&#39;</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/backends/backend_agg.py</span> in <span class="ni">draw_path</span><span class="nt">(self, gc, path, transform, rgbFace)</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="n">npts</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">vertices</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="g g-Whitespace">    </span><span class="mi">137</span> 
+<span class="ne">--&gt; </span><span class="mi">138</span>         <span class="k">if</span> <span class="p">(</span><span class="n">npts</span> <span class="o">&gt;</span> <span class="n">nmax</span> <span class="o">&gt;</span> <span class="mi">100</span> <span class="ow">and</span> <span class="n">path</span><span class="o">.</span><span class="n">should_simplify</span> <span class="ow">and</span>
+<span class="g g-Whitespace">    </span><span class="mi">139</span>                 <span class="n">rgbFace</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">gc</span><span class="o">.</span><span class="n">get_hatch</span><span class="p">()</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">140</span>             <span class="n">nch</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">npts</span> <span class="o">/</span> <span class="n">nmax</span><span class="p">)</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
