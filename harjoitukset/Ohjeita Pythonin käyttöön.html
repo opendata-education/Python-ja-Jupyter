@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -41,16 +41,15 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://opendata-education.github.io/Python-ja-Jupyter/intro.html/harjoitukset/Ohjeita Pythonin käyttöön.html" />
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -73,7 +72,12 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
     
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
@@ -161,22 +165,22 @@
 
 
           
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
     <div class="topbar container-xl fixed-top">
     <div class="topbar-contents row">
         <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
         <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
             
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
@@ -191,7 +195,7 @@
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -235,6 +239,12 @@
         
         
         
+        <a class="colab-button" href="https://colab.research.google.com/github/opendata-education/Python-ja-Jupyter/blob/main/materiaali/harjoitukset/Ohjeita Pythonin käyttöön.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
         
     </div>
 </div>
@@ -242,7 +252,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -354,7 +364,122 @@
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Ohjeita Pythonin käyttöön Jupyterilla</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lahtokohdat">
+   1. Lähtökohdat
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#paketit">
+   2. Paketit
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tietorakenteet-ja-datan-kasittely">
+   3. Tietorakenteet ja datan käsittely
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#peruslaskutoimitukset-ja-syntaksilogiikka">
+   4. Peruslaskutoimitukset ja syntaksilogiikka
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#satunnaisdatan-luominen">
+   5. Satunnaisdatan luominen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kuvaajien-piirtaminen">
+   6. Kuvaajien piirtäminen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#animaatioiden-tekeminen">
+   7. Animaatioiden tekeminen
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kartat-ja-lampokartat">
+   8. Kartat ja lämpökartat
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ongelmia-katso-tanne">
+   9. Ongelmia? Katso tänne
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#yhyy-en-osaa">
+     Yhyy, en osaa?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solu-jai-jumiin-eika-piirra-kuvaajaani-tai-aja-koodiani">
+     Solu jäi jumiin eikä piirrä kuvaajaani tai aja koodiani?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#virheilmoitus-herjaa-nimi-is-not-defined-tai-nimi-does-not-exist">
+     Virheilmoitus herjaa ‘nimi is not defined’ tai ‘nimi does not exist’?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#yritan-tallentaa-muuttujaan-asioita-mutta-print-nimi-kertookin-none">
+     Yritän tallentaa muuttujaan asioita, mutta print(nimi) kertookin None?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#datani-ei-suostu-lataamaan">
+     Datani ei suostu lataamaan?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lataamassani-datassa-on-jotain-omituisia-nan-arvoja">
+     Lataamassani datassa on jotain omituisia ‘NaN’-arvoja?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#yhdistin-palasia-datasta-mutta-nyt-en-enaa-pysty-tekemaan-asioita-uudella-muuttujallani">
+     Yhdistin palasia datasta, mutta nyt en enää pysty tekemään asioita uudella muuttujallani?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#koodini-ei-toimi-vaikka-se-on-ihan-varmasti-oikein-kirjoitettu">
+     Koodini ei toimi, vaikka se on ihan varmasti oikein kirjoitettu?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#datan-paivamaarat-sekoittavat-toiminnan-miten-korjaan">
+     Datan päivämäärät sekoittavat toiminnan, miten korjaan?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kopioin-datan-uuteen-muuttujaan-jonka-kasittelyn-jalkeen-huomaan-alkuperaisen-muuttujan-arvojen-vaihtuneen">
+     Kopioin datan uuteen muuttujaan, jonka käsittelyn jälkeen huomaan alkuperäisen muuttujan arvojen vaihtuneen?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
   <div class="section" id="ohjeita-pythonin-kayttoon-jupyterilla">
@@ -1076,8 +1201,8 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10897
-(10897, 14)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11017
+(11017, 14)
 </pre></div>
 </div>
 </div>
@@ -1452,8 +1577,8 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>199
-34
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>201
+35
 </pre></div>
 </div>
 </div>
@@ -1620,7 +1745,7 @@ Name: M, dtype: float64
       <td>X</td>
       <td></td>
       <td></td>
-      <td>0.000000</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>1</th>
@@ -1633,7 +1758,7 @@ Name: M, dtype: float64
       <td></td>
       <td></td>
       <td></td>
-      <td>0.505051</td>
+      <td>0.5</td>
     </tr>
     <tr>
       <th>2</th>
@@ -1646,7 +1771,7 @@ Name: M, dtype: float64
       <td></td>
       <td></td>
       <td>X</td>
-      <td>1.010101</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>3</th>
@@ -1659,7 +1784,7 @@ Name: M, dtype: float64
       <td></td>
       <td></td>
       <td></td>
-      <td>1.515152</td>
+      <td>1.5</td>
     </tr>
     <tr>
       <th>4</th>
@@ -1672,7 +1797,7 @@ Name: M, dtype: float64
       <td></td>
       <td></td>
       <td></td>
-      <td>2.020202</td>
+      <td>2.0</td>
     </tr>
   </tbody>
 </table>
@@ -1800,24 +1925,34 @@ Name: M, dtype: float64
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1628</span><span class="o">/</span><span class="mf">3032815357.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="nn">Input In [24],</span> in <span class="ni">&lt;cell line: 13&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span>     <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Anna toinenkin kokonaisluku: &quot;</span><span class="p">))</span>
 <span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="n">summaus</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span> 
 <span class="ne">---&gt; </span><span class="mi">13</span> <span class="n">vapaaValinta</span><span class="p">()</span>
 
-<span class="nn">/tmp/ipykernel_1628/3032815357.py</span> in <span class="ni">vapaaValinta</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> 
+<span class="nn">Input In [24],</span> in <span class="ni">vapaaValinta</span><span class="nt">()</span>
 <span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="k">def</span> <span class="nf">vapaaValinta</span><span class="p">():</span>
 <span class="ne">----&gt; </span><span class="mi">9</span>     <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Anna kokonaisluku: &quot;</span><span class="p">))</span>
 <span class="g g-Whitespace">     </span><span class="mi">10</span>     <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Anna toinenkin kokonaisluku: &quot;</span><span class="p">))</span>
 <span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="n">summaus</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/ipykernel/kernelbase.py</span> in <span class="ni">raw_input</span><span class="nt">(self, prompt)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1001</span>         <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">1002</span><span class="s2">         if not self._allow_stdin:</span>
-<span class="ne">-&gt; </span><span class="mi">1003</span><span class="s2">             raise StdinNotImplementedError(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1004</span><span class="s2">                 &quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">1005</span><span class="s2">             )</span>
+<span class="nn">File /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/ipykernel/kernelbase.py:1072,</span> in <span class="ni">Kernel.raw_input</span><span class="nt">(self, prompt)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1065</span> <span class="sd">&quot;&quot;&quot;Forward raw_input to frontends</span>
+<span class="g g-Whitespace">   </span><span class="mi">1066</span><span class="sd"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1067</span><span class="sd"> Raises</span>
+<span class="g g-Whitespace">   </span><span class="mi">1068</span><span class="sd"> ------</span>
+<span class="g g-Whitespace">   </span><span class="mi">1069</span><span class="sd"> StdinNotImplementedError if active frontend doesn&#39;t support stdin.</span>
+<span class="g g-Whitespace">   </span><span class="mi">1070</span><span class="sd"> &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1071</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_allow_stdin</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1072</span>     <span class="k">raise</span> <span class="n">StdinNotImplementedError</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1073</span>         <span class="s2">&quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1074</span>     <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1075</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_input_request</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1076</span>     <span class="nb">str</span><span class="p">(</span><span class="n">prompt</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1077</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_parent_ident</span><span class="p">[</span><span class="s2">&quot;shell&quot;</span><span class="p">],</span>
+<span class="g g-Whitespace">   </span><span class="mi">1078</span>     <span class="bp">self</span><span class="o">.</span><span class="n">get_parent</span><span class="p">(</span><span class="s2">&quot;shell&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1079</span>     <span class="n">password</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1080</span> <span class="p">)</span>
 
 <span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
 </pre></div>
@@ -1913,7 +2048,7 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Päivän voittoarpa on: 45
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Päivän voittoarpa on: 74
 </pre></div>
 </div>
 </div>
@@ -1928,7 +2063,7 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4.765804186451006
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4.9382621960717845
 </pre></div>
 </div>
 </div>
@@ -1948,7 +2083,7 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Jukka&#39;, &#39;Netta&#39;, &#39;Iida&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Torsti&#39;, &#39;Pekka&#39;, &#39;Netta&#39;]
 </pre></div>
 </div>
 </div>
@@ -1964,7 +2099,7 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Netta&#39;, &#39;Jukka&#39;, &#39;Paula&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Paula&#39;, &#39;Torsti&#39;, &#39;Netta&#39;]
 </pre></div>
 </div>
 </div>
@@ -1979,7 +2114,7 @@ Name: M, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.0140339046918707
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.1161199386691023
 </pre></div>
 </div>
 </div>
@@ -3002,179 +3137,6 @@ Name: M, dtype: float64
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_1628</span><span class="o">/</span><span class="mf">520665059.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span> 
-<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-<span class="ne">---&gt; </span><span class="mi">14</span> <span class="n">HTML</span><span class="p">(</span><span class="n">anim</span><span class="o">.</span><span class="n">to_jshtml</span><span class="p">())</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/animation.py</span> in <span class="ni">to_jshtml</span><span class="nt">(self, fps, embed_frames, default_mode)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1331</span>                                     <span class="n">embed_frames</span><span class="o">=</span><span class="n">embed_frames</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1332</span>                                     <span class="n">default_mode</span><span class="o">=</span><span class="n">default_mode</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">1333</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="n">writer</span><span class="o">=</span><span class="n">writer</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1334</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_html_representation</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1335</span> 
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/animation.py</span> in <span class="ni">save</span><span class="nt">(self, filename, writer, fps, dpi, codec, bitrate, extra_args, metadata, extra_anim, savefig_kwargs, progress_callback)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1093</span>                         <span class="n">progress_callback</span><span class="p">(</span><span class="n">frame_number</span><span class="p">,</span> <span class="n">total_frames</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1094</span>                         <span class="n">frame_number</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="ne">-&gt; </span><span class="mi">1095</span>                 <span class="n">writer</span><span class="o">.</span><span class="n">grab_frame</span><span class="p">(</span><span class="o">**</span><span class="n">savefig_kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1096</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1097</span>     <span class="k">def</span> <span class="nf">_step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/animation.py</span> in <span class="ni">grab_frame</span><span class="nt">(self, **savefig_kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">772</span>                 <span class="k">return</span>
-<span class="g g-Whitespace">    </span><span class="mi">773</span>             <span class="n">f</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">()</span>
-<span class="ne">--&gt; </span><span class="mi">774</span>             <span class="bp">self</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">frame_format</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">775</span>                              <span class="n">dpi</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dpi</span><span class="p">,</span> <span class="o">**</span><span class="n">savefig_kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">776</span>             <span class="n">imgdata64</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">encodebytes</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">getvalue</span><span class="p">())</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/figure.py</span> in <span class="ni">savefig</span><span class="nt">(self, fname, transparent, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3010</span>                         <span class="n">ax</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">_cm_set</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">))</span>
-<span class="g g-Whitespace">   </span><span class="mi">3011</span> 
-<span class="ne">-&gt; </span><span class="mi">3012</span>             <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">print_figure</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3013</span> 
-<span class="g g-Whitespace">   </span><span class="mi">3014</span>     <span class="k">def</span> <span class="nf">ginput</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">show_clicks</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/backend_bases.py</span> in <span class="ni">print_figure</span><span class="nt">(self, filename, dpi, facecolor, edgecolor, orientation, format, bbox_inches, pad_inches, bbox_extra_artists, backend, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2312</span>                 <span class="c1"># force the figure dpi to 72), so we need to set it again here.</span>
-<span class="g g-Whitespace">   </span><span class="mi">2313</span>                 <span class="k">with</span> <span class="n">cbook</span><span class="o">.</span><span class="n">_setattr_cm</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">):</span>
-<span class="ne">-&gt; </span><span class="mi">2314</span>                     <span class="n">result</span> <span class="o">=</span> <span class="n">print_method</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">2315</span>                         <span class="n">filename</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">2316</span>                         <span class="n">facecolor</span><span class="o">=</span><span class="n">facecolor</span><span class="p">,</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/backend_bases.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1641</span>             <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1642</span> 
-<span class="ne">-&gt; </span><span class="mi">1643</span>         <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1644</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1645</span>     <span class="k">return</span> <span class="n">wrapper</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/_api/deprecation.py</span> in <span class="ni">wrapper</span><span class="nt">(*inner_args, **inner_kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">410</span>                          <span class="k">else</span> <span class="n">deprecation_addendum</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">411</span>                 <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">412</span>         <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">inner_args</span><span class="p">,</span> <span class="o">**</span><span class="n">inner_kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">413</span> 
-<span class="g g-Whitespace">    </span><span class="mi">414</span>     <span class="n">DECORATORS</span><span class="p">[</span><span class="n">wrapper</span><span class="p">]</span> <span class="o">=</span> <span class="n">decorator</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/backends/backend_agg.py</span> in <span class="ni">print_png</span><span class="nt">(self, filename_or_obj, metadata, pil_kwargs, *args)</span>
-<span class="g g-Whitespace">    </span><span class="mi">538</span>             <span class="o">*</span><span class="n">metadata</span><span class="o">*</span><span class="p">,</span> <span class="n">including</span> <span class="n">the</span> <span class="n">default</span> <span class="s1">&#39;Software&#39;</span> <span class="n">key</span><span class="o">.</span>
-<span class="g g-Whitespace">    </span><span class="mi">539</span>         <span class="sd">&quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">540</span><span class="sd">         FigureCanvasAgg.draw(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">541</span><span class="sd">         mpl.image.imsave(</span>
-<span class="g g-Whitespace">    </span><span class="mi">542</span><span class="sd">             filename_or_obj, self.buffer_rgba(), format=&quot;png&quot;, origin=&quot;upper&quot;,</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/backends/backend_agg.py</span> in <span class="ni">draw</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">434</span><span class="sd">              (self.toolbar._wait_cursor_for_draw_cm() if self.toolbar</span>
-<span class="g g-Whitespace">    </span><span class="mi">435</span><span class="sd">               else nullcontext()):</span>
-<span class="ne">--&gt; </span><span class="mi">436</span><span class="sd">             self.figure.draw(self.renderer)</span>
-<span class="g g-Whitespace">    </span><span class="mi">437</span><span class="sd">             # A GUI class may be need to update a window using this draw, so</span>
-<span class="g g-Whitespace">    </span><span class="mi">438</span><span class="sd">             # don&#39;t forget to call the superclass.</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/artist.py</span> in <span class="ni">draw_wrapper</span><span class="nt">(artist, renderer, *args, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">71</span><span class="sd">     @wraps(draw)</span>
-<span class="g g-Whitespace">     </span><span class="mi">72</span><span class="sd">     def draw_wrapper(artist, renderer, *args, **kwargs):</span>
-<span class="ne">---&gt; </span><span class="mi">73</span><span class="sd">         result = draw(artist, renderer, *args, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">74</span><span class="sd">         if renderer._rasterizing:</span>
-<span class="g g-Whitespace">     </span><span class="mi">75</span><span class="sd">             renderer.stop_rasterizing()</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/artist.py</span> in <span class="ni">draw_wrapper</span><span class="nt">(artist, renderer)</span>
-<span class="g g-Whitespace">     </span><span class="mi">48</span><span class="sd">                 renderer.start_filter()</span>
-<span class="g g-Whitespace">     </span><span class="mi">49</span><span class="sd"> </span>
-<span class="ne">---&gt; </span><span class="mi">50</span><span class="sd">             return draw(artist, renderer)</span>
-<span class="g g-Whitespace">     </span><span class="mi">51</span><span class="sd">         finally:</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span><span class="sd">             if artist.get_agg_filter() is not None:</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/figure.py</span> in <span class="ni">draw</span><span class="nt">(self, renderer)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2801</span><span class="sd"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">2802</span><span class="sd">             self.patch.draw(renderer)</span>
-<span class="ne">-&gt; </span><span class="mi">2803</span><span class="sd">             mimage._draw_list_compositing_images(</span>
-<span class="g g-Whitespace">   </span><span class="mi">2804</span><span class="sd">                 renderer, self, artists, self.suppressComposite)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2805</span><span class="sd"> </span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/image.py</span> in <span class="ni">_draw_list_compositing_images</span><span class="nt">(renderer, parent, artists, suppress_composite)</span>
-<span class="g g-Whitespace">    </span><span class="mi">130</span><span class="sd">     if not_composite or not has_images:</span>
-<span class="g g-Whitespace">    </span><span class="mi">131</span><span class="sd">         for a in artists:</span>
-<span class="ne">--&gt; </span><span class="mi">132</span><span class="sd">             a.draw(renderer)</span>
-<span class="g g-Whitespace">    </span><span class="mi">133</span><span class="sd">     else:</span>
-<span class="g g-Whitespace">    </span><span class="mi">134</span><span class="sd">         # Composite any adjacent images together</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/artist.py</span> in <span class="ni">draw_wrapper</span><span class="nt">(artist, renderer)</span>
-<span class="g g-Whitespace">     </span><span class="mi">48</span><span class="sd">                 renderer.start_filter()</span>
-<span class="g g-Whitespace">     </span><span class="mi">49</span><span class="sd"> </span>
-<span class="ne">---&gt; </span><span class="mi">50</span><span class="sd">             return draw(artist, renderer)</span>
-<span class="g g-Whitespace">     </span><span class="mi">51</span><span class="sd">         finally:</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span><span class="sd">             if artist.get_agg_filter() is not None:</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/axes/_base.py</span> in <span class="ni">draw</span><span class="nt">(self, renderer)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3080</span><span class="sd">             renderer.stop_rasterizing()</span>
-<span class="g g-Whitespace">   </span><span class="mi">3081</span><span class="sd"> </span>
-<span class="ne">-&gt; </span><span class="mi">3082</span><span class="sd">         mimage._draw_list_compositing_images(</span>
-<span class="g g-Whitespace">   </span><span class="mi">3083</span><span class="sd">             renderer, self, artists, self.figure.suppressComposite)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3084</span><span class="sd"> </span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/image.py</span> in <span class="ni">_draw_list_compositing_images</span><span class="nt">(renderer, parent, artists, suppress_composite)</span>
-<span class="g g-Whitespace">    </span><span class="mi">130</span><span class="sd">     if not_composite or not has_images:</span>
-<span class="g g-Whitespace">    </span><span class="mi">131</span><span class="sd">         for a in artists:</span>
-<span class="ne">--&gt; </span><span class="mi">132</span><span class="sd">             a.draw(renderer)</span>
-<span class="g g-Whitespace">    </span><span class="mi">133</span><span class="sd">     else:</span>
-<span class="g g-Whitespace">    </span><span class="mi">134</span><span class="sd">         # Composite any adjacent images together</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/artist.py</span> in <span class="ni">draw_wrapper</span><span class="nt">(artist, renderer)</span>
-<span class="g g-Whitespace">     </span><span class="mi">48</span><span class="sd">                 renderer.start_filter()</span>
-<span class="g g-Whitespace">     </span><span class="mi">49</span><span class="sd"> </span>
-<span class="ne">---&gt; </span><span class="mi">50</span><span class="sd">             return draw(artist, renderer)</span>
-<span class="g g-Whitespace">     </span><span class="mi">51</span><span class="sd">         finally:</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span><span class="sd">             if artist.get_agg_filter() is not None:</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/axis.py</span> in <span class="ni">draw</span><span class="nt">(self, renderer, *args, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1161</span><span class="sd"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">1162</span><span class="sd">         for tick in ticks_to_draw:</span>
-<span class="ne">-&gt; </span><span class="mi">1163</span><span class="sd">             tick.draw(renderer)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1164</span><span class="sd"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">1165</span><span class="sd">         # scale up the axis label box to also find the neighbors, not</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/artist.py</span> in <span class="ni">draw_wrapper</span><span class="nt">(artist, renderer)</span>
-<span class="g g-Whitespace">     </span><span class="mi">48</span><span class="sd">                 renderer.start_filter()</span>
-<span class="g g-Whitespace">     </span><span class="mi">49</span><span class="sd"> </span>
-<span class="ne">---&gt; </span><span class="mi">50</span><span class="sd">             return draw(artist, renderer)</span>
-<span class="g g-Whitespace">     </span><span class="mi">51</span><span class="sd">         finally:</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span><span class="sd">             if artist.get_agg_filter() is not None:</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/axis.py</span> in <span class="ni">draw</span><span class="nt">(self, renderer)</span>
-<span class="g g-Whitespace">    </span><span class="mi">297</span><span class="sd">         for artist in [self.gridline, self.tick1line, self.tick2line,</span>
-<span class="g g-Whitespace">    </span><span class="mi">298</span><span class="sd">                        self.label1, self.label2]:</span>
-<span class="ne">--&gt; </span><span class="mi">299</span><span class="sd">             artist.draw(renderer)</span>
-<span class="g g-Whitespace">    </span><span class="mi">300</span><span class="sd">         renderer.close_group(self.__name__)</span>
-<span class="g g-Whitespace">    </span><span class="mi">301</span><span class="sd">         self.stale = False</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/artist.py</span> in <span class="ni">draw_wrapper</span><span class="nt">(artist, renderer)</span>
-<span class="g g-Whitespace">     </span><span class="mi">48</span><span class="sd">                 renderer.start_filter()</span>
-<span class="g g-Whitespace">     </span><span class="mi">49</span><span class="sd"> </span>
-<span class="ne">---&gt; </span><span class="mi">50</span><span class="sd">             return draw(artist, renderer)</span>
-<span class="g g-Whitespace">     </span><span class="mi">51</span><span class="sd">         finally:</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span><span class="sd">             if artist.get_agg_filter() is not None:</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/lines.py</span> in <span class="ni">draw</span><span class="nt">(self, renderer)</span>
-<span class="g g-Whitespace">    </span><span class="mi">782</span><span class="sd">             gc.set_antialiased(self._antialiased)</span>
-<span class="g g-Whitespace">    </span><span class="mi">783</span><span class="sd"> </span>
-<span class="ne">--&gt; </span><span class="mi">784</span><span class="sd">             ec_rgba = mcolors.to_rgba(</span>
-<span class="g g-Whitespace">    </span><span class="mi">785</span><span class="sd">                 self.get_markeredgecolor(), self._alpha)</span>
-<span class="g g-Whitespace">    </span><span class="mi">786</span><span class="sd">             fc_rgba = mcolors.to_rgba(</span>
-
-<span class="nn">/opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/matplotlib/colors.py</span> in <span class="ni">to_rgba</span><span class="nt">(c, alpha)</span>
-<span class="g g-Whitespace">    </span><span class="mi">175</span><span class="sd">     &quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">176</span>     <span class="c1"># Special-case nth color syntax because it should not be cached.</span>
-<span class="ne">--&gt; </span><span class="mi">177</span>     <span class="k">if</span> <span class="n">_is_nth_color</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">178</span>         <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span>
-<span class="g g-Whitespace">    </span><span class="mi">179</span>         <span class="n">prop_cycler</span> <span class="o">=</span> <span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span>
-
-<span class="ne">KeyboardInterrupt</span>: 
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -3363,8 +3325,8 @@ Kopioin datan uuteen muuttujaan, jonka käsittelyn jälkeen huomaan alkuperäise
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
+            
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="Jupyter-aloitus.html" title="previous page">
         <i class="fas fa-angle-left"></i>
@@ -3381,24 +3343,22 @@ Kopioin datan uuteen muuttujaan, jonka käsittelyn jälkeen huomaan alkuperäise
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Juha Teuho<br/>
-        
-          <div class="extra_footer">
-            <div>
+  <p>
+    
+      By Juha Teuho<br/>
+    
+      <div class="extra_footer">
+        <div>
 <a>Toteutettu Opetushallituksen valtionavustuksella tiedekasvatuksen edistämiseen.</a></br><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="license" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> Tämän sivuston materiaali on käytettävissä seuraavalla lisenssillä: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY 4.0.</a>
 </div>    
 
-          </div>
-      </p>
-    </div>
-  </footer>
+      </div>
+  </p>
+</footer>
 </main>
 
 
