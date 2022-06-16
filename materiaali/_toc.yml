@@ -1,14 +1,16 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
-- file: intro
-- part: Notebookit tutuksi
-  chapters:
+format: jb-book
+root: intro
+chapters:
+- file: harjoitukset/notebookit_tutuksi
+  sections:
   - file: harjoitukset/Jupyter-aloitus
-- part: Kaverina Python
-  chapters:
+- file: harjoitukset/kaverina_python
+  sections:
   - file: harjoitukset/Ohjeita Pythonin käyttöön
-- part: Kiinni data-analyysiin
-  chapters:
+- file: harjoitukset/data-analyysi
+  sections:
   - file: harjoitukset/jupyter-intro
   - file: harjoitukset/data-analyysi_esimerkki
   - file: harjoitukset/python-funktiot
