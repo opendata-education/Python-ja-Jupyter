@@ -4,11 +4,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Jupyter Notebook -tutoriaali &#8212; Python ja Jupyter</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,44 +20,44 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
-    <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="canonical" href="https://opendata-education.github.io/Python-ja-Jupyter/intro.html/harjoitukset/Jupyter-aloitus.html" />
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Ohjeita Pythonin käyttöön Jupyterilla" href="Ohjeita%20Pythonin%20k%C3%A4ytt%C3%B6%C3%B6n.html" />
-    <link rel="prev" title="Tervetuloa avoimen datan pariin" href="../intro.html" />
+    <link rel="next" title="Kaverina Python" href="kaverina_python.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="notebookit_tutuksi.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -63,7 +65,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -72,14 +88,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -97,168 +109,288 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../intro.html">
-   Tervetuloa avoimen datan pariin
-  </a>
- </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Notebookit tutuksi
- </span>
-</p>
-<ul class="current nav bd-sidenav">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Tervetuloa avoimen datan pariin
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Jupyter Notebook -tutoriaali
   </a>
  </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Kaverina Python
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="Ohjeita%20Pythonin%20k%C3%A4ytt%C3%B6%C3%B6n.html">
-   Ohjeita Pythonin käyttöön Jupyterilla
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="kaverina_python.html">
+   Kaverina Python
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="Ohjeita%20Pythonin%20k%C3%A4ytt%C3%B6%C3%B6n.html">
+     Ohjeita Pythonin käyttöön Jupyterilla
+    </a>
+   </li>
+  </ul>
  </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Kiinni data-analyysiin
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="jupyter-intro.html">
-   Data-analyysi Pythonilla
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="data-analyysi.html">
+   Kiinni data-analyysiin
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="data-analyysi_esimerkki.html">
-   Harjoittele data-analyysiä
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="python-funktiot.html">
-   Funktiot Pythonissa
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jupyter-intro.html">
+     Data-analyysi Pythonilla
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data-analyysi_esimerkki.html">
+     Harjoittele data-analyysiä
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="python-funktiot.html">
+     Funktiot Pythonissa
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
-<div class="sbt-scroll-pixel-helper"></div>
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            <div class="topbar-left">
-                
-                <label class="nav-toggle-button" for="__navigation">
-                    <div class="visually-hidden">Toggle navigation</div>
-                    <i class="fas fa-bars"></i>
-                </label>
-                
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
             
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/harjoitukset/Jupyter-aloitus.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/opendata-education/Python-ja-Jupyter"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/opendata-education/Python-ja-Jupyter/issues/new?title=Issue%20on%20page%20%2Fharjoitukset/Jupyter-aloitus.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/opendata-education/Python-ja-Jupyter/main?urlpath=tree/materiaali/harjoitukset/Jupyter-aloitus.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <a class="colab-button" href="https://colab.research.google.com/github/opendata-education/Python-ja-Jupyter/blob/main/materiaali/harjoitukset/Jupyter-aloitus.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
-                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
-                    src="../_static/images/logo_colab.png"
-                    alt="Interact on Colab">Colab</button></a>
-        
-        
-        
-    </div>
-</div>
-
         </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/opendata-education/Python-ja-Jupyter/main?urlpath=tree/materiaali/harjoitukset/Jupyter-aloitus.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/opendata-education/Python-ja-Jupyter/blob/main/materiaali/harjoitukset/Jupyter-aloitus.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/opendata-education/Python-ja-Jupyter"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/opendata-education/Python-ja-Jupyter/issues/new?title=Issue%20on%20page%20%2Fharjoitukset/Jupyter-aloitus.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/harjoitukset/Jupyter-aloitus.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
    Jupyter Notebook -tutoriaali
@@ -456,12 +588,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Jupyter Notebook -tutoriaali</h1>
@@ -675,11 +806,12 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="section" id="jupyter-notebook-tutoriaali">
-<h1>Jupyter Notebook -tutoriaali<a class="headerlink" href="#jupyter-notebook-tutoriaali" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="jupyter-notebook-tutoriaali">
+<h1>Jupyter Notebook -tutoriaali<a class="headerlink" href="#jupyter-notebook-tutoriaali" title="Permalink to this headline">#</a></h1>
 <p>Tervetuloa käyttämään Jupyter Notebookia!</p>
 <p>Tähän tutoriaaliin on koottu suomeksi oleellisimmat perustiedot Jupyter Notebookin käytöstä ja ominaisuuksista. Jos olet avannut tutoriaalin Jupyterissa, voit vapaasti kokeilla erilaisia toimintoja, muokata sisältöä ja luoda omia kommenttejasi. Mikäli sinulla ei vielä ole Jupyteria, katso osio <em>Jupyter Notebookin asennus</em>.</p>
 <p>Yksityiskohtaisempia ohjeita varten Jupyter-projektin virallinen englanninkielinen dokumentaatio löytyy osoitteesta http://jupyter.readthedocs.io/en/latest/index.html. Jupyter Notebook -sovellukseen keskittyvä dokumentaatio on saatavilla osoitteessa http://jupyter-notebook.readthedocs.io/en/latest/.</p>
@@ -708,14 +840,14 @@ const thebe_selector_output = ".output, .cell_output"
 </ol>
 <p><a class="reference external" href="#harjoitus">Lyhyt harjoitus</a></p>
 <p><a id="mikaon"></a></p>
-<div class="section" id="mika-jupyter-notebook">
-<h2>1. Mikä Jupyter Notebook?<a class="headerlink" href="#mika-jupyter-notebook" title="Permalink to this headline">¶</a></h2>
+<section id="mika-jupyter-notebook">
+<h2>1. Mikä Jupyter Notebook?<a class="headerlink" href="#mika-jupyter-notebook" title="Permalink to this headline">#</a></h2>
 <p>Jupyter Notebook on verkkosovellus, jonka avulla voidaan luoda ohjelmointikoodia, tavallista tekstiä, kuvia, visuaalisointeja ja yhtälöitä yhdistäviä dokumentteja. Näitä dokumentteja kutsutaan <strong>notebookeiksi</strong>.</p>
 <p>Jupyter on toteutettu avoimella lähdekoodilla. Sovellus tukee yli 40 eri ohjelmointikieltä (mm. Python, C++, C#, JavaScript, Ruby).</p>
 <p><a id="asennus"></a></p>
-</div>
-<div class="section" id="jupyter-notebookin-asennus">
-<h2>2. Jupyter Notebookin asennus<a class="headerlink" href="#jupyter-notebookin-asennus" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="jupyter-notebookin-asennus">
+<h2>2. Jupyter Notebookin asennus<a class="headerlink" href="#jupyter-notebookin-asennus" title="Permalink to this headline">#</a></h2>
 <p>Jupyter Notebook on mahdollista asentaa muutamalla eri tavalla. Helpoin ja suositeltavin vaihtoehto on hoitaa asennus Anacondan avulla. Anaconda asentaa yhdellä kertaa Pythonin, Jupyterin sekä Python-ohjelmoinnissa hyödyllisiä paketteja. Asennus Anacondan avulla on helppoa:</p>
 <ul class="simple">
 <li><p>Lataa Anaconda sivulta https://www.continuum.io/downloads. Suositeltavinta on ladata Python 3:n uusin versio, joka on tämän tutoriaalin kirjoitushetkellä 3.5.</p></li>
@@ -732,9 +864,9 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p>Huomaa, että Binderiin tekemäsi muutokset eivät automaattisesti tallennu minnekään ja poistuvat, jos ympäristö on 20 minuuttia käyttämättä. Voit kuitenkin tallentaa Binderilla muokkaamasi ja laatimasi notebookit omalle koneellesi talteen. Tämä onnistuu avoimen notebookin valikosta klikkaamalla <em>File</em> -&gt; <em>Download as</em> -&gt; <em>notebook (.ipynb)</em>.</p>
 <p><a id="luonotebook"></a></p>
-</div>
-<div class="section" id="kaynnistaminen-ja-uuden-notebookin-luominen">
-<h2>3. Käynnistäminen ja uuden notebookin luominen<a class="headerlink" href="#kaynnistaminen-ja-uuden-notebookin-luominen" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="kaynnistaminen-ja-uuden-notebookin-luominen">
+<h2>3. Käynnistäminen ja uuden notebookin luominen<a class="headerlink" href="#kaynnistaminen-ja-uuden-notebookin-luominen" title="Permalink to this headline">#</a></h2>
 <p>Jupyter Notebook käynnistyy edellä mainitulla tavalla joko <em>Anaconda Navigator</em> -ohjelman kautta tai komentorivin komennolla <em>jupyter notebook</em>. Käynnistymisen jälkeen Jupyterin päävalikko, <strong>dashboard</strong>, avautuu selaimessa.
 <br>
 <img src="../kuvat/dashboard.png" align="center">
@@ -743,20 +875,23 @@ Dashboardin kautta voidaan luoda uusia notebookeja, avata tai poistaa vanhoja se
 <p>Uuden notebookin luominen onnistuu dashboardin oikeassa yläkulmassa olevalla <em>New</em>-painikkeella. Painikkeesta avautuu vetovalikko, josta voidaan valita <em>Notebooks</em>-tekstin alta notebookissa käytettävä ydin (kernel). Ydin määrää, millä ohjelmointikielellä notebook toimii (esim. Python 2, Python 3, C++, …). Saatavilla olevien ytimien määrä riippuu siitä, mitä ytimiä käyttäjä on asentanut yhteensopiviksi.</p>
 <p>Tässä tutoriaalissa käytämme kielenä Python 3:a. Ytimen valitsemisen jälkeen luotu notebook avautuu selaimen uudelle välilehdelle.</p>
 <p><a id="interface"></a></p>
-</div>
-<div class="section" id="kayttoliittyma-ja-sen-toiminta">
-<h2>4. Käyttöliittymä ja sen toiminta<a class="headerlink" href="#kayttoliittyma-ja-sen-toiminta" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="kayttoliittyma-ja-sen-toiminta">
+<h2>4. Käyttöliittymä ja sen toiminta<a class="headerlink" href="#kayttoliittyma-ja-sen-toiminta" title="Permalink to this headline">#</a></h2>
 <p>Jupyter toimii selainpohjaisen käyttöliittymän kautta. Käyttöliittymän tärkeimmät osat ovat yläreunan valikkopalkki ja työkalupalkki (kuva alla), sekä itse notebook.
 <br>
 <img src="../kuvat/valikkopalkki.jpg">
 <br>
 Jupyteria käytetään kahdessa eri tilassa: <strong>editointitilassa</strong> ja <strong>komentotilassa</strong>. Editointitilassa käyttäjä voi muokata notebookin yhden osion, <strong>solun</strong>, sisältöä, ja komentotilassa taas hallita notebookia kokonaisuutena. Editointitilaan voidaan siirtyä näppäimellä <em>Enter</em> tai tuplaklikkaamalla sitä notebookin osaa, jota halutaan editoida. Takaisin komentotilaan pääsee näppäimellä <em>Esc</em>, klikkaamalla solun ulkopuolista osaa tai uudella tuplaklikkauksella. Valikkopalkin oikealta on mahdollista tarkistaa, kummassa tilassa Jupyter on. Mikäli ylhäällä oikealla näkyy kuva</p>
-<img alt="../_images/editointitila.png" class="align-left" src="../_images/editointitila.png" />
+<img src="../kuvat/editointitila.png" align="left">
+<br>
+<br>
+(tekstin tilalla voi lukea myös muuta), ollaan editointitilassa, muutoin komentotilassa.
 <p>Editointitilan ja komentotilan näppäinkomennot eroavat toisistaan. Riippuen siitä, kummassa tilassa ollaan, samalla näppäimellä voi olla eri komento. Esimerkiksi komentotilassa näppäin <em>s</em> tallentaa notebookin, mutta editointitilassa saadaan kirjoitettua kirjain “s”.</p>
 <p><a id="solut"></a></p>
-</div>
-<div class="section" id="solut">
-<h2>5. Solut<a class="headerlink" href="#solut" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="solut">
+<h2>5. Solut<a class="headerlink" href="#solut" title="Permalink to this headline">#</a></h2>
 <p>Kaikki notebookin sisältö kirjoitetaan <strong>soluihin</strong> (cells). Alla on esimerkiksi solu, joka on määrätty koodisoluksi. Myös tämä teksti on kirjoitettu omaan soluunsa, tekstisoluun. Soluja voidaan ajaa (run), jolloin solut tekevät solutyypistä riippuen erilaisia toimintoja.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -802,14 +937,22 @@ Jupyteria käytetään kahdessa eri tilassa: <strong>editointitilassa</strong> j
 <td class="text-align:center"><p>Ctrl + S</p></td>
 <td class="text-align:right"><p>tallenna</p></td>
 </tr>
+<tr class="row-odd"><td class="text-align:center"><p>* <em>Solu ei aktiivinen</em> viittaa komentotilaan, jolloin kursori ei ole solun sisällä ja solun reuna on sininen. <br></p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:center"><p></p></td>
+<td class="text-align:right"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p>** <em>Solu aktiivinen</em> viittaa editointitilaan, jolloin kursori on solun sisällä ja solun reuna on vihreä.</p></td>
+<td class="text-align:left"><p></p></td>
+<td class="text-align:center"><p></p></td>
+<td class="text-align:right"><p></p></td>
+</tr>
 </tbody>
 </table>
-<p>* <em>Solu ei aktiivinen</em> viittaa komentotilaan, jolloin kursori ei ole solun sisällä ja solun reuna on sininen. <br>
-** <em>Solu aktiivinen</em> viittaa editointitilaan, jolloin kursori on solun sisällä ja solun reuna on vihreä.</p>
 <p>Löydät ja voit muokata kaikkia pikakomentoja painamalla <em><strong>H</strong></em> komentotilassa.</p>
 <p><a id="luosolu"></a></p>
-<div class="section" id="solun-luominen-ja-muokkaaminen">
-<h3>5.1 Solun luominen ja muokkaaminen<a class="headerlink" href="#solun-luominen-ja-muokkaaminen" title="Permalink to this headline">¶</a></h3>
+<section id="solun-luominen-ja-muokkaaminen">
+<h3>5.1 Solun luominen ja muokkaaminen<a class="headerlink" href="#solun-luominen-ja-muokkaaminen" title="Permalink to this headline">#</a></h3>
 <p>Uuden solun luominen onnistuu joko</p>
 <ul class="simple">
 <li><p>valitsemalla <em>Insert</em> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <em>Insert Cell Below</em> valikkopalkista</p></li>
@@ -818,13 +961,16 @@ Jupyteria käytetään kahdessa eri tilassa: <strong>editointitilassa</strong> j
 </ul>
 <p>Jos luet tutoriaalia Jupyterissa, voit kokeilla lisätä uuden solun tämän tekstisolun alapuolelle. Voit myös lisätä soluja valitun solun yläpuolelle näppäinkomennolla <em>a</em>.</p>
 <p>Solun luomisen jälkeen voidaan valita solun tyyppi. Valinta onnistuu joko työkalupalkin vetovalikosta</p>
-<img alt="../_images/solutyyppi.png" class="align-left" src="../_images/solutyyppi.png" />
+<img src="../kuvat/solutyyppi.png" align="left">
+<br>
+<br>
+tai näppäinkomennon kautta. Näppäimellä *m* valitaan tekstisolu, näppäimellä *y* koodisolu ja *r*:llä raw-solun.
 <p>Valmista solua pääsee muokkaamaan siirtymällä editointitilaan näppäimellä <em>Enter</em> tai kaksoisklikkaamalla muokattavaa solua (sininen). Solutyyppiä voidaan myös vaihtaa, vaikka soluun olisikin jo kirjattu sisältöä.</p>
 <p>Solun poistaminen onnistuu nopeiten painamalla komentotilassa poistettavan solun kohdalla näppäintä <em>d</em> kaksi kertaa. Solun voi poistaa myös valikkopalkin <em>Edit</em> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <em>Delete Cells</em> -valinnalla.</p>
 <p><a id="ajasolu"></a></p>
-</div>
-<div class="section" id="solun-ajaminen">
-<h3>5.2 Solun ajaminen<a class="headerlink" href="#solun-ajaminen" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="solun-ajaminen">
+<h3>5.2 Solun ajaminen<a class="headerlink" href="#solun-ajaminen" title="Permalink to this headline">#</a></h3>
 <p>Jupyter Notebookin tärkein ominaisuus on solujen ajaminen (running). Ajamisen jälkeen solu tekee siihen kirjatut tehtävät: tekstisolun sisällöstä tulee muotoiltua tekstiä, otsikkosolusta otsikko ja koodisolu suorittaa siihen ohjelmointikielellä kirjatut komennot. Saatoit jo huomata aiemmin, että tekstisolun editointitilaan siirtymisen ja siitä poistumisen jälkeen solu ei automaattisesti palautunutkaan muotoilluksi tekstiksi. Tämä johtuu siitä, että solu tulee muokkaamisen jälkeen ajaa.</p>
 <p>Ainut solutyyppi, jota ei ajeta suoraan notebookissa, on raw-solu. Siihen kirjattu koodi on tarkoitettu esimerkiksi menemään muokkaamatta <em>nbconvert</em>-työkalun, https://github.com/jupyter/nbconvert, ulostuloon. Nbconvertin avulla notebookeja voidaan viedä muihin tiedostomuotoihin.</p>
 <p>Solun ajaminen onnistuu kolmella eri tavalla:</p>
@@ -833,7 +979,7 @@ Jupyteria käytetään kahdessa eri tilassa: <strong>editointitilassa</strong> j
 <li><p>valitsemalla <em>Cell</em> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <em>Run Cells</em> valikkopalkista</p></li>
 <li><p>painamalla <em>run cell, select below</em> -näppäintä (kuvassa alla)</p></li>
 </ul>
-<img alt="../_images/ajasolu.png" class="align-left" src="../_images/ajasolu.png" />
+<img src="../kuvat/ajasolu.png" align="left">
 <p>Jos luet tutoriaalia Jupyterilla, voit kokeilla alla olevan koodisolun ajamista. Voit myös muokata koodia ja ajaa solua uudestaan.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -853,9 +999,9 @@ Jupyteria käytetään kahdessa eri tilassa: <strong>editointitilassa</strong> j
 </div>
 <p>Tarkastellaan seuraavaksi tarkemmin teksti-, otsikko- ja koodisolutyyppejä.</p>
 <p><a id="markdown"></a></p>
-</div>
-<div class="section" id="tekstisolu-markdown">
-<h3>5.3 Tekstisolu (Markdown)<a class="headerlink" href="#tekstisolu-markdown" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="tekstisolu-markdown">
+<h3>5.3 Tekstisolu (Markdown)<a class="headerlink" href="#tekstisolu-markdown" title="Permalink to this headline">#</a></h3>
 <p>Jupyterin tekstisolut käyttävät <em>Markdown</em>-merkintäkieltä, joka on HTML-kielen ylijoukko. Markdown mahdollistaa tavallisen tekstin kirjoittamisen lisäksi tekstin muotoilua. Markdownin avulla tekstiä voidaan esimerkiksi <strong>lihavoida</strong>, <em>kursivoida</em> ja ~~yliviivata~~.</p>
 <blockquote>
 <div><p>Tekstin sekaan voidaan esimerkiksi liittää tällainen lohkolainaus.</p>
@@ -869,34 +1015,34 @@ Jupyteria käytetään kahdessa eri tilassa: <strong>editointitilassa</strong> j
 </ul>
 <p>Tässä tutoriaalissa ei käydä tarkemmin läpi Markdownin muotoilukomentoja, mutta hyvä lista erilaisista komennoista löytyy esimerkiksi verkkosivulta https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet. Lisäksi voit halutessasi siirtyä tämän tekstisolun editointitilaan ja tarkastella, miten tekstissä käytetyt muotoilut on kirjattu soluun.</p>
 <p><a id="otsikko"></a></p>
-</div>
-<div class="section" id="otsikkosolu-heading">
-<h3>5.4 Otsikkosolu (heading)<a class="headerlink" href="#otsikkosolu-heading" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="otsikkosolu-heading">
+<h3>5.4 Otsikkosolu (heading)<a class="headerlink" href="#otsikkosolu-heading" title="Permalink to this headline">#</a></h3>
 <p>Tarkalleen ottaen otsikkosolut eivät itse asiassa edes ole oma solutyyppinsä, vaan pikemminkin oikotie otsikoiden luomiseen. Otsikkosolu nimittäin käyttää myös Markdown-merkintäkieltä, eli otsikkosolu on periaatteessa tekstisolu. Python 3 ilmoittaa tämän luomisvaiheessa.</p>
 <p>Eritasoiset otsikot määritellään Markdownilla #-merkillä. Alla on lueteltuna Jupyterissa käytetyt otsikkotyypit alkaen #-merkitystä otsikosta, jatkuen järjestyksessä ##-merkityllä ja päättyen ######-merkittyyn otsikkotyyppiin.</p>
-</div>
-</div>
-</div>
-<div class="section" id="ensimmainen-otsikkotyyppi">
-<h1>Ensimmäinen otsikkotyyppi<a class="headerlink" href="#ensimmainen-otsikkotyyppi" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="toinen-otsikkotyyppi">
-<h2>Toinen otsikkotyyppi<a class="headerlink" href="#toinen-otsikkotyyppi" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="kolmas-otsikkotyyppi">
-<h3>Kolmas otsikkotyyppi<a class="headerlink" href="#kolmas-otsikkotyyppi" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="neljas-otsikkotyyppi">
-<h4>Neljäs otsikkotyyppi<a class="headerlink" href="#neljas-otsikkotyyppi" title="Permalink to this headline">¶</a></h4>
-<div class="section" id="viides-otsikkotyyppi">
-<h5>Viides otsikkotyyppi<a class="headerlink" href="#viides-otsikkotyyppi" title="Permalink to this headline">¶</a></h5>
-<div class="section" id="kuudes-otsikkotyyppi">
-<h6>Kuudes otsikkotyyppi<a class="headerlink" href="#kuudes-otsikkotyyppi" title="Permalink to this headline">¶</a></h6>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="ensimmainen-otsikkotyyppi">
+<h1>Ensimmäinen otsikkotyyppi<a class="headerlink" href="#ensimmainen-otsikkotyyppi" title="Permalink to this headline">#</a></h1>
+<section id="toinen-otsikkotyyppi">
+<h2>Toinen otsikkotyyppi<a class="headerlink" href="#toinen-otsikkotyyppi" title="Permalink to this headline">#</a></h2>
+<section id="kolmas-otsikkotyyppi">
+<h3>Kolmas otsikkotyyppi<a class="headerlink" href="#kolmas-otsikkotyyppi" title="Permalink to this headline">#</a></h3>
+<section id="neljas-otsikkotyyppi">
+<h4>Neljäs otsikkotyyppi<a class="headerlink" href="#neljas-otsikkotyyppi" title="Permalink to this headline">#</a></h4>
+<section id="viides-otsikkotyyppi">
+<h5>Viides otsikkotyyppi<a class="headerlink" href="#viides-otsikkotyyppi" title="Permalink to this headline">#</a></h5>
+<section id="kuudes-otsikkotyyppi">
+<h6>Kuudes otsikkotyyppi<a class="headerlink" href="#kuudes-otsikkotyyppi" title="Permalink to this headline">#</a></h6>
 <p>Vaikka otsikkosolut ja tekstisolut ovatkin periaatteessa samaa merkintäkieltä käyttäviä soluja, on suositeltavaa pitää otsikot ja tekstit omissa soluissaan. Tämä tekee tekstin kääntämisen ohjelmalle sujuvammaksi.</p>
 <p><a id="koodi"></a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="koodisolu-code">
-<h3>5.5 Koodisolu (code)<a class="headerlink" href="#koodisolu-code" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+</section>
+</section>
+<section id="koodisolu-code">
+<h3>5.5 Koodisolu (code)<a class="headerlink" href="#koodisolu-code" title="Permalink to this headline">#</a></h3>
 <p>Koodisoluihin voidaan kirjoittaa ohjelmointikoodia notebookiin valitun ytimen kielellä. Jos notebook käyttää esimerkiksi Python 3 -ydintä, voidaan koodisoluissa suorittaa Python 3 -komentoja. Mikäli tässä tapauksessa koodisoluihin kirjoitettaisiin koodia esimerkiksi C++ -kielellä, ei koodi kääntyisi, sillä se tulkittaisiin Python 3:na.</p>
 <p>Koodisoluihin kirjattu koodi käyttäytyy samalla tapaa kuin missä tahansa muussakin ohjelmointiympäristössä. Tämä on mahdollista IPython-ytimen avulla. Toiminta perustuu tiivistetysti siihen, että notebook on yhteydessä ytimeen, jossa koodi varsinaisesti ajetaan. Ydin kommunikoi ajamisen tuloksista takaisin notebookiin. Koodin ajamisen tulokset näkyvät koodisolun alle ilmestyvässä <em>output</em>-osiossa.</p>
 <p>Esimerkiksi alla olevassa koodisolussa tallennetaan muuttujaan <em>summa</em> yhteenlaskun 3 + 4 tulos, ja pyydetään näyttämään muuttujan <em>summa</em> arvo. Koodia ajettaessa muuttujan luonti ja yhteenlasku tapahtuvat ytimessä, jonka jälkeen ydin palauttaa notebookiin ajamisen tulokset, ja koodisolun <em>output</em>-osioon ilmestyy luku 7.</p>
@@ -930,14 +1076,14 @@ Jupyteria käytetään kahdessa eri tilassa: <strong>editointitilassa</strong> j
 </div>
 </div>
 <p><a id="kuvavideo"></a></p>
-</div>
-</div>
-<div class="section" id="kuvien-ja-videoiden-lisaaminen-notebookiin">
-<h2>6. Kuvien ja videoiden lisääminen notebookiin<a class="headerlink" href="#kuvien-ja-videoiden-lisaaminen-notebookiin" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="kuvien-ja-videoiden-lisaaminen-notebookiin">
+<h2>6. Kuvien ja videoiden lisääminen notebookiin<a class="headerlink" href="#kuvien-ja-videoiden-lisaaminen-notebookiin" title="Permalink to this headline">#</a></h2>
 <p>Notebookiin voidaan lisätä kuvia ja videoita monella eri tavalla. Tässä käydään läpi yksi mahdollinen tapa, kuvan ja videon lisääminen tekstisoluun HTML-kielen avulla.</p>
 <p><a id="lisaakuva"></a></p>
-<div class="section" id="kuvan-lisaaminen">
-<h3>6.1 Kuvan lisääminen<a class="headerlink" href="#kuvan-lisaaminen" title="Permalink to this headline">¶</a></h3>
+<section id="kuvan-lisaaminen">
+<h3>6.1 Kuvan lisääminen<a class="headerlink" href="#kuvan-lisaaminen" title="Permalink to this headline">#</a></h3>
 <p>Koska Jupyterin tekstisoluissa käytetään Markdownia, joka on HTML:n ylijoukko, toimivat useimmat HTML-elementit (tags) suoraan tekstisoluissa. Esimerkiksi <em>Testikuva.png</em>-nimisen kuvan lisääminen onnistuisi kirjoittamalla suoraan tekstisoluun seuraava HTML-elementti:</p>
 <p><code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;testikuva.png&quot;&gt;</span></code></p>
 <p>Kuvan tulee yllä olevassa esimerkikssä olla samassa hakemistossa notebookin kanssa. Mikäli notebookiin liitettävä kuva on jossakin toisessa hakemistossa, täytyy HTML-elementissä kertoa tämä hakemisto. Hyvä esimerkki hakemistoon viittaamisessa eri tilanteista löytyy verkkosivulta http://stackoverflow.com/questions/14489016/how-to-properly-reference-local-resources-in-html.</p>
@@ -948,11 +1094,12 @@ Jupyteria käytetään kahdessa eri tilassa: <strong>editointitilassa</strong> j
 <p>Vastaavasti kuvia voi lisätä notebookeihin myös komennolla:</p>
 <p><code class="docutils literal notranslate"><span class="pre">![Testikuva](../Kuvat/testikuva.png)</span></code></p>
 <p>tämän keinon huono puoli on, että kuvan sijaintia ja kokoa ei voi erikseen muokata. Hyvänä puolena on kuitenkin se, että tiedostosijainnin sijasta tähän pystyy linkkaamaan myös suoraan halutun kuvan URL-osoiteen.</p>
-<img alt="../_images/testikuva.png" src="../_images/testikuva.png" />
-<p><a id="muotoilekuva"></a></p>
-</div>
-<div class="section" id="kuvan-muotoilu">
-<h3>6.3 Kuvan muotoilu<a class="headerlink" href="#kuvan-muotoilu" title="Permalink to this headline">¶</a></h3>
+<img src="../kuvat/testikuva.png">
+<br>
+Jos luet tutoriaalia Jupyterilla, voit myös tarkastella, miten tutoriaaliin liitetyt kuvat on kirjattu tekstisoluihin. Esimerkiksi yllä oleva kuva notebookista ja kansiosta on kirjattu tähän tekstisoluun HTML:llä. Voit myös kokeilla kuvien koon ja sijainnin muuttamista.<p><a id="muotoilekuva"></a></p>
+</section>
+<section id="kuvan-muotoilu">
+<h3>6.3 Kuvan muotoilu<a class="headerlink" href="#kuvan-muotoilu" title="Permalink to this headline">#</a></h3>
 <p>HTML-elementtiin voidaan lisäksi sisällyttää tietoa esimerkiksi kuvan sijainnista ja koosta. Esimerkiksi kuva voidaan tasata vasempaan reunaan komennolla</p>
 <p><code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;../Kuvat/testikuva.png&quot;</span> <span class="pre">align=&quot;left&quot;&gt;</span></code>.</p>
 <p>Huomioi, että tasaus voi siirtää kuvan jälkeisen tekstin kuvan rinnalle. Voit “työntää” tekstiä alaspäin lisäämällä rivinvaihtoja <code class="docutils literal notranslate"><span class="pre">&lt;br&gt;</span></code>.</p>
@@ -960,28 +1107,35 @@ Jupyteria käytetään kahdessa eri tilassa: <strong>editointitilassa</strong> j
 <p><code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;../Kuvat/testikuva.png&quot;</span> <span class="pre">width=&quot;80&quot;</span> <span class="pre">height=&quot;50&quot;&gt;</span></code></p>
 <p>Lisätietoa HTML:n kuvaelementistä löytyy esimerkiksi verkkosivulta <br> http://www.w3schools.com/tags/tag_img.asp.</p>
 <p><a id="lisaavideo"></a></p>
-</div>
-<div class="section" id="videon-lisaaminen">
-<h3>6.3 Videon lisääminen<a class="headerlink" href="#videon-lisaaminen" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="videon-lisaaminen">
+<h3>6.3 Videon lisääminen<a class="headerlink" href="#videon-lisaaminen" title="Permalink to this headline">#</a></h3>
 <p>Videon upottaminen notebookiin onnistuu myös HTML-elementin avulla. Videon hakemiston määrittäminen toimii vastaavasti kuin kuvan tapauksessa (ks. kohta <a class="reference external" href="#lisaakuva">6.1 Kuvan lisääminen</a>). Esimerkiksi notebookin kanssa samassa hakemistossa oleva video <em>testivideo.mp4</em> saadaan upotettua notebookiin elementillä</p>
 <p><code class="docutils literal notranslate"><span class="pre">&lt;video</span> <span class="pre">src=&quot;../Videot/testivideo.mp4&quot;</span> <span class="pre">type=&quot;video/mp4&quot;</span> <span class="pre">controls&gt;</span></code></p>
 <p>Komennolla <em>type</em> määritellään videon tiedostomuoto, joka tämän esimerkin tapauksessa on .mp4. Komento <em>controls</em> luo videon toistamiseen tarvittavat painikkeet. Tarkempaa tietoa HTML:n videoelementistä löytyy esimerkiksi verkkosivulta http://www.w3schools.com/tags/tag_video.asp.</p>
 <p><a id="latex"></a></p>
-</div>
-</div>
-<div class="section" id="jupyter-ja-latex">
-<h2>7. Jupyter ja <span class="math notranslate nohighlight">\(\LaTeX\)</span><a class="headerlink" href="#jupyter-ja-latex" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="jupyter-ja-latex">
+<h2>7. Jupyter ja <span class="math notranslate nohighlight">\(\LaTeX\)</span><a class="headerlink" href="#jupyter-ja-latex" title="Permalink to this headline">#</a></h2>
 <p>Jupyter Notebook tukee myös <span class="math notranslate nohighlight">\(\LaTeX\)</span>-koodia. <span class="math notranslate nohighlight">\(\LaTeX\)</span>illa voidaan esimerkiksi tuottaa kätevästi matemaattisia yhtälöitä. Jupyterissa <span class="math notranslate nohighlight">\(\LaTeX\)</span>-koodia voidaan kirjoittaa tekstisoluihin erottamalla se muusta tekstistä $-merkeillä. Merkintä $…$ tuottaa tekstin sekaan sijoittuvaa materiaalia (tekstimatematiikkatila), ja merkintä $$…$$ uudelle riville sijoittuvaa materiaalia (näyttömatematiikkatila). Merkinnöissä <span class="math notranslate nohighlight">\(\LaTeX\)</span>-koodi kirjoitettaisiin siis …-merkinnän tilalle.</p>
 <p>Tekstimatematiikka näyttää esimerkiksi tältä: <span class="math notranslate nohighlight">\(\sin(x) = \frac{3}{4}\)</span>, ja näyttömatematiikka vastaavasti tältä:</p>
 <div class="math notranslate nohighlight">
 \[\int_2^3{cos(x)} = \frac{23}{45}\]</div>
 <p>Lisätietoa <span class="math notranslate nohighlight">\(\LaTeX\)</span>ista löytyy esimerkiksi verkkosivulta https://www.latex-project.org/.</p>
 <p><a id="dashboard"></a></p>
-</div>
-<div class="section" id="notebookin-tallentaminen-ja-dashboardin-kaytto">
-<h2>8. Notebookin tallentaminen ja dashboardin käyttö<a class="headerlink" href="#notebookin-tallentaminen-ja-dashboardin-kaytto" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="notebookin-tallentaminen-ja-dashboardin-kaytto">
+<h2>8. Notebookin tallentaminen ja dashboardin käyttö<a class="headerlink" href="#notebookin-tallentaminen-ja-dashboardin-kaytto" title="Permalink to this headline">#</a></h2>
 <p>Notebookien tallentaminen onnistuu helpoiten näppäinoikotiellä <em>s</em>. Tallentaa voi myös valikkopalkista valitsemalla <em>File</em> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <em>Save and Checkpoint</em>, tai työkalupalkista klikkaamalla vasemmalla olevaa tallennusikonia.</p>
-<img alt="../_images/tallenna.png" class="align-left" src="../_images/tallenna.png" />
+<img src="../kuvat/tallenna.png" align="left">
+<br>
+<br>
+Notebookit tallentuvat .ipynb -tiedostomuodossa. Tallennettuja notebookeja voi tarkastella ja aukaista Jupyterissa dashboardin kautta.
+<br>
+<img src="../kuvat/dashboard.png">
+<br>
+Dashboardissa *Files*-välilehti on tarkoitettu tiedostojen tarkastelua varten ja *Running*-välilehti käynnissä olevien Jupyter-prosessien tarkasteluun. Tässä tutoriaalissa emme perehdy *Clusters*-välilehteen.
 <p><em>Files</em> siis näyttää Jupyterin käyttämän tallennuspaikan (tietokone, serveri, pilvipalvelu…) sisällön. <em>Files</em>-välilehdellä käyttäjä voi esimerkiksi avata, poistaa, monistaa ja nimetä uudelleen notebookeja. Mikäli jonkin notebookin logo on korostettu vihreällä värillä (ks. kuva yllä), tarkoittaa tämä sitä, että notebook on käynnissä ja yhteydessä ytimeen.</p>
 <p>Jupyter ei automaattisesti sammuta notebookeja ja katkaise niiden yhteyttä ytimeen, vaikka notebookin välilehti suljettaisiin, vaan notebook tulee käytön jälkeen sammuttaa manuaalisesti. Sammutus onnistuu kahdella eri tapaa. Ensimmäinen tapa on klikata <em>Files</em>-välilehdellä käynnissä olevan notebookin ruutua ja klikata ilmestyvää painiketta <em>Shutdown</em> (kuvassa).
 <br>
@@ -991,56 +1145,68 @@ Sammutus onnistuu myös <em>Running</em>-välilehdeltä, joka näyttää kaikki 
 <br>
 <img src="../kuvat/running.png"></p>
 <p><a id="kaytto"></a></p>
-</div>
-<div class="section" id="notebookien-kayttaminen">
-<h2>9. Notebookien käyttäminen<a class="headerlink" href="#notebookien-kayttaminen" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="notebookien-kayttaminen">
+<h2>9. Notebookien käyttäminen<a class="headerlink" href="#notebookien-kayttaminen" title="Permalink to this headline">#</a></h2>
 <p>Valmiita notebookeja voidaan avata kahdella eri tavalla: interaktiivisina tai staattisina versioina. Jupyterissa avattaessa notebookien interaktiivisuus säilyy, eli käyttäjä voi muokata ja ajaa soluja. Vaihtoehtoisesti notebookeja voidaan tarkastella myös staattisina versioina, jolloin solujen sisältö on näkyvissä, mutta ei muokattavissa tai ajettavissa. Staattisten versioiden avaamiseen ei tarvita Jupyter-sovellusta.</p>
 <p>Notebookien staattisia versioita voidaan luoda eri tavoilla. Valikkopalkin <em>File</em> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <em>Download as</em> -valinnalla voidaan esimerkiksi tallentaa notebook selaimessa tarkasteltavassa staattisessa muodossa .html-tiedostona. Toinen kätevä tapa notebookien staattiseen tarkasteluun on <strong>nbviewer</strong>-sovellus (https://nbviewer.jupyter.org/). Nbviewerin avulla verkkoon julkisesti saataville tallennettu notebook saadaan näytettyä staattisena html-versiona. Nbvieweriin syötetään joko url-linkki notebookiin tai GitHub-käyttäjätunnus, mikäli notebook on tallennettu GitHub-palveluun (https://github.com/).</p>
 <p><a id="ongelmia"></a></p>
-<div class="section" id="mahdollisia-ongelmatilanteita-ja-ratkaisuja-niihin">
-<h3>9.1 Mahdollisia ongelmatilanteita ja ratkaisuja niihin<a class="headerlink" href="#mahdollisia-ongelmatilanteita-ja-ratkaisuja-niihin" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="a-koodisolun-ajaminen-kestaa-liian-kauan">
-<h4>a) Koodisolun ajaminen kestää liian kauan<a class="headerlink" href="#a-koodisolun-ajaminen-kestaa-liian-kauan" title="Permalink to this headline">¶</a></h4>
+<section id="mahdollisia-ongelmatilanteita-ja-ratkaisuja-niihin">
+<h3>9.1 Mahdollisia ongelmatilanteita ja ratkaisuja niihin<a class="headerlink" href="#mahdollisia-ongelmatilanteita-ja-ratkaisuja-niihin" title="Permalink to this headline">#</a></h3>
+<section id="a-koodisolun-ajaminen-kestaa-liian-kauan">
+<h4>a) Koodisolun ajaminen kestää liian kauan<a class="headerlink" href="#a-koodisolun-ajaminen-kestaa-liian-kauan" title="Permalink to this headline">#</a></h4>
 <p>Joskus virheellisen tai liian monimutkaisen koodisolun ajaminen voi jumittaa Jupyterin toiminnan. Koodisolun suorittamisen voi keskeyttää joko valitsemalla <em>Kernel</em> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <em>Interrupt</em> valikkopalkista, tai työkalupalkin <em>interrupt kernel</em> -painikkeella (kuvassa alla).</p>
-<img alt="../_images/keskeyta.png" class="align-left" src="../_images/keskeyta.png" />
-<img alt="../_images/busy.png" class="align-left" src="../_images/busy.png" />
-</div>
-<div class="section" id="b-koodisolu-antaa-erroria-vaikka-koodissa-ei-ole-virhetta">
-<h4>b) Koodisolu antaa erroria, vaikka koodissa ei ole virhettä<a class="headerlink" href="#b-koodisolu-antaa-erroria-vaikka-koodissa-ei-ole-virhetta" title="Permalink to this headline">¶</a></h4>
+<img src="../kuvat/keskeyta.png" align="left">
+<br>
+<br>
+Koodisolun, jonka ajaminen on kesken, voi tunnistaa solun vasemmalla puolella olevan *In*-merkinnän sisällä olevasta asteriskista
+<img src="../kuvat/busy.png" align="left">
+<br>
+<br>
+tai notebookin välilehden nimen edessä näkyvästä *(busy)*-tekstistä.</section>
+<section id="b-koodisolu-antaa-erroria-vaikka-koodissa-ei-ole-virhetta">
+<h4>b) Koodisolu antaa erroria, vaikka koodissa ei ole virhettä<a class="headerlink" href="#b-koodisolu-antaa-erroria-vaikka-koodissa-ei-ole-virhetta" title="Permalink to this headline">#</a></h4>
 <p>Jos koodissasi oli aiemmin virhe, jonka korjasit, niin ohjelmassa voi olla tallentuneena silti virheellinen muuttuja/koodi. Helpoin tapa ratkaista ongelma on käynnistää ydin uudelleen valitsemalla</p>
 <ul class="simple">
 <li><p><em>Kernel <span class="math notranslate nohighlight">\(\rightarrow\)</span> Restart &amp; Clear Output</em>, jolloin tallennetut muuttujat poistetaan muistista ja voit ajaa solut yksitellen alusta</p></li>
 <li><p><em>Kernel <span class="math notranslate nohighlight">\(\rightarrow\)</span> Restart &amp; Run All</em>, jolloin tallennetut muuttujat poistetaan muistista ja kaikki solut ajetaan automaattisesti.</p></li>
 </ul>
 <p>Kirjoittamasi teksti ja koodi säilyvät, vain ohjelman muistiin tallennetut tiedot pyyhitään.</p>
-</div>
-<div class="section" id="c-yhteys-ytimeen-katkeaa">
-<h4>c) Yhteys ytimeen katkeaa<a class="headerlink" href="#c-yhteys-ytimeen-katkeaa" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="c-yhteys-ytimeen-katkeaa">
+<h4>c) Yhteys ytimeen katkeaa<a class="headerlink" href="#c-yhteys-ytimeen-katkeaa" title="Permalink to this headline">#</a></h4>
 <p>On mahdollista, että notebook kadottaa yhteyden ytimeen, johon se on yhdistetty. Katkenneen yhteyden voi havaita valikkopalkin oikeassa reunassa olevasta kuviosta. Ytimen toimiessa normaalisti kuvio näyttää ehjältä pallolta,</p>
-<img alt="../_images/toimiva.png" class="align-left" src="../_images/toimiva.png" />
-<img alt="../_images/yhteyskatko.png" class="align-left" src="../_images/yhteyskatko.png" />
+<img src="../kuvat/toimiva.png" align="left">
+<br>
+<br>
+kun taas katkenneen yhteyden tapauksessa kuvio muistuttaa haljennutta palloa.
+<img src="../kuvat/yhteyskatko.png" align="left">
+<br>
+<br>
+Yhteyden voi yrittää saada toimimaan yhdistämällä notebookin uudelleen ytimeen. Tämä onnistuu valikkopalkin valinnalla *Kernel* $\rightarrow$ *Reconnect*.
 <p>Mikäli yhdistäminen ei tuota tulosta, voidaan yrittää notebookin ytimen uudelleenkäynnistämistä (restarting). Uudelleenkäynnistämisessä on huomioitava, että kaikki notebookin koodilla luodut muuttujat katoavat, kun ydin käynnistyy uudelleen. Uudelleenkäynnistys onnistuu joko valikkopalkin valinnalla <em>Kernel</em> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <em>Restart</em>, tai työkalupalkin <em>restart the kernel (with dialog)</em> -painikkeella</p>
-<img alt="../_images/restart.png" class="align-left" src="../_images/restart.png" />
-</div>
-<div class="section" id="d-solu-ei-kaanny-ajettaessa">
-<h4>d) Solu ei käänny ajettaessa<a class="headerlink" href="#d-solu-ei-kaanny-ajettaessa" title="Permalink to this headline">¶</a></h4>
+<img src="../kuvat/restart.png" align="left">
+<br>
+<br></section>
+<section id="d-solu-ei-kaanny-ajettaessa">
+<h4>d) Solu ei käänny ajettaessa<a class="headerlink" href="#d-solu-ei-kaanny-ajettaessa" title="Permalink to this headline">#</a></h4>
 <p>Todennäköisimmät syyt sille, että solu ei käänny ajettaessa oikein, ovat väärin kirjoitettu koodi tai vahingossa asetettu väärä solutyyppi. Mikäli esimerkiksi tekstisoluun on kirjoitettu ohjelmointikoodia, ei solu tee koodille määrättyjä tehtäviä, vaan kääntää koodin suoraan tekstiksi.</p>
 <p>Syy koodisolujen virheelliselle kääntymiselle voi olla myös väärä ydin. Ydin määrää, millä ohjelmointikielellä koodisoluun kirjoitettu koodi käännetään.</p>
 <p><a id="huomioita"></a></p>
-</div>
-</div>
-</div>
-<div class="section" id="muita-huomioita">
-<h2>10. Muita huomioita<a class="headerlink" href="#muita-huomioita" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="muita-huomioita">
+<h2>10. Muita huomioita<a class="headerlink" href="#muita-huomioita" title="Permalink to this headline">#</a></h2>
 <p>Tähän tutoriaaliin on kirjattu tietoa Jupyter Notebookin käytön aloittamisesta ja ohjelman peruskomennoista. Jupyter tarjoaa näiden perusominaisuuksien lisäksi runsaasti erilaisia mahdollisuuksia esimerkiksi laskentaan, data-analyysiin, opetukseen tai ohjelmoinnin opetteluun. Hyvä tapa Jupyterin käytön ja ohjelmoinnin oppimiseen on kokeileminen ja itsensä haastaminen: <em>Mitä tämä koodinpätkä oikein tekee? Miten saisin kirjoitettua notebookin, joka laskee arvosanojen keskiarvon? Voisikohan arvosanoista laatia histogrammin?</em></p>
 <p>Sivulta https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks löytyy runsaasti mielenkiintoisia esimerkkejä erilaisista notebookeista. Esimerkit tarjoavat kuvaa siitä, mitä kaikkea materiaalia Jupyterin avulla voidaan tuottaa.</p>
 <p>Hauskaa matkaa Jupyterin maailmaan!</p>
 <p><a id="harjoitus"></a></p>
-</div>
-<div class="section" id="lyhyt-harjoitus">
-<h2>Lyhyt harjoitus<a class="headerlink" href="#lyhyt-harjoitus" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="tekstisolun-luominen">
-<h3>1) Tekstisolun luominen<a class="headerlink" href="#tekstisolun-luominen" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="lyhyt-harjoitus">
+<h2>Lyhyt harjoitus<a class="headerlink" href="#lyhyt-harjoitus" title="Permalink to this headline">#</a></h2>
+<section id="tekstisolun-luominen">
+<h3>1) Tekstisolun luominen<a class="headerlink" href="#tekstisolun-luominen" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Luo uusi solu.</p></li>
 <li><p>Aseta solun tyypiksi tekstisolu (Markdown).</p></li>
@@ -1048,26 +1214,26 @@ Sammutus onnistuu myös <em>Running</em>-välilehdeltä, joka näyttää kaikki 
 <li><p>Aja solu.</p></li>
 </ul>
 <p>(Vinkki: osiot <a class="reference external" href="#solut">5</a> ja <a class="reference external" href="#latex">7</a>)</p>
-</div>
-<div class="section" id="koodisolun-luominen">
-<h3>2) Koodisolun luominen<a class="headerlink" href="#koodisolun-luominen" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="koodisolun-luominen">
+<h3>2) Koodisolun luominen<a class="headerlink" href="#koodisolun-luominen" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Luo alle uusi solu ja aseta sen tyypiksi koodisolu (Code).</p></li>
 <li><p>Kirjoita soluun koodi, joka tulostaa lukujen 3, 5, 6, 7, ja 9 keskiarvon.</p></li>
 <li><p>Kirjoita loppuun koodi, joka tulostaa <em>Tulostettiin keskiarvo.</em></p></li>
 </ul>
 <p>(Vinkki: osio <a class="reference external" href="#solut">5</a>)</p>
-</div>
-<div class="section" id="otsikointi-ja-tallennus">
-<h3>3) Otsikointi ja tallennus<a class="headerlink" href="#otsikointi-ja-tallennus" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="otsikointi-ja-tallennus">
+<h3>3) Otsikointi ja tallennus<a class="headerlink" href="#otsikointi-ja-tallennus" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Otsikoi luomasi solut sopivilla teksteillä. Luo otsikot omiin soluihinsa.</p></li>
 <li><p>Tallenna lopuksi notebookisi.</p></li>
 </ul>
 <p>(Vinkki: osiot <a class="reference external" href="#solut">5</a> ja <a class="reference external" href="#dashboard">8</a>)</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1091,47 +1257,53 @@ Sammutus onnistuu myös <em>Running</em>-välilehdeltä, joka näyttää kaikki 
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="notebookit_tutuksi.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Tervetuloa avoimen datan pariin</p>
+            <p class="prev-next-title">&lt;no title&gt;</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="Ohjeita%20Pythonin%20k%C3%A4ytt%C3%B6%C3%B6n.html" title="next page">
+    <a class='right-next' id="next-link" href="kaverina_python.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Ohjeita Pythonin käyttöön Jupyterilla</p>
+        <p class="prev-next-title">Kaverina Python</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
-    
-      By Juha Teuho<br/>
-    
-      <div class="extra_footer">
-        <div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Juha Teuho<br/>
+  
+    <div class="extra_footer">
+      <div>
 <a>Toteutettu Opetushallituksen valtionavustuksella tiedekasvatuksen edistämiseen.</a></br><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="license" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> Tämän sivuston materiaali on käytettävissä seuraavalla lisenssillä: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY 4.0.</a>
 </div>    
 
-      </div>
-  </p>
-</footer>
-</main>
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
