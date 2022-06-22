@@ -1,0 +1,801 @@
+Player,Team,Age,Height (cm),Weight (kg),Stick
+Nick Abruzzese,Toronto,22,178,79,left
+Noel Acciari,Florida,30,178,95,right
+Sebastian Aho,NY Islanders,26,177,83,left
+Sebastian Aho,Carolina,24,183,80,left
+Jake Allen,Montreal,31,188,86,left
+Michael Amadio,Vegas,25,188,93,right
+Frederik Andersen,Carolina,32,193,107,left
+Craig Anderson,Buffalo,40,187,84,left
+Mikey Anderson,Los Angeles,22,183,88,left
+Josh Anderson,Montreal,27,191,100,right
+Rasmus Andersson,Calgary,25,184,96,right
+Lias Andersson,Los Angeles,23,185,86,left
+Mason Appleton,Winnipeg,26,188,88,right
+Josh Archibald,Edmonton,29,180,80,right
+Joel Armia,Montreal,28,192,97,right
+Viktor Arvidsson,Los Angeles,29,175,82,right
+Rasmus Asplund,Buffalo,24,180,87,left
+Zach Aston-Reese,Anaheim,27,183,93,left
+Andreas Athanasiou,Los Angeles,27,188,85,left
+Cam Atkinson,Philadelphia,32,174,79,right
+Ronnie Attard,Philadelphia,23,191,94,right
+Nicolas Aubé-Kubel,Colorado,25,180,85,right
+Mikael Backlund,Calgary,33,183,90,left
+Josh Bailey,NY Islanders,32,184,92,left
+Rudolfs Balcers,San Jose,25,180,82,left
+Aleksandr Barabanov,San Jose,27,179,87,left
+Ivan Barbašov,St. Louis,26,183,85,left
+Aleksander Barkov,Florida,26,191,97,left
+Tyson Barrie,Edmonton,30,178,89,right
+Mathew Barzal,NY Islanders,24,183,86,right
+Nathan Bastian,New Jersey,24,193,94,right
+Drake Batherson,Ottawa,24,190,94,right
+Gavin Bayreuther,Columbus,27,185,88,left
+Jay Beagle,Arizona,36,191,95,right
+Jake Bean,Columbus,23,185,82,left
+Ethan Bear,Carolina,24,181,89,right
+Nathan Beaulieu,Pittsburgh,29,187,91,left
+Anthony Beauvillier,NY Islanders,24,179,82,left
+Pierre-Édouard Bellemare,Tampa Bay,37,182,89,left
+Kieffer Bellows,NY Islanders,23,185,88,left
+Emil Bemström,Columbus,22,179,86,right
+Matty Beniers,Seattle,19,188,79,left
+Jamie Benn,Dallas,32,188,95,left
+Jordie Benn,Minnesota,34,188,90,left
+Sam Bennett,Florida,25,185,88,left
+Matt Benning,Nashville,27,185,93,right
+Simon Benoît,Anaheim,23,191,92,left
+Patrice Bergeron,Boston,36,184,89,right
+Jonathan Bernier,New Jersey,33,182,84,left
+Tyler Bertuzzi,Detroit,27,184,90,left
+Jordan Binnington,St. Louis,28,185,79,left
+Anders Bjork,Buffalo,25,183,89,left
+Oliver Bjorkstrand,Columbus,27,183,80,right
+Nick Bjugstad,Minnesota,29,196,98,right
+Tobias Björnfot,Los Angeles,21,184,92,left
+Colin Blackwell,Toronto,29,175,86,right
+Mackenzie Blackwood,New Jersey,25,193,102,left
+Samuel Blais,NY Rangers,25,188,93,left
+Nick Blankenburg,Columbus,23,175,79,right
+Anton Blidh,Boston,27,183,91,left
+Teodors Blugers,Pittsburgh,27,183,84,left
+Matěj Blümel,Dallas,22,183,90,left
+Sergei Bobrovski,Florida,33,188,83,left
+Brock Boeser,Vancouver,25,185,94,right
+Zach Bogosian,Tampa Bay,31,189,91,right
+Matt Boldy,Minnesota,21,188,91,left
+Nick Bonino,San Jose,34,185,89,left
+Adam Boqvist,Columbus,21,183,84,right
+Jesper Boqvist,New Jersey,23,182,82,left
+Thomas Bordeleau,San Jose,20,180,82,left
+Will Borgen,Seattle,25,191,94,right
+Henrik Borgström,Chicago,24,191,90,left
+Mark Borowiecki,Nashville,32,186,94,left
+Robert Bortuzzo,St. Louis,33,193,98,right
+Evan Bouchard,Edmonton,22,191,90,right
+Travis Boyd,Arizona,28,183,86,right
+Brian Boyle,Pittsburgh,37,199,112,left
+Tyler Bozak,St. Louis,36,185,83,right
+Derick Brassard,Edmonton,34,185,91,left
+Jesper Bratt,New Jersey,23,179,84,left
+Justin Braun,NY Rangers,35,188,93,right
+Bobby Brink,Philadelphia,20,175,74,right
+T.J. Brodie,Toronto,31,185,83,left
+Jonas Brodin,Minnesota,28,185,88,left
+Adam Brooks,Winnipeg,25,181,81,left
+Laurent Brossoit,Vegas,29,191,92,left
+Josh Brown,Boston,28,195,98,right
+Logan Brown,St. Louis,24,198,100,left
+Patrick Brown,Philadelphia,29,180,97,right
+Connor Brown,Ottawa,28,182,83,right
+Jacob Bryson,Buffalo,24,175,79,left
+Erik Brännström,Ottawa,22,179,81,left
+Michael Bunting,Toronto,26,183,84,left
+André Burakovsky,Colorado,27,189,90,left
+Brent Burns,San Jose,37,195,104,right
+Kyle Burroughs,Vancouver,26,183,90,right
+Will Butcher,Buffalo,27,178,86,left
+Pavel Butšnevitš,St. Louis,27,186,89,left
+Quinton Byfield,Los Angeles,19,194,98,left
+Bowen Byram,Colorado,20,184,88,left
+Paul Byron,Montreal,33,175,75,left
+Nicklas Bäckström,Washington,34,183,96,left
+Drake Caggiula,Buffalo,27,178,80,left
+Jack Campbell,Toronto,30,191,94,left
+Kyle Capobianco,Arizona,24,185,89,left
+Brandon Carlo,Boston,25,196,98,right
+John Carlson,Washington,32,191,98,right
+Gabriel Carlsson,Columbus,25,195,88,left
+Lucas Carlsson,Florida,24,184,86,left
+Ryan Carpenter,Calgary,31,183,91,right
+Sam Carrick,Anaheim,30,183,93,right
+Alexandre Carrier,Nashville,25,180,79,right
+William Carrier,Vegas,27,187,96,left
+Jeff Carter,Pittsburgh,37,191,98,right
+Noah Cates,Philadelphia,23,188,86,left
+Cole Caufield,Montreal,21,170,77,right
+Cody Ceci,Edmonton,28,189,95,right
+Erik Černák,Tampa Bay,24,192,106,right
+Thomas Chabot,Ottawa,25,188,89,left
+Ben Chiarot,Florida,30,191,106,left
+Alex Chiasson,Vancouver,31,193,94,right
+Jakob Chychrun,Arizona,24,188,95,left
+Filip Chytil,NY Rangers,22,188,93,left
+Anthony Cirelli,Tampa Bay,24,183,85,left
+Casey Cizikas,NY Islanders,31,180,90,left
+Kale Clague,Montreal,23,183,80,left
+Kyle Clifford,Toronto,31,188,96,left
+Connor Clifton,Boston,27,180,88,right
+Cal Clutterbuck,NY Islanders,34,180,97,right
+Dylan Coghlan,Vegas,24,188,94,right
+Andrew Cogliano,Colorado,34,178,79,left
+Ian Cole,Carolina,33,185,100,left
+Blake Coleman,Calgary,30,180,94,left
+Ross Colton,Tampa Bay,25,183,86,left
+J.T. Compher,Colorado,27,184,88,right
+Eric Comrie,Winnipeg,26,185,79,left
+Maxime Comtois,Anaheim,23,188,95,left
+Kevin Connauton,Philadelphia,32,188,93,left
+Kyle Connor,Winnipeg,25,185,83,left
+Andrew Copp,NY Rangers,27,185,93,left
+Nick Cousins,Nashville,28,179,84,left
+Logan Couture,San Jose,33,185,93,left
+Sean Couturier,Philadelphia,29,191,96,left
+Charlie Coyle,Boston,30,190,97,right
+Dylan Cozens,Buffalo,21,191,85,right
+Sidney Crosby,Pittsburgh,34,180,91,left
+Lawson Crouse,Arizona,24,193,100,left
+Kirby Dach,Chicago,21,193,90,right
+Jevgeni Dadonov,Montreal,33,179,82,left
+Jonathan Dahlén,San Jose,24,181,80,left
+Rasmus Dahlin,Buffalo,22,190,93,left
+Phillip Danault,Los Angeles,29,184,91,left
+Justin Danforth,Columbus,29,175,84,right
+Laurent Dauphin,Montreal,27,183,84,left
+Nico Daws,New Jersey,21,193,92,left
+Calvin de Haan,Chicago,30,185,90,left
+Tony DeAngelo,Carolina,26,180,83,right
+Alex DeBrincat,Chicago,24,170,75,right
+Jake DeBrusk,Boston,25,183,88,left
+Danny DeKeyser,Detroit,32,191,83,left
+Michael Del Zotto,Ottawa,31,183,88,left
+Collin Delia,Chicago,27,188,94,left
+Dylan DeMelo,Winnipeg,29,184,88,right
+Thatcher Demko,Vancouver,26,193,87,left
+Travis Dermott,Vancouver,25,182,93,left
+Nicolas Deslauriers,Minnesota,31,184,100,left
+Casey DeSmith,Pittsburgh,30,183,82,left
+Connor Dewar,Minnesota,22,178,83,left
+Jason Dickinson,Vancouver,26,187,93,left
+Brenden Dillon,Winnipeg,31,193,102,left
+Cam Dineen,Arizona,23,180,84,left
+Noah Dobson,NY Islanders,22,193,88,right
+Max Domi,Carolina,27,177,87,left
+Ryan Donato,Seattle,26,183,86,left
+Joonas Donskoi,Seattle,30,183,86,right
+Drew Doughty,Los Angeles,32,184,91,right
+Nic Dowd,Washington,31,186,89,right
+Leon Draisaitl,Edmonton,26,189,94,left
+Chris Driedger,Seattle,27,193,93,left
+Jonathan Drouin,Montreal,27,183,89,left
+Jamie Drysdale,Anaheim,20,180,83,right
+Dillon Dubé,Calgary,23,179,85,left
+Pierre-Luc Dubois,Winnipeg,23,189,94,left
+Matt Duchene,Nashville,31,180,90,left
+Anthony Duclair,Florida,26,180,89,left
+Brandon Duhaime,Minnesota,24,183,84,left
+Matt Dumba,Minnesota,27,183,83,right
+Brian Dumoulin,Pittsburgh,30,193,94,left
+Vince Dunn,Seattle,25,183,92,left
+Sean Durzi,Los Angeles,23,183,84,right
+Christian Dvorak,Montreal,26,184,87,left
+Cody Eakin,Buffalo,30,183,89,left
+Jordan Eberle,Seattle,31,180,85,right
+Alexander Edler,Los Angeles,36,191,95,left
+Joel Edmundson,Montreal,28,193,99,left
+Nikolaj Ehlers,Winnipeg,26,181,78,left
+Jack Eichel,Vegas,25,188,97,right
+Aaron Ekblad,Florida,26,193,98,right
+Mattias Ekholm,Nashville,31,191,98,left
+Oliver Ekman-Larsson,Vancouver,30,188,91,left
+Lars Eller,Washington,32,185,94,left
+Brian Elliott,Tampa Bay,37,188,95,left
+Ryan Ellis,Philadelphia,31,178,83,right
+Pierre Engvall,Toronto,25,196,98,left
+Tyler Ennis,Ottawa,32,175,73,left
+MacKenzie Entwistle,Chicago,22,192,83,right
+Loui Eriksson,Arizona,36,187,78,left
+Joel Eriksson Ek,Minnesota,25,188,95,left
+Adam Erne,Detroit,27,185,96,left
+Jake Evans,Montreal,25,183,82,right
+Robby Fabbri,Detroit,26,179,83,left
+Dante Fabbro,Nashville,23,184,87,right
+Radek Faksa,Dallas,28,191,97,left
+Joel Farabee,Philadelphia,22,183,77,left
+Jesper Fast,Carolina,30,184,87,right
+Justin Faulk,St. Louis,30,183,97,right
+Martin Fehérváry,Washington,22,188,92,left
+Mario Ferraro,San Jose,23,180,84,left
+Kevin Fiala,Minnesota,25,178,90,left
+Christian Fischer,Arizona,25,188,96,right
+Casey Fitzgerald,Buffalo,25,180,84,right
+Haydn Fleury,Seattle,25,190,94,left
+Marc-André Fleury,Minnesota,37,188,82,left
+Warren Foegele,Edmonton,26,188,90,left
+Nick Foligno,Boston,34,183,96,left
+Marcus Foligno,Minnesota,30,191,105,left
+Cal Foote,Tampa Bay,23,192,103,right
+Derek Forbort,Boston,30,193,99,left
+Alex Formenton,Ottawa,22,188,88,left
+Filip Forsberg,Nashville,27,187,93,right
+Anton Forsberg,Ottawa,29,188,87,left
+Gustav Forsling,Florida,25,182,84,left
+Cam Fowler,Anaheim,30,186,95,left
+Adam Fox,NY Rangers,24,179,82,right
+Pavel Francouz,Colorado,32,182,81,right
+Trent Frederic,Boston,24,190,95,left
+Mark Friedman,Pittsburgh,26,180,84,right
+Morgan Frost,Philadelphia,22,180,77,left
+Jonah Gadjovich,San Jose,23,188,91,left
+Sam Gagner,Detroit,32,180,89,right
+Alex Galchenyuk,Arizona,28,185,88,left
+Brendan Gallagher,Montreal,29,174,83,right
+Dylan Gambrell,Ottawa,25,183,85,right
+Jake Gardiner,Carolina,31,188,92,left
+Conor Garland,Vancouver,26,177,75,right
+Adam Gaudette,Ottawa,25,185,77,right
+Frédérick Gaudreau,Minnesota,29,183,81,right
+Johnny Gaudreau,Calgary,28,175,74,left
+Julien Gauthier,NY Rangers,24,193,103,right
+Vladislav Gavrikov,Columbus,26,190,97,left
+Morgan Geekie,Seattle,23,188,87,right
+Mason Geertsen,New Jersey,27,193,93,left
+Aleksandr Georgijev,NY Rangers,26,185,82,left
+John Gibson,Anaheim,28,188,93,left
+Jon Gillies,New Jersey,28,197,98,left
+Mark Giordano,Toronto,38,183,90,left
+Samuel Girard,Colorado,23,178,77,left
+Zemgus Girgensons,Buffalo,28,188,96,left
+Claude Giroux,Florida,34,180,84,right
+Luke Glendening,Dallas,33,180,88,right
+Alex Goligoski,Minnesota,36,180,78,left
+Barclay Goodrow,NY Rangers,29,188,95,left
+Shayne Gostisbehere,Arizona,29,180,81,left
+Yanni Gourde,Seattle,30,175,77,left
+Mikael Granlund,Nashville,30,178,83,left
+Derek Grant,Anaheim,32,191,95,left
+Ryan Graves,New Jersey,26,194,100,left
+Andy Greene,NY Islanders,39,180,86,left
+Jordan Greenway,Minnesota,25,197,109,left
+Noah Gregor,San Jose,23,183,84,left
+Thomas Greiss,Detroit,36,187,100,left
+Philipp Grubauer,Seattle,30,185,85,left
+Carl Grundström,Los Angeles,24,184,88,left
+Matt Grzelcyk,Boston,28,175,79,left
+Radko Gudas,Florida,31,183,93,right
+Erik Gudbranson,Calgary,30,195,101,right
+Jake Guentzel,Pittsburgh,27,179,82,left
+Denis Gurjanov,Dallas,24,190,88,left
+Erik Gustafsson,Chicago,30,184,90,left
+Brandon Hagel,Tampa Bay,23,180,79,left
+Carl Hagelin,Washington,33,182,83,left
+Nicolas Hague,Vegas,23,197,104,left
+Libor Hájek,NY Rangers,24,188,92,left
+Jani Hakanpää,Dallas,30,197,98,right
+Jaroslav Halák,Vancouver,36,180,82,left
+Taylor Hall,Boston,30,185,93,left
+Dougie Hamilton,New Jersey,28,197,104,right
+Travis Hamonic,Ottawa,31,188,94,right
+Noah Hanifin,Calgary,25,191,98,left
+Joel Hanley,Dallas,30,180,86,left
+Jansen Harkins,Winnipeg,24,188,84,left
+Thomas Harley,Dallas,20,191,93,left
+Ben Harpur,Nashville,27,198,104,left
+Jordan Harris,Montreal,21,180,81,left
+Carter Hart,Philadelphia,23,187,85,left
+Ryan Hartman,Minnesota,27,183,87,right
+Garnet Hathaway,Washington,30,188,94,right
+Erik Haula,Boston,31,183,88,left
+John Hayden,Buffalo,27,191,101,right
+Kevin Hayes,Philadelphia,29,196,98,left
+Barrett Hayton,Arizona,21,185,86,left
+Victor Hedman,Tampa Bay,31,198,109,left
+Danton Heinen,Pittsburgh,26,185,84,left
+Miro Heiskanen,Dallas,22,185,86,left
+Magnus Hellberg,Detroit,31,196,86,left
+Connor Hellebuyck,Winnipeg,28,193,94,left
+Darren Helm,Colorado,35,181,87,left
+Adam Henrique,Anaheim,32,183,88,left
+Tomáš Hertl,San Jose,28,188,97,left
+Matthew Highmore,Vancouver,26,180,85,left
+Adin Hill,San Jose,25,197,92,left
+Vinnie Hinostroza,Buffalo,28,177,80,right
+Roope Hintz,Dallas,25,191,95,left
+Nico Hischier,New Jersey,23,185,81,left
+Mike Hoffman,Montreal,32,183,82,left
+Nick Holden,Ottawa,34,192,97,left
+Justin Holl,Toronto,30,193,89,right
+Braden Holtby,Dallas,32,188,96,left
+Bo Horvat,Vancouver,27,183,98,left
+Brett Howden,Vegas,24,190,89,left
+Filip Hronek,Detroit,24,183,84,right
+Jonathan Huberdeau,Florida,28,185,91,left
+Jack Hughes,New Jersey,20,179,82,left
+Quinn Hughes,Vancouver,22,178,79,left
+Dryden Hunt,NY Rangers,26,182,87,left
+Brad Hunt,Vancouver,33,175,80,left
+Ville Husso,St. Louis,27,191,93,left
+Ben Hutton,Vegas,29,188,94,left
+Zach Hyman,Edmonton,29,185,97,right
+Robert Hägg,Florida,27,188,94,left
+Nils Höglander,Vancouver,21,176,84,left
+Patric Hörnqvist,Florida,35,182,86,right
+Alex Iafallo,Los Angeles,28,183,84,left
+Matt Irwin,Washington,34,185,94,left
+Mattias Janmark,Vegas,29,185,89,left
+Tristan Jarry,Pittsburgh,27,188,88,left
+Seth Jarvis,Carolina,20,178,79,right
+Dmitrij Jaškin,Arizona,29,186,98,left
+Tanner Jeannot,Nashville,24,188,97,left
+Boone Jenner,Columbus,28,187,93,left
+Nick Jensen,Washington,31,185,93,right
+Ryan Johansen,Nashville,29,191,99,right
+Marcus Johansson,Washington,31,180,92,left
+Reese Johnson,Chicago,23,185,87,right
+Kent Johnson,Columbus,19,185,76,left
+Erik Johnson,Colorado,34,193,102,right
+Jack Johnson,Colorado,35,185,103,left
+Tyler Johnson,Chicago,31,173,82,right
+Andreas Johnsson,New Jersey,27,178,88,left
+Ross Johnston,NY Islanders,28,196,104,left
+Henri Jokiharju,Buffalo,22,183,88,right
+Max Jones,Anaheim,24,190,97,left
+Caleb Jones,Chicago,24,185,88,left
+Martin Jones,Philadelphia,32,193,88,left
+Seth Jones,Chicago,27,193,94,right
+Mathieu Joseph,Ottawa,25,184,86,left
+Dakota Joshua,St. Louis,25,188,90,left
+Roman Josi,Nashville,31,187,90,left
+Tyson Jost,Minnesota,24,180,85,left
+Olli Juolevi,Detroit,23,188,84,left
+Calle Järnkrok,Calgary,30,181,84,right
+Nazem Kadri,Colorado,31,183,87,left
+Kaapo Kakko,NY Rangers,21,189,93,left
+Arthur Kaliyev,Los Angeles,20,188,86,left
+Patrick Kane,Chicago,33,178,80,left
+Evander Kane,Edmonton,30,188,96,left
+Kasperi Kapanen,Pittsburgh,25,185,88,right
+Kirill Kaprizov,Minnesota,25,178,91,left
+William Karlsson,Vegas,29,184,86,left
+Erik Karlsson,San Jose,31,183,87,right
+Ondřej Kaše,Toronto,26,182,86,right
+Zack Kassian,Edmonton,31,191,95,right
+Boris Katchouk,Chicago,23,188,93,left
+Duncan Keith,Edmonton,38,184,88,left
+Clayton Keller,Arizona,23,178,77,left
+Parker Kelly,Ottawa,22,183,89,left
+Adrian Kempe,Los Angeles,25,188,88,left
+Michal Kempný,Washington,31,183,88,left
+Alexander Kerfoot,Toronto,27,178,82,left
+Phil Kessel,Arizona,34,183,92,right
+Jujhar Khaira,Chicago,27,193,96,left
+Alex Killorn,Tampa Bay,32,185,88,left
+Joel Kiviranta,Dallas,26,179,82,left
+John Klingberg,Dallas,29,191,86,right
+Spencer Knight,Florida,21,191,87,left
+Nikolai Knyžov,San Jose,24,188,99,left
+Keegan Kolesar,Vegas,25,188,98,right
+Vladislav Koljatšonok,Arizona,20,186,88,left
+Travis Konecny,Philadelphia,25,178,80,right
+Anže Kopitar,Los Angeles,34,192,102,left
+Joonas Korpisalo,Columbus,28,190,87,left
+Jesperi Kotkaniemi,Carolina,21,188,90,left
+Peyton Krebs,Buffalo,21,180,82,left
+Chris Kreider,NY Rangers,31,191,102,left
+Torey Krug,St. Louis,31,176,82,left
+Dominik Kubalik,Chicago,26,187,81,left
+Darcy Kuemper,Colorado,31,194,98,left
+Karson Kuhlman,Seattle,26,179,84,right
+Brett Kulak,Edmonton,28,188,86,left
+Dmitri Kulikov,Minnesota,31,184,93,left
+Luke Kunin,Nashville,24,181,91,right
+Janne Kuokkanen,New Jersey,23,185,88,left
+Rasmus Kupari,Los Angeles,22,186,86,right
+Sean Kuraly,Columbus,29,188,96,left
+Philipp Kurashev,Chicago,22,183,86,left
+Nikita Kutšerov,Tampa Bay,28,181,81,left
+Jevgeni Kuznetsov,Washington,29,186,92,left
+Oliver Kylington,Calgary,24,183,84,left
+Jordan Kyrou,St. Louis,23,183,85,right
+Kaapo Kähkönen,San Jose,25,187,98,left
+David Kämpf,Toronto,27,185,88,left
+Kevin Labanc,San Jose,26,180,84,right
+Andrew Ladd,Arizona,36,190,93,left
+Sam Lafferty,Chicago,27,185,88,right
+Alexis Lafrenière,NY Rangers,20,186,89,left
+William Lagesson,Montreal,26,188,89,left
+Patrik Laine,Columbus,24,194,98,right
+Juho Lammikko,Vancouver,26,188,87,left
+Gabriel Landeskog,Colorado,29,184,98,left
+Kevin Lankinen,Chicago,27,188,84,left
+Dylan Larkin,Detroit,25,185,89,left
+Johan Larsson,Washington,29,182,92,left
+Adam Larsson,Seattle,29,191,95,right
+Scott Laughton,Philadelphia,27,184,86,left
+Jérémy Lauzon,Nashville,25,188,93,left
+Curtis Lazar,Boston,27,183,88,right
+Nick Leddy,St. Louis,31,181,93,left
+Anders Lee,NY Islanders,31,190,104,left
+Artturi Lehkonen,Colorado,26,180,82,left
+Robin Lehner,Vegas,30,193,113,left
+Brendan Lemieux,Los Angeles,26,184,97,left
+Otto Leskinen,Montreal,25,181,85,left
+Kris Letang,Pittsburgh,35,183,91,right
+Anton Levtchi,Florida,26,182,84,left
+Trevor Lewis,Calgary,35,185,93,right
+Timothy Liljegren,Toronto,23,183,87,right
+Kole Lind,Seattle,23,185,81,right
+Oskar Lindblom,Philadelphia,25,186,87,left
+Petteri Lindbohm,Florida,28,190,95,left
+Esa Lindell,Dallas,27,191,97,left
+Ryan Lindgren,NY Rangers,24,184,90,left
+Elias Lindholm,Calgary,27,184,87,right
+Hampus Lindholm,Boston,28,190,96,left
+Gustav Lindström,Detroit,23,188,83,right
+Blake Lizotte,Los Angeles,24,171,78,left
+Ilja Ljubuškin,Toronto,28,187,91,right
+Ryan Lomberg,Florida,27,175,85,left
+Steven Lorentz,Carolina,26,193,93,left
+Adam Lowry,Winnipeg,29,195,95,left
+Milan Lucic,Calgary,33,191,105,left
+Matt Luff,Nashville,24,188,89,right
+Anton Lundell,Florida,20,185,86,left
+Isac Lundeström,Anaheim,22,184,87,left
+Eetu Luostarinen,Florida,23,190,85,left
+Joona Luoto,Columbus,24,190,91,left
+Kurtis MacDermid,Colorado,28,195,106,left
+Mackenzie MacEachern,St. Louis,28,191,93,left
+Zack MacEwen,Philadelphia,25,191,93,right
+Nathan MacKinnon,Colorado,26,183,91,right
+Josh Mahura,Anaheim,23,184,84,left
+Cale Makar,Colorado,23,180,85,right
+Jevgeni Malkin,Pittsburgh,35,192,89,left
+Maksim Mamin,Florida,27,188,93,left
+Andrew Mangiapane,Calgary,26,178,83,left
+Josh Manson,Colorado,30,191,98,right
+Anthony Mantha,Washington,27,195,106,left
+Brad Marchand,Boston,33,175,83,left
+Jonathan Marchessault,Vegas,31,175,78,right
+Mason Marchment,Florida,26,193,95,left
+John Marino,Pittsburgh,24,185,82,right
+Jacob Markström,Calgary,32,197,93,left
+Mitch Marner,Toronto,24,183,77,right
+Patrick Maroon,Tampa Bay,34,191,108,left
+Matt Martin,NY Islanders,32,191,99,left
+Alec Martinez,Vegas,34,185,94,left
+Jordan Martinook,Carolina,29,184,89,left
+Mike Matheson,Pittsburgh,28,188,85,left
+Auston Matthews,Toronto,24,191,93,left
+Scott Mayfield,NY Islanders,29,195,101,right
+Gerald Mayhew,Anaheim,29,175,75,right
+Dysin Mayo,Arizona,25,183,84,right
+Charlie McAvoy,Boston,24,184,94,right
+Jack McBain,Arizona,22,193,99,left
+Jake McCabe,Chicago,28,185,93,left
+Jared McCann,Seattle,25,184,84,left
+Michael McCarron,Nashville,27,196,108,right
+Connor McDavid,Edmonton,25,185,88,left
+Ryan McDonagh,Tampa Bay,32,185,97,left
+Brock McGinn,Pittsburgh,28,183,85,left
+Greg McKegg,NY Rangers,29,183,86,left
+Marc McLaughlin,Boston,22,182,93,right
+Michael McLeod,New Jersey,24,188,85,right
+Ryan McLeod,Edmonton,22,188,94,left
+Connor McMichael,Washington,21,182,83,left
+Brayden McNabb,Vegas,31,193,96,left
+Jaycob Megna,San Jose,29,199,100,left
+Timo Meier,San Jose,25,184,95,left
+Nicolas Meloche,San Jose,24,191,96,right
+Dawson Mercer,New Jersey,20,183,82,right
+Ryan Merkley,San Jose,21,183,84,right
+Jon Merrill,Minnesota,30,191,93,left
+Elvis Merzlikins,Columbus,28,191,82,left
+Victor Mete,Ottawa,23,176,84,left
+Ben Meyers,Colorado,23,180,88,left
+Jacob Middleton,Minnesota,26,191,95,left
+Ilja Mihejev,Toronto,27,189,88,left
+Niko Mikkola,St. Louis,26,194,96,left
+Sonny Milano,Anaheim,25,183,87,left
+Colin Miller,Buffalo,29,185,89,right
+J.T. Miller,Vancouver,29,187,99,left
+K'Andre Miller,NY Rangers,22,194,98,left
+Casey Mittelstadt,Buffalo,23,185,88,left
+Sean Monahan,Calgary,27,188,91,left
+Samuel Montembeault,Montreal,25,191,90,left
+Brandon Montour,Florida,28,183,87,right
+Trevor Moore,Los Angeles,27,178,83,left
+Josh Morrissey,Winnipeg,27,183,88,left
+Janis Moser,Arizona,21,185,78,left
+Tyler Motte,NY Rangers,27,178,86,left
+Petr Mrázek,Toronto,30,188,86,left
+Connor Murphy,Chicago,29,193,96,right
+Matt Murray,Ottawa,27,194,90,left
+Ryan Murray,Colorado,28,185,93,left
+Jake Muzzin,Toronto,33,190,103,left
+Tyler Myers,Vancouver,32,203,104,right
+Philippe Myers,Nashville,25,196,95,right
+Olli Määttä,Los Angeles,27,187,92,left
+Vladislav Namestnikov,Dallas,29,182,82,left
+Riley Nash,Tampa Bay,32,185,86,right
+Martin Nečas,Carolina,23,187,86,right
+Alex Nedeljkovic,Detroit,26,182,92,left
+Brock Nelson,NY Islanders,30,192,96,left
+Patrik Nemeth,NY Rangers,30,192,103,left
+Alex Newhook,Colorado,21,179,86,left
+Nino Niederreiter,Carolina,29,187,98,left
+Matt Nieto,San Jose,29,180,86,left
+Valeri Nitšuškin,Colorado,27,193,95,left
+Josh Norris,Ottawa,22,185,87,left
+Tomáš Nosek,Boston,29,190,92,left
+Ryan Nugent-Hopkins,Edmonton,29,183,83,left
+Darnell Nurse,Edmonton,27,193,100,left
+Markus Nutivaara,Florida,27,186,86,left
+William Nylander,Toronto,26,181,92,right
+Gustav Nyquist,Columbus,32,180,80,left
+Liam O'Brien,Arizona,27,185,98,left
+Logan O'Connor,Colorado,25,183,79,right
+Ryan O'Reilly,St. Louis,31,184,98,left
+Jordan Oesterle,Detroit,29,183,84,left
+Jake Oettinger,Dallas,23,193,93,left
+Kyle Okposo,Buffalo,34,184,98,right
+Jamie Oleksiak,Seattle,29,201,115,left
+Jussi Olkinuora,Detroit,31,188,91,left
+Victor Olofsson,Buffalo,26,180,82,left
+Dmitri Orlov,Washington,30,180,95,left
+T.J. Oshie,Washington,35,180,86,right
+Aleksandr Ovetškin,Washington,36,188,107,right
+Max Pacioretty,Vegas,33,188,96,left
+Jean-Gabriel Pageau,NY Islanders,29,178,83,right
+Ondřej Palát,Tampa Bay,31,182,88,left
+Kyle Palmieri,NY Islanders,31,179,85,right
+Artemi Panarin,NY Rangers,30,180,77,right
+Colton Parayko,St. Louis,28,197,104,right
+Zach Parise,NY Islanders,37,180,88,left
+David Pastrňák,Boston,25,182,88,right
+Nolan Patrick,Vegas,23,189,90,right
+Nick Paul,Tampa Bay,27,191,103,left
+Joe Pavelski,Dallas,37,180,88,right
+Tanner Pearson,Vancouver,29,185,92,left
+Andrew Peeke,Columbus,24,191,88,right
+Adam Pelech,NY Islanders,27,189,94,left
+Cole Perfetti,Winnipeg,20,177,80,left
+Mathieu Perreault,Montreal,34,178,85,left
+David Perron,St. Louis,33,183,89,right
+Corey Perry,Tampa Bay,36,191,93,right
+Brett Pesce,Carolina,27,191,93,right
+Cal Petersen,Los Angeles,27,185,83,right
+Jacob Peterson,Dallas,22,185,77,left
+Jeff Petry,Montreal,34,191,92,right
+Marcus Pettersson,Pittsburgh,25,192,80,left
+Elias Pettersson,Vancouver,23,188,80,left
+Michael Pezzetta,Montreal,24,185,98,left
+Alex Pietrangelo,Vegas,32,191,95,right
+Shane Pinto,Ottawa,21,188,87,right
+Neal Pionk,Winnipeg,26,182,85,right
+Tyler Pitlick,Montreal,30,188,91,right
+Rem Pitlick,Montreal,25,180,89,left
+Vasili Podkolzin,Vancouver,20,185,87,left
+Ryan Poehling,Montreal,23,189,87,left
+Brayden Point,Tampa Bay,26,179,83,right
+Tucker Poolman,Vancouver,28,190,92,right
+Derrick Pouliot,Seattle,28,183,89,left
+Owen Power,Buffalo,19,198,97,left
+Carey Price,Montreal,34,191,97,left
+Ivan Provorov,Philadelphia,25,184,91,left
+Jesse Puljujärvi,Edmonton,23,193,92,right
+Ryan Pulock,NY Islanders,27,187,98,right
+Mark Pysyk,Buffalo,30,186,90,right
+Juuso Pärssinen,Nashville,21,190,92,left
+Jonathan Quick,Los Angeles,36,185,99,left
+Antti Raanta,Carolina,32,183,87,left
+Taylor Raddysh,Chicago,24,191,90,right
+Aleksandr Radulov,Dallas,35,185,91,left
+Michael Raffl,Dallas,33,185,93,left
+Rickard Rakell,Pittsburgh,28,185,88,right
+Mikko Rantanen,Colorado,25,193,98,left
+Victor Rask,Seattle,29,187,90,left
+Michael Rasmussen,Detroit,23,197,95,left
+Lucas Raymond,Detroit,20,180,82,right
+Ryan Reaves,NY Rangers,35,185,102,right
+Scott Reedy,San Jose,23,188,97,right
+Mike Reilly,Boston,28,187,89,left
+James Reimer,San Jose,34,188,98,left
+Sam Reinhart,Florida,26,187,87,right
+Brad Richardson,Vancouver,37,183,87,left
+Morgan Rielly,Toronto,28,184,99,left
+Rasmus Ristolainen,Philadelphia,27,192,100,right
+Nick Ritchie,Arizona,26,191,107,left
+Brett Ritchie,Calgary,28,193,100,right
+David Rittich,Nashville,29,191,92,left
+Jason Robertson,Dallas,22,190,90,left
+Eric Robinson,Columbus,26,188,91,left
+Evan Rodrigues,Pittsburgh,28,180,83,right
+Aleksandr Romanov,Montreal,22,184,94,left
+Kevin Rooney,NY Rangers,28,188,92,left
+Jack Roslovic,Columbus,25,185,85,right
+Antoine Roussel,Arizona,32,180,91,left
+Carter Rowney,Detroit,32,188,94,right
+Matt Roy,Los Angeles,27,185,90,right
+Nicolas Roy,Vegas,25,193,94,right
+Chad Ruhwedel,Pittsburgh,31,180,87,right
+Kris Russell,Edmonton,35,178,78,left
+Bryan Rust,Pittsburgh,29,180,87,right
+Jan Rutta,Tampa Bay,31,190,91,right
+Adam Ružička,Calgary,22,194,95,left
+Derek Ryan,Edmonton,35,179,84,right
+Brandon Saad,St. Louis,29,185,98,left
+Dylan Samberg,Winnipeg,23,193,98,left
+Ilja Samsonov,Washington,25,191,93,left
+Mattias Samuelsson,Buffalo,22,193,103,left
+Jake Sanderson,Ottawa,19,188,86,left
+Rasmus Sandin,Toronto,22,181,81,left
+Zach Sanford,Winnipeg,27,192,94,left
+Travis Sanheim,Philadelphia,26,192,83,left
+Jegor Šarangovitš,New Jersey,23,188,88,left
+Juuse Saros,Nashville,27,179,82,left
+David Savard,Montreal,31,188,103,right
+Marco Scandella,St. Louis,32,190,95,left
+Mark Scheifele,Winnipeg,29,190,94,right
+Brayden Schenn,St. Louis,30,184,91,left
+Luke Schenn,Vancouver,32,188,102,right
+Nick Schmaltz,Arizona,26,183,80,right
+Nate Schmidt,Winnipeg,30,183,88,left
+Braden Schneider,NY Rangers,20,188,92,right
+Justin Schultz,Washington,31,188,87,right
+Jaden Schwartz,Seattle,29,179,86,left
+Nick Seeler,Philadelphia,28,188,91,left
+Tyler Seguin,Dallas,30,185,91,right
+Moritz Seider,Detroit,21,192,89,right
+Andrej Sekera,Dallas,35,183,91,left
+Mihail Sergatšov,Tampa Bay,23,189,99,left
+Igor Šestjorkin,NY Rangers,26,186,84,left
+Damon Severson,New Jersey,27,188,94,right
+Kevin Shattenkirk,Anaheim,33,183,96,right
+Riley Sheahan,Seattle,30,190,96,left
+Conor Sheary,Washington,29,173,79,left
+Devin Shore,Edmonton,27,184,93,left
+Jonas Siegenthaler,New Jersey,24,190,100,left
+Jakob Silfverberg,Anaheim,31,186,92,right
+Cole Sillinger,Columbus,18,187,92,left
+Radim Šimek,San Jose,29,180,91,left
+Wayne Simmonds,Toronto,33,191,84,right
+Dominik Simon,Anaheim,27,180,86,left
+Colton Sissons,Nashville,28,185,92,right
+Jeff Skinner,Buffalo,29,180,88,left
+Brady Skjei,Carolina,28,191,95,left
+Jaccob Slavin,Carolina,28,191,94,left
+Mike Smith,Edmonton,40,195,98,left
+Craig Smith,Boston,32,183,94,right
+Reilly Smith,Vegas,31,185,81,left
+Ty Smith,New Jersey,22,180,80,left
+Nathan Smith,Arizona,23,185,86,right
+Brendan Smith,Carolina,33,188,91,left
+Givani Smith,Detroit,24,188,98,left
+Ilja Sorokin,NY Islanders,26,188,86,left
+Carson Soucy,Seattle,27,195,94,left
+Daniel Sprong,Seattle,25,183,88,right
+Jared Spurgeon,Minnesota,32,174,76,right
+Jordan Staal,Carolina,33,193,100,left
+Marc Staal,Detroit,35,193,96,left
+Steven Stamkos,Tampa Bay,32,185,89,right
+Logan Stanley,Winnipeg,23,198,105,left
+Paul Stastny,Winnipeg,36,183,88,left
+Troy Stecher,Los Angeles,28,178,84,right
+Sam Steel,Anaheim,24,180,84,left
+Derek Stepan,Carolina,31,181,89,right
+Mitchell Stephens,Detroit,25,180,88,right
+Chandler Stephenson,Vegas,28,182,90,left
+Riley Stillman,Chicago,24,185,89,left
+Anthony Stolarz,Anaheim,28,198,110,left
+Michael Stone,Calgary,31,190,95,right
+Mark Stone,Vegas,29,192,91,right
+Dylan Strome,Chicago,25,190,91,left
+Ryan Strome,NY Rangers,28,185,88,right
+Anton Strålman,Arizona,35,180,87,right
+Marián Studenič,Dallas,23,184,82,left
+Nico Sturm,Colorado,26,191,97,left
+Tim Stützle,Ottawa,20,184,87,left
+P.K. Subban,New Jersey,32,183,95,right
+Oskar Sundqvist,Detroit,28,190,95,right
+Andrej Šustr,Anaheim,31,201,98,right
+Pius Suter,Detroit,25,181,79,left
+Ryan Suter,Dallas,37,186,92,left
+Brandon Sutter,Vancouver,33,191,87,right
+Nick Suzuki,Montreal,22,180,91,right
+Jevgeni Svetšnikov,Winnipeg,25,191,94,left
+Andrei Svetšnikov,Carolina,22,189,91,left
+Jeremy Swayman,Boston,23,191,88,left
+Harri Säteri,Arizona,32,186,89,left
+Cam Talbot,Minnesota,34,193,89,left
+Brandon Tanev,Seattle,30,183,82,left
+Christopher Tanev,Calgary,32,188,88,right
+Vladimir Tarasenko,St. Louis,30,184,102,left
+Tomáš Tatar,New Jersey,31,178,83,left
+John Tavares,Toronto,31,184,94,left
+Troy Terry,Anaheim,24,185,84,right
+Teuvo Teräväinen,Carolina,27,179,87,left
+Alexandre Texier,Columbus,22,184,84,left
+Shea Theodore,Vegas,26,188,88,left
+Robert Thomas,St. Louis,22,183,99,right
+Tage Thompson,Buffalo,24,200,98,right
+Nate Thompson,Philadelphia,37,185,97,left
+Joe Thornton,Florida,42,193,100,left
+Chris Tierney,Ottawa,27,185,86,left
+Conor Timmins,Arizona,23,186,92,right
+Owen Tippett,Philadelphia,23,185,94,right
+Matthew Tkachuk,Calgary,24,188,92,left
+Brady Tkachuk,Ottawa,22,193,96,left
+Jonathan Toews,Chicago,34,188,92,left
+Devon Toews,Colorado,28,185,87,left
+Tyler Toffoli,Calgary,30,183,89,right
+Dustin Tokarski,Buffalo,32,183,90,left
+Eeli Tolvanen,Nashville,23,178,87,left
+Philip Tomasino,Nashville,20,183,82,right
+Dominic Toninato,Winnipeg,28,188,87,left
+Aleksei Toroptšenko,St. Louis,22,191,85,left
+Jakov Trenin,Nashville,25,188,91,left
+Vincent Trocheck,Carolina,28,178,84,right
+Jacob Trouba,NY Rangers,28,191,95,right
+Jegor Tšinahov,Columbus,21,182,81,left
+Alex Tuch,Buffalo,25,193,100,right
+Kyle Turris,Edmonton,32,185,86,right
+Linus Ullmark,Boston,28,193,97,left
+Urho Vaakanainen,Anaheim,23,185,84,left
+James van Riemsdyk,Philadelphia,32,191,97,left
+Trevor van Riemsdyk,Washington,30,188,87,right
+Vitek Vaněček,Washington,26,185,85,left
+Semjon Varlamov,NY Islanders,34,188,97,left
+Andrei Vasilevski,Tampa Bay,27,193,98,left
+Frank Vatrano,NY Rangers,28,180,89,left
+Karel Vejmelka,Arizona,25,191,92,right
+Joe Veleno,Detroit,22,185,93,left
+Carter Verhaeghe,Florida,26,188,82,left
+Jimmy Vesey,New Jersey,28,190,90,left
+Jeffrey Viel,San Jose,25,188,93,left
+Gabriel Vilardi,Los Angeles,22,191,91,right
+Daniel Vladař,Calgary,24,196,84,left
+Alex Vlasic,Chicago,20,198,91,left
+Marc-Édouard Vlasic,San Jose,35,185,93,left
+Jakub Voráček,Columbus,32,189,96,left
+Jakub Vrána,Detroit,26,183,89,left
+Oliver Wahlstrom,NY Islanders,21,188,96,right
+Sean Walker,Los Angeles,27,180,89,right
+Nathan Walker,St. Louis,28,175,84,left
+Jake Walman,Detroit,26,185,97,left
+Austin Watson,Ottawa,30,193,93,right
+Jasper Weatherby,San Jose,24,193,98,left
+Scott Wedgewood,Dallas,29,183,88,left
+MacKenzie Weegar,Florida,28,183,91,right
+Alexander Wennberg,Seattle,27,185,89,left
+Zach Werenski,Columbus,24,188,96,left
+Blake Wheeler,Winnipeg,35,196,102,right
+Colin White,Ottawa,25,183,86,right
+Colton White,New Jersey,24,185,84,left
+Zach Whitecloud,Vegas,25,188,95,right
+Chris Wideman,Montreal,32,178,82,right
+Tom Wilson,Washington,28,193,98,right
+Miles Wood,New Jersey,26,187,88,left
+Kailer Yamamoto,Edmonton,23,173,69,right
+Keith Yandle,Philadelphia,35,186,88,left
+Cam York,Philadelphia,21,180,78,left
+Pavel Zacha,New Jersey,25,191,96,left
+Filip Zadina,Detroit,22,183,89,left
+Nikita Zadorov,Calgary,27,197,107,left
+Nikita Zaitsev,Ottawa,30,188,87,right
+Jakub Zbořil,Boston,25,184,87,left
+Trevor Zegras,Anaheim,21,183,84,left
+Mika Zibanejad,NY Rangers,29,188,94,right
+Artjom Zub,Ottawa,26,188,90,right
+Mats Zuccarello,Minnesota,34,171,80,left
+Jason Zucker,Pittsburgh,30,180,87,left
