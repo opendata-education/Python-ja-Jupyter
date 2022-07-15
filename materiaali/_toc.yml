@@ -12,6 +12,5 @@ chapters:
 - file: harjoitukset/data-analyysi
   sections:
   - file: harjoitukset/jupyter-intro
-  - file: harjoitukset/histogrammi
   - file: harjoitukset/data-analyysi_esimerkki
   - file: harjoitukset/python-funktiot
