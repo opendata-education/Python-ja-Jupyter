@@ -624,8 +624,6 @@ title="Print to PDF"
 <span class="n">fig</span><span class="o">.</span><span class="n">set_figwidth</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>      <span class="c1">#Asetetaan kuvaajan mitat sopivan kokoisiksi</span>
 <span class="n">bins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">14</span><span class="p">)</span>    <span class="c1">#Käytetään luokkien määrään numpy-kirjaston arange-funktiota, jotta luokat saadaan oikeille kohdille kuvaajalla.</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">kuukaudet</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="n">bins</span><span class="p">,</span><span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>  <span class="c1">#&#39;edgecolor&#39;-muuttujan avulla eri kuukaudet saadaan eroteltua toisistaan. align-muuttujan avulla luokat asetetaan oikeille kohdilleen.  </span>
-<span class="c1">#ax.set_xticks(bins[:-1])   </span>
-<span class="c1">#ax.set_xticklabels([&#39;tammi&#39;,&#39;helmi&#39;,&#39;maalis&#39;,&#39;huhti&#39;,&#39;touko&#39;,&#39;kesä&#39;,&#39;heinä&#39;,&#39;elo&#39;,&#39;syys&#39;,&#39;loka&#39;,&#39;marras&#39;,&#39;joulu&#39;]) </span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;NHL-pelaajien syntymäkuukaudet&#39;</span><span class="p">)</span>  <span class="c1">#Nimetään kuvaaja</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;syntymäkuukausi&#39;</span><span class="p">)</span>   <span class="c1">#Nimetään x-akseli</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;määrä&#39;</span><span class="p">)</span>     <span class="c1">#Nimetään y-akseli</span>
@@ -999,42 +997,42 @@ input[type=range].anim-slider {
 </style>
 
 <div class="animation">
-  <img id="_anim_img6bd3c0865260473faa5398f3398c82ce">
+  <img id="_anim_imgef38a7dd1bc94b508b6e939c091d1bcb">
   <div class="anim-controls">
-    <input id="_anim_slider6bd3c0865260473faa5398f3398c82ce" type="range" class="anim-slider"
+    <input id="_anim_slideref38a7dd1bc94b508b6e939c091d1bcb" type="range" class="anim-slider"
            name="points" min="0" max="1" step="1" value="0"
-           oninput="anim6bd3c0865260473faa5398f3398c82ce.set_frame(parseInt(this.value));">
+           oninput="animef38a7dd1bc94b508b6e939c091d1bcb.set_frame(parseInt(this.value));">
     <div class="anim-buttons">
-      <button title="Decrease speed" aria-label="Decrease speed" onclick="anim6bd3c0865260473faa5398f3398c82ce.slower()">
+      <button title="Decrease speed" aria-label="Decrease speed" onclick="animef38a7dd1bc94b508b6e939c091d1bcb.slower()">
           <i class="fa fa-minus"></i></button>
-      <button title="First frame" aria-label="First frame" onclick="anim6bd3c0865260473faa5398f3398c82ce.first_frame()">
+      <button title="First frame" aria-label="First frame" onclick="animef38a7dd1bc94b508b6e939c091d1bcb.first_frame()">
         <i class="fa fa-fast-backward"></i></button>
-      <button title="Previous frame" aria-label="Previous frame" onclick="anim6bd3c0865260473faa5398f3398c82ce.previous_frame()">
+      <button title="Previous frame" aria-label="Previous frame" onclick="animef38a7dd1bc94b508b6e939c091d1bcb.previous_frame()">
           <i class="fa fa-step-backward"></i></button>
-      <button title="Play backwards" aria-label="Play backwards" onclick="anim6bd3c0865260473faa5398f3398c82ce.reverse_animation()">
+      <button title="Play backwards" aria-label="Play backwards" onclick="animef38a7dd1bc94b508b6e939c091d1bcb.reverse_animation()">
           <i class="fa fa-play fa-flip-horizontal"></i></button>
-      <button title="Pause" aria-label="Pause" onclick="anim6bd3c0865260473faa5398f3398c82ce.pause_animation()">
+      <button title="Pause" aria-label="Pause" onclick="animef38a7dd1bc94b508b6e939c091d1bcb.pause_animation()">
           <i class="fa fa-pause"></i></button>
-      <button title="Play" aria-label="Play" onclick="anim6bd3c0865260473faa5398f3398c82ce.play_animation()">
+      <button title="Play" aria-label="Play" onclick="animef38a7dd1bc94b508b6e939c091d1bcb.play_animation()">
           <i class="fa fa-play"></i></button>
-      <button title="Next frame" aria-label="Next frame" onclick="anim6bd3c0865260473faa5398f3398c82ce.next_frame()">
+      <button title="Next frame" aria-label="Next frame" onclick="animef38a7dd1bc94b508b6e939c091d1bcb.next_frame()">
           <i class="fa fa-step-forward"></i></button>
-      <button title="Last frame" aria-label="Last frame" onclick="anim6bd3c0865260473faa5398f3398c82ce.last_frame()">
+      <button title="Last frame" aria-label="Last frame" onclick="animef38a7dd1bc94b508b6e939c091d1bcb.last_frame()">
           <i class="fa fa-fast-forward"></i></button>
-      <button title="Increase speed" aria-label="Increase speed" onclick="anim6bd3c0865260473faa5398f3398c82ce.faster()">
+      <button title="Increase speed" aria-label="Increase speed" onclick="animef38a7dd1bc94b508b6e939c091d1bcb.faster()">
           <i class="fa fa-plus"></i></button>
     </div>
-    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_select6bd3c0865260473faa5398f3398c82ce"
+    <form title="Repetition mode" aria-label="Repetition mode" action="#n" name="_anim_loop_selectef38a7dd1bc94b508b6e939c091d1bcb"
           class="anim-state">
-      <input type="radio" name="state" value="once" id="_anim_radio1_6bd3c0865260473faa5398f3398c82ce"
+      <input type="radio" name="state" value="once" id="_anim_radio1_ef38a7dd1bc94b508b6e939c091d1bcb"
              >
-      <label for="_anim_radio1_6bd3c0865260473faa5398f3398c82ce">Once</label>
-      <input type="radio" name="state" value="loop" id="_anim_radio2_6bd3c0865260473faa5398f3398c82ce"
+      <label for="_anim_radio1_ef38a7dd1bc94b508b6e939c091d1bcb">Once</label>
+      <input type="radio" name="state" value="loop" id="_anim_radio2_ef38a7dd1bc94b508b6e939c091d1bcb"
              checked>
-      <label for="_anim_radio2_6bd3c0865260473faa5398f3398c82ce">Loop</label>
-      <input type="radio" name="state" value="reflect" id="_anim_radio3_6bd3c0865260473faa5398f3398c82ce"
+      <label for="_anim_radio2_ef38a7dd1bc94b508b6e939c091d1bcb">Loop</label>
+      <input type="radio" name="state" value="reflect" id="_anim_radio3_ef38a7dd1bc94b508b6e939c091d1bcb"
              >
-      <label for="_anim_radio3_6bd3c0865260473faa5398f3398c82ce">Reflect</label>
+      <label for="_anim_radio3_ef38a7dd1bc94b508b6e939c091d1bcb">Reflect</label>
     </form>
   </div>
 </div>
@@ -1044,9 +1042,9 @@ input[type=range].anim-slider {
   /* Instantiate the Animation class. */
   /* The IDs given should match those used in the template above. */
   (function() {
-    var img_id = "_anim_img6bd3c0865260473faa5398f3398c82ce";
-    var slider_id = "_anim_slider6bd3c0865260473faa5398f3398c82ce";
-    var loop_select_id = "_anim_loop_select6bd3c0865260473faa5398f3398c82ce";
+    var img_id = "_anim_imgef38a7dd1bc94b508b6e939c091d1bcb";
+    var slider_id = "_anim_slideref38a7dd1bc94b508b6e939c091d1bcb";
+    var loop_select_id = "_anim_loop_selectef38a7dd1bc94b508b6e939c091d1bcb";
     var frames = new Array(100);
 
   frames[0] = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABDgAAALQCAYAAAB118BaAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90\
@@ -22718,7 +22716,7 @@ AAAAAIb3fwDUJ2e1hHVuVgAAAABJRU5ErkJggg==\
     /* set a timeout to make sure all the above elements are created before
        the object is initialized. */
     setTimeout(function() {
-        anim6bd3c0865260473faa5398f3398c82ce = new Animation(frames, img_id, slider_id, 200.0,
+        animef38a7dd1bc94b508b6e939c091d1bcb = new Animation(frames, img_id, slider_id, 200.0,
                                  loop_select_id);
     }, 0);
   })()
