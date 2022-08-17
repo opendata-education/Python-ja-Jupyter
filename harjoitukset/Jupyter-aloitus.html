@@ -865,21 +865,21 @@ title="Print to PDF"
 </section>
 <section id="jupyter-notebookin-asennus">
 <h2>2. Jupyter Notebookin asennus<a class="headerlink" href="#jupyter-notebookin-asennus" title="Permalink to this headline">#</a></h2>
-<p>Jupyter Notebook on mahdollista asentaa muutamalla eri tavalla. Helpoin ja suositeltavin vaihtoehto on hoitaa asennus Anacondan avulla. Anaconda asentaa yhdellä kertaa Pythonin, Jupyterin sekä Python-ohjelmoinnissa hyödyllisiä paketteja. Asennus Anacondan avulla on helppoa:</p>
+<p>Jupyter Notebookia on mahdollista käyttää suoraan selaimesta asentamatta mitään ohjelmistoa joko Binder- tai Google Colab-sovelluksen avulla. Binder luo GitHub-hakemistosta selaimessa toimivan Jupyter-ympäristön, jossa hakemistossa olevia notebookeja voi käyttää ja muokata. Binderin käyttö on helppoa:</p>
 <ul class="simple">
-<li><p>Lataa Anaconda sivulta https://www.continuum.io/downloads. Suositeltavinta on ladata Python 3:n uusin versio, joka on tämän tutoriaalin kirjoitushetkellä 3.5.</p></li>
-<li><p>Asenna Anaconda lataamasi paketin asennusohjelman avulla.</p></li>
-<li><p>Asennuksen jälkeen voit käynnistää Jupyterin joko avaamalla ohjelman <em>Anaconda Navigator</em> ja valitsemalla valikosta Jupyter Notebookin, tai kirjoittamalla komentoriville komennon <em>jupyter notebook</em>.</p></li>
-</ul>
-<p>Muut Jupyterin asennusvaihtoehdot ja täydet, englanninkieliset asennusohjeet löytyvät sivulta http://jupyter.readthedocs.io/en/latest/install.html.</p>
-<p>Voit myös avata kokeiluversion (https://try.jupyter.org/) tai luoda ilmaisen käyttäjätunnuksen CoCalc-palveluun (https://cocalc.com/). CoCalcin avulla Jupyteria voidaan käyttää pilvipalvelussa ilman asennusta tietokoneelle.</p>
-<p>Lisäksi Jupyteria on mahdollista käyttää ilman asennusta tällä hetkellä beta-vaiheessa olevalla Binder-sovelluksella (https://beta.mybinder.org/). Binder luo sille annetusta GitHub-hakemistosta selaimessa toimivan Jupyter-ympäristön, jossa hakemistossa olevia notebookeja voi käyttää ja muokata. Binderin käyttö on helppoa:</p>
-<ul class="simple">
-<li><p>Mene sivulle https://beta.mybinder.org/.</p></li>
-<li><p>Kopioi kenttään <em>GitHub repo or URL</em> sen GitHub-hakemiston osoite, jonka haluat aukaista. Esimerkiksi tämän materiaalin voi avata kopioimalla osoitteen https://github.com/cms-opendata-education/cms-jupyter-materials-finnish</p></li>
+<li><p>Mene sivulle https://mybinder.org/.</p></li>
+<li><p>Kopioi kenttään <em>GitHub repo or URL</em> sen GitHub-hakemiston osoite, jonka haluat aukaista. Esimerkiksi tämän materiaalin voi avata kopioimalla osoitteen https://github.com/opendata-education/Python-ja-Jupyter.</p></li>
 <li><p>Kirjoita kenttään <em>Git branch, tag, or commit</em> “master” (mahdollisesti jo valmiina) ja paina nappia <em>launch</em>.</p></li>
 </ul>
 <p>Huomaa, että Binderiin tekemäsi muutokset eivät automaattisesti tallennu minnekään ja poistuvat, jos ympäristö on 20 minuuttia käyttämättä. Voit kuitenkin tallentaa Binderilla muokkaamasi ja laatimasi notebookit omalle koneellesi talteen. Tämä onnistuu avoimen notebookin valikosta klikkaamalla <em>File</em> -&gt; <em>Download as</em> -&gt; <em>notebook (.ipynb)</em>.</p>
+<p>Binderin sijasta voi käyttää myös Google Colabia. Google Colab on pilvipohjainen palvelu, jonka avulla notebookeja voi muokata suoraan selaimessa, tallentamalla muutokset Google Driveen. Colabin käyttöä varten tarvitaan Google-tili.</p>
+<p>Jos haluat vakaamman käyttäjäkokemuksen ja käytät Jupyteria Notebookia usein, se kannattaa asentaa, sillä silloin notebookeja voi luoda ja muokata lokaalisti. Helpoin ja suositeltavin vaihtoehto on hoitaa asennus Anacondan avulla. Anaconda asentaa yhdellä kertaa Pythonin, Jupyterin sekä Python-ohjelmoinnissa hyödyllisiä paketteja. Asennus Anacondan avulla on helppoa:</p>
+<ul class="simple">
+<li><p>Lataa Anaconda <a class="reference external" href="https://www.anaconda.com/products/distribution/">tältä nettisivulta</a>. Suositeltavinta on ladata Python 3:n uusin versio.</p></li>
+<li><p>Asenna Anaconda lataamasi paketin asennusohjelman avulla.</p></li>
+<li><p>Asennuksen jälkeen voit käynnistää Jupyterin joko avaamalla ohjelman <em>Anaconda Navigator</em> ja valitsemalla valikosta Jupyter Notebookin, tai kirjoittamalla komentoriville komennon <em>jupyter notebook</em>.</p></li>
+</ul>
+<p>Muut Jupyterin asennusvaihtoehdot ja täydet, englanninkieliset asennusohjeet löytyvät <a class="reference external" href="http://jupyter.readthedocs.io/en/latest/install.html">tältä sivulta</a>.</p>
 <p><a id="luonotebook"></a></p>
 </section>
 <section id="kaynnistaminen-ja-uuden-notebookin-luominen">
@@ -890,7 +890,7 @@ title="Print to PDF"
 <br>
 Dashboardin kautta voidaan luoda uusia notebookeja, avata tai poistaa vanhoja sekä hallinnoida Jupyterin toimintaa. Dashboardiin tutustutaan tarkemmin osiossa <a class="reference external" href="#dashboard">8. Notebookin tallentaminen ja dashboardin käyttö</a>.</p>
 <p>Uuden notebookin luominen onnistuu dashboardin oikeassa yläkulmassa olevalla <em>New</em>-painikkeella. Painikkeesta avautuu vetovalikko, josta voidaan valita <em>Notebooks</em>-tekstin alta notebookissa käytettävä ydin (kernel). Ydin määrää, millä ohjelmointikielellä notebook toimii (esim. Python 2, Python 3, C++, …). Saatavilla olevien ytimien määrä riippuu siitä, mitä ytimiä käyttäjä on asentanut yhteensopiviksi.</p>
-<p>Tässä tutoriaalissa käytämme kielenä Python 3:a. Ytimen valitsemisen jälkeen luotu notebook avautuu selaimen uudelle välilehdelle.</p>
+<p>Tässä tutoriaalissa käytämme Python 3 -kieltä. Ytimen valitsemisen jälkeen luotu notebook avautuu selaimen uudelle välilehdelle.</p>
 <p><a id="interface"></a></p>
 </section>
 <section id="kayttoliittyma-ja-sen-toiminta">
