@@ -831,7 +831,7 @@ title="Print to PDF"
 <h1>Jupyter Notebook -tutoriaali<a class="headerlink" href="#jupyter-notebook-tutoriaali" title="Permalink to this headline">#</a></h1>
 <p>Tervetuloa käyttämään Jupyter Notebookia!</p>
 <p>Tähän tutoriaaliin on koottu suomeksi oleellisimmat perustiedot Jupyter Notebookin käytöstä ja ominaisuuksista. Jos olet avannut tutoriaalin Jupyterissa, voit vapaasti kokeilla erilaisia toimintoja, muokata sisältöä ja luoda omia kommenttejasi. Mikäli sinulla ei vielä ole Jupyteria, katso osio <em>Jupyter Notebookin asennus</em>.</p>
-<p>Yksityiskohtaisempia ohjeita varten Jupyter-projektin virallinen englanninkielinen dokumentaatio löytyy osoitteesta http://jupyter.readthedocs.io/en/latest/index.html. Jupyter Notebook -sovellukseen keskittyvä dokumentaatio on saatavilla osoitteessa http://jupyter-notebook.readthedocs.io/en/latest/.</p>
+<p>Yksityiskohtaisempia ohjeita varten Jupyter-projektin virallinen englanninkielinen dokumentaatio löytyy <a class="reference external" href="http://jupyter.readthedocs.io/en/latest/index.html">täältä</a>. Jupyter Notebook -sovellukseen keskittyvä dokumentaatio on saatavilla <a class="reference external" href="http://jupyter-notebook.readthedocs.io/en/latest/">täällä</a>.</p>
 <p>Tämä dokumentti sisältää:<br>
 (valitettavasti linkit toimivat vain Jupyterissa, eivät GitHubissa)</p>
 <ol class="simple">
@@ -867,8 +867,8 @@ title="Print to PDF"
 <h2>2. Jupyter Notebookin asennus<a class="headerlink" href="#jupyter-notebookin-asennus" title="Permalink to this headline">#</a></h2>
 <p>Jupyter Notebookia on mahdollista käyttää suoraan selaimesta asentamatta mitään ohjelmistoa joko Binder- tai Google Colab-sovelluksen avulla. Binder luo GitHub-hakemistosta selaimessa toimivan Jupyter-ympäristön, jossa hakemistossa olevia notebookeja voi käyttää ja muokata. Binderin käyttö on helppoa:</p>
 <ul class="simple">
-<li><p>Mene sivulle https://mybinder.org/.</p></li>
-<li><p>Kopioi kenttään <em>GitHub repo or URL</em> sen GitHub-hakemiston osoite, jonka haluat aukaista. Esimerkiksi tämän materiaalin voi avata kopioimalla osoitteen https://github.com/opendata-education/Python-ja-Jupyter.</p></li>
+<li><p>Mene sivulle <a class="reference external" href="https://mybinder.org/">https://mybinder.org/</a>.</p></li>
+<li><p>Kopioi kenttään <em>GitHub repo or URL</em> sen GitHub-hakemiston osoite, jonka haluat aukaista. Esimerkiksi tämän materiaalin voi avata kopioimalla osoitteen <a class="reference external" href="https://github.com/opendata-education/Python-ja-Jupyter">https://github.com/opendata-education/Python-ja-Jupyter</a>.</p></li>
 <li><p>Kirjoita kenttään <em>Git branch, tag, or commit</em> “master” (mahdollisesti jo valmiina) ja paina nappia <em>launch</em>.</p></li>
 </ul>
 <p>Huomaa, että Binderiin tekemäsi muutokset eivät automaattisesti tallennu minnekään ja poistuvat, jos ympäristö on 20 minuuttia käyttämättä. Voit kuitenkin tallentaa Binderilla muokkaamasi ja laatimasi notebookit omalle koneellesi talteen. Tämä onnistuu avoimen notebookin valikosta klikkaamalla <em>File</em> -&gt; <em>Download as</em> -&gt; <em>notebook (.ipynb)</em>.</p>
@@ -1030,7 +1030,7 @@ tai näppäinkomennon kautta. Näppäimellä *m* valitaan tekstisolu, näppäime
 <li><p>maitoa</p></li>
 <li><p>soijasuikaleita</p></li>
 </ul>
-<p>Tässä tutoriaalissa ei käydä tarkemmin läpi Markdownin muotoilukomentoja, mutta hyvä lista erilaisista komennoista löytyy esimerkiksi verkkosivulta https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet. Lisäksi voit halutessasi siirtyä tämän tekstisolun editointitilaan ja tarkastella, miten tekstissä käytetyt muotoilut on kirjattu soluun.</p>
+<p>Tässä tutoriaalissa ei käydä tarkemmin läpi Markdownin muotoilukomentoja, mutta hyvä lista erilaisista komennoista löytyy esimerkiksi <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">täältä</a>. Lisäksi voit halutessasi siirtyä tämän tekstisolun editointitilaan ja tarkastella, miten tekstissä käytetyt muotoilut on kirjattu soluun.</p>
 <p><a id="otsikko"></a></p>
 </section>
 <section id="otsikkosolu-heading">
@@ -1103,7 +1103,7 @@ tai näppäinkomennon kautta. Näppäimellä *m* valitaan tekstisolu, näppäime
 <h3>6.1 Kuvan lisääminen<a class="headerlink" href="#kuvan-lisaaminen" title="Permalink to this headline">#</a></h3>
 <p>Koska Jupyterin tekstisoluissa käytetään Markdownia, joka on HTML:n ylijoukko, toimivat useimmat HTML-elementit (tags) suoraan tekstisoluissa. Esimerkiksi <em>Testikuva.png</em>-nimisen kuvan lisääminen onnistuisi kirjoittamalla suoraan tekstisoluun seuraava HTML-elementti:</p>
 <p><code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;testikuva.png&quot;&gt;</span></code></p>
-<p>Kuvan tulee yllä olevassa esimerkikssä olla samassa hakemistossa notebookin kanssa. Mikäli notebookiin liitettävä kuva on jossakin toisessa hakemistossa, täytyy HTML-elementissä kertoa tämä hakemisto. Hyvä esimerkki hakemistoon viittaamisessa eri tilanteista löytyy verkkosivulta http://stackoverflow.com/questions/14489016/how-to-properly-reference-local-resources-in-html.</p>
+<p>Kuvan tulee yllä olevassa esimerkikssä olla samassa hakemistossa notebookin kanssa. Mikäli notebookiin liitettävä kuva on jossakin toisessa hakemistossa, täytyy HTML-elementissä kertoa tämä hakemisto. Hyvä esimerkki hakemistoon viittaamisessa eri tilanteista löytyy <a class="reference external" href="http://stackoverflow.com/questions/14489016/how-to-properly-reference-local-resources-in-html">tältä verkkosivulta</a>.</p>
 <p>Otetaan esimerkkinä tilanne, jossa kuva ei ole samassa kansiossa notebookin kanssa. Haluttu kuva <em>testikuva.png</em> sijaitsee yhtä tasoa ylemmän hakemiston kansiossa <em>Kuvat</em>.</p>
 <p>Kuvan liittäminen notebookiin onnistuu tällöin seuraavalla komennolla:</p>
 <p><code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;../Kuvat/testikuva.png&quot;&gt;</span></code>,</p>
@@ -1166,7 +1166,7 @@ Sammutus onnistuu myös <em>Running</em>-välilehdeltä, joka näyttää kaikki 
 <section id="notebookien-kayttaminen">
 <h2>9. Notebookien käyttäminen<a class="headerlink" href="#notebookien-kayttaminen" title="Permalink to this headline">#</a></h2>
 <p>Valmiita notebookeja voidaan avata kahdella eri tavalla: interaktiivisina tai staattisina versioina. Jupyterissa avattaessa notebookien interaktiivisuus säilyy, eli käyttäjä voi muokata ja ajaa soluja. Vaihtoehtoisesti notebookeja voidaan tarkastella myös staattisina versioina, jolloin solujen sisältö on näkyvissä, mutta ei muokattavissa tai ajettavissa. Staattisten versioiden avaamiseen ei tarvita Jupyter-sovellusta.</p>
-<p>Notebookien staattisia versioita voidaan luoda eri tavoilla. Valikkopalkin <em>File</em> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <em>Download as</em> -valinnalla voidaan esimerkiksi tallentaa notebook selaimessa tarkasteltavassa staattisessa muodossa .html-tiedostona. Toinen kätevä tapa notebookien staattiseen tarkasteluun on <strong>nbviewer</strong>-sovellus (https://nbviewer.jupyter.org/). Nbviewerin avulla verkkoon julkisesti saataville tallennettu notebook saadaan näytettyä staattisena html-versiona. Nbvieweriin syötetään joko url-linkki notebookiin tai GitHub-käyttäjätunnus, mikäli notebook on tallennettu GitHub-palveluun (https://github.com/).</p>
+<p>Notebookien staattisia versioita voidaan luoda eri tavoilla. Valikkopalkin <em>File</em> <span class="math notranslate nohighlight">\(\rightarrow\)</span> <em>Download as</em> -valinnalla voidaan esimerkiksi tallentaa notebook selaimessa tarkasteltavassa staattisessa muodossa .html-tiedostona. Toinen kätevä tapa notebookien staattiseen tarkasteluun on <strong><a class="reference external" href="https://nbviewer.jupyter.org/">nbviewer</a></strong>-sovellus. Nbviewerin avulla verkkoon julkisesti saataville tallennettu notebook saadaan näytettyä staattisena html-versiona. Nbvieweriin syötetään joko url-linkki notebookiin tai GitHub-käyttäjätunnus, mikäli notebook on tallennettu <a class="reference external" href="https://github.com/">GitHub</a>-palveluun.</p>
 <p><a id="ongelmia"></a></p>
 <section id="mahdollisia-ongelmatilanteita-ja-ratkaisuja-niihin">
 <h3>9.1 Mahdollisia ongelmatilanteita ja ratkaisuja niihin<a class="headerlink" href="#mahdollisia-ongelmatilanteita-ja-ratkaisuja-niihin" title="Permalink to this headline">#</a></h3>
