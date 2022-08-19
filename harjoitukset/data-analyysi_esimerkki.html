@@ -564,6 +564,7 @@ title="Print to PDF"
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Kirjoita tähän soluun koodi, joka ottaa käyttöön pandas kirjaston lyhenteellä &quot;pd&quot;</span>
 <span class="c1"># Lopuksi aja solu. Huom! Solu ei tulosta mitään, koska lataamme ainoastaan paketin käyttöömme.</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 </div>
 </div>
@@ -603,7 +604,7 @@ title="Print to PDF"
 </div>
 </div>
 <p>Jotkin funktiot kuuluvat Pythoniin valmiina, mutta paketit (kuten pandas ja matplotlib) sisältävät ainakin meidän kannalta hyödyllisiä funktioita. Funktioita voi tehdä myös itse, mutta sitä ei käsitellä tässä ohjeessa.</p>
-<p>Palataan datan lukemiseen. Dataa voidaan lukea pandas-paketin <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html"><code class="docutils literal notranslate"><span class="pre">read_csv()</span></code></a>-funktiolla, jolle annetaan parametrinä luettavan datatiedoston nimi, esimerkiksi</p>
+<p>Palataan datan lukemiseen. Dataa voidaan lukea pandas-paketin <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html"><code class="docutils literal notranslate"><span class="pre">read_csv()</span></code></a>-funktiolla, jolle annetaan parametrinä luettavan datatiedoston nimi/osoite, esimerkiksi</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;tiedostonimi.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -622,7 +623,8 @@ Pelkästään datan lukemisesta ei kuitenkaan ole hyötyä, vaan data pitää my
 </div>
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Kirjoita tähän soluun koodi, joka lukee datan tiedostosta &quot;keskilampotila2020_Helsinki.csv&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Kirjoita tähän soluun koodi, joka lukee datan tiedostosta </span>
+<span class="c1"># &quot;https://github.com/opendata-education/Python-ja-Jupyter/raw/main/materiaali/harjoitukset/keskilampotila2020_Helsinki.csv&quot;</span>
 <span class="c1"># ja tallentaa sen muuttujaan &quot;data&quot;. Muista ajaa solu!</span>
 <span class="c1"># Huom! Datan lataamisesta ei tulostu mitään solua ajettaessa.</span>
 </pre></div>
@@ -751,7 +753,7 @@ Sarakkeen valitseminen datataulukosta onnistuu kulmasulkeiden <code class="docut
 </section>
 <section id="esimerkki">
 <h3>Esimerkki<a class="headerlink" href="#esimerkki" title="Permalink to this headline">#</a></h3>
-<p>Piirretään kolmen paikkakunnan (Helsinki, Tampere, Oulu) kuukausien keskilämpötilat vuonna 2020 samaan kuvaajaan. Tiedostot ovat nimeltään:</p>
+<p>Piirretään kolmen paikkakunnan (Helsinki, Tampere, Oulu) kuukausien keskilämpötilat vuonna 2020 samaan kuvaajaan. Tiedostojen nimet ovat:</p>
 <ul class="simple">
 <li><p>keskilampotila2020_Helsinki.csv</p></li>
 <li><p>keskilampotila2020_Tampere.csv</p></li>
@@ -772,9 +774,9 @@ Sarakkeen valitseminen datataulukosta onnistuu kulmasulkeiden <code class="docut
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Luetaan datatiedostot eri muuttujiin</span>
 
-<span class="n">data_hel</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;keskilampotila2020_Helsinki.csv&#39;</span><span class="p">)</span>
-<span class="n">data_tre</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;keskilampotila2020_Tampere.csv&#39;</span><span class="p">)</span>
-<span class="n">data_oul</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;keskilampotila2020_Oulu.csv&#39;</span><span class="p">)</span>
+<span class="n">data_hel</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://github.com/opendata-education/Python-ja-Jupyter/raw/main/materiaali/harjoitukset/keskilampotila2020_Helsinki.csv&#39;</span><span class="p">)</span>
+<span class="n">data_tre</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://github.com/opendata-education/Python-ja-Jupyter/raw/main/materiaali/harjoitukset/keskilampotila2020_Tampere.csv&#39;</span><span class="p">)</span>
+<span class="n">data_oul</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://github.com/opendata-education/Python-ja-Jupyter/raw/main/materiaali/harjoitukset/keskilampotila2020_Oulu.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
